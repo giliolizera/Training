@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-slate-700">
+  <div class="bg-slate-600">
   <div class="w-full px-4 pt-16">
     <div class="mx-auto w-full max-w-md rounded-2xl bg-slate-900 p-2">
       <button @click="exibir = !exibir" type="button" class="flex w-full justify-between rounded-lg bg-slate-800 px-4 py-2 text-left text-sm font-medium text-purple-300 hover:bg-slate-700 focus:outline-none">
@@ -15,7 +15,7 @@
     </div>
   </div>
   </div>
-  <div class="bg-slate-700 w-full h-screen"></div>
+  <div class="bg-slate-600 w-full h-16"></div>
 </template>
 
 <script>

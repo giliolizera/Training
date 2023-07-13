@@ -1,14 +1,15 @@
 <template>
-  <HelloWorld/>
+  <Disclosure/>
+  <Tabs/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Disclosure from './components/Disclosure.vue'
+import Tabs from './components/Tabs.vue'
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    Disclosure, Tabs
   }
 }
 </script>
