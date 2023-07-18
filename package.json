@@ -7,10 +7,12 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@truffle/hdwallet-provider": "^1.0.41-1",
     "vue": "^3.2.13",
     "vue-router": "^4.2.4"
   },
   "devDependencies": {
+    "@heroicons/react": "^2.0.18",
     "@vue/cli-service": "~5.0.0",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.25",

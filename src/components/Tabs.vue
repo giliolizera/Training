@@ -56,7 +56,7 @@
       </div>
     </div>
   </div>
-  <div class="bg-blue-300 w-full h-28"></div>
+  <div class="bg-blue-300 w-full h-16"></div>
 </template>
 
 <script>
