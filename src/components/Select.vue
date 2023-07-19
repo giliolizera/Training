@@ -1,20 +1,35 @@
 <template>
-  <div class="bg-yellow-600 py-4">
-     <div class="mx-auto w-72 max-w-md">
-        <select class="flex w-full cursor-default rounded-lg bg-white py-2 pl-2 pr-10 text-left shadow-md focus:outline-none sm:text-sm font-medium ">
-           <option class="bg-amber-100 text-amber-900 text-base hover:bg-amber-300 relative cursor-default select-none py-2 pl-10 pr-4" 
-              v-for="people in peoples" :key="id">{{ people.name }}
-           </option>
-           <ChevronUpDownIcon class="h-5 w-5 text-gray-400"/>
-        </select>
+  <div class="bg-orange-300 py-16">
+    <div class="mx-auto w-72 max-w-md rounded-md">
+      <div class="inline-flex bg-white w-72 rounded-md">
+        <button @click="exibir = !exibir" @keydown.down="teste()" class="w-full pl-3 px-1 py-1 rounded-md text-left" type="text">{{ active }}</button>
+        <button @click="exibir = !exibir">
+          <ChevronUpDownIcon class="h-5 w-5 text-gray-500"/>
+        </button>
+      </div>
+      
+        <div class="mt-2">
+          <ul v-if="!exibir" class="bg-white grid rounded-md">
+              <button @click="active = people.name , exibir=true" class="inline-flex py-1.5 hover:bg-orange-200 hover:rounded-md" v-for="people in peoples" :key="id">
+                <div v-if="active === people.name" class="pl-2 inline-flex">
+                  <CheckIcon class="h-5 w-5 mt-0.5 text-yellow-500"/>
+                  <div class="pl-3">
+                    {{ people.name }}
+                  </div>
+                </div>
+                <div v-if="active != people.name" class="pl-10">
+                  {{ people.name }}
+                </div>
+              </button>
+          </ul>
+        </div>
      </div>
+
   </div>
-  <div class="h-64 bg-yellow-600"></div>
+  <div class="h-4 bg-orange-300"></div>
 </template>
 
 <script>
-  import { ChevronUpDownIcon } from '@heroicons/vue/20/solid'
-
   export default {
      data: () => ({
         peoples: [
@@ -24,7 +39,20 @@
            { id: 4, name: 'Tom Cook' },
            { id: 5, name: 'Tanya Fox' },
            { id: 6, name: 'Hellen Schmidt' },
-        ]
-     })
+        ],
+        active: 'Wade Cooper',
+        exibir: false,
+     }),
+     methods: {
+        teste() {
+          this.peoples.id = this.peoples.id + 1;
+          console.log(this.peoples.id)
+        }
+     }
   }
+</script>
+
+<script setup>
+  import { ChevronUpDownIcon } from '@heroicons/vue/20/solid'
+  import { CheckIcon } from "@heroicons/vue/24/outline";
 </script>
