@@ -10,7 +10,7 @@
        
          <div class="mt-2">
            <ul v-if="!exibir" class="bg-white grid rounded-md">
-               <button @click="active = people.name , exibir=true" class="inline-flex py-1.5 hover:bg-orange-200 hover:rounded-md" v-for="people in peoples" :key="id">
+               <button @click="active = people.name , exibir=true" class="inline-flex py-1.5 hover:bg-orange-200 hover:rounded-md" v-for="(people,index) in peoples" :key="index">
                  <div v-if="active === people.name" class="pl-2 inline-flex">
                    <CheckIcon class="h-5 w-5 mt-0.5 text-yellow-500"/>
                    <div class="pl-3">
@@ -26,23 +26,28 @@
       </div>
  
    </div>
-   <div class="h-64 bg-blue-500"></div>
+   <div class="h-40 bg-blue-500"></div>
  </template>
  
  <script>
    export default {
       data: () => ({
          peoples: [
-            { id: 1, name: 'Wade Cooper' },
-            { id: 2, name: 'Arlene Mccoy' },
-            { id: 3, name: 'Devon Webb' },
-            { id: 4, name: 'Tom Cook' },
-            { id: 5, name: 'Tanya Fox' },
-            { id: 6, name: 'Hellen Schmidt' },
+            { name: 'Wade Cooper' },
+            { name: 'Arlene Mccoy' },
+            { name: 'Devon Webb' },
+            { name: 'Tom Cook' },
+            { name: 'Tanya Fox' },
+            { name: 'Hellen Schmidt' },
          ],
          active: 'Wade Cooper',
-         exibir: false,
+         exibir: true,
       }),
+      watch: {
+        filtrar(){
+          this.peoples = this.peoples.filter(people => people.name.includes(this.filtrar))
+        }
+      }
    }
  </script>
  
