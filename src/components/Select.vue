@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-orange-300 py-16">
+  <div class="bg-slate-600 py-16">
     <div class="mx-auto w-72 max-w-md rounded-md">
       <div class="inline-flex bg-white w-72 rounded-md">
         <button @click="exibir = !exibir" @keypress="!exibir" @keydown.prevent.esc="escape()" @keydown.prevent.down="baixo()" @keydown.prevent.up="cima()" @keydown.prevent.enter="enter()" class="w-full pl-3 px-1 py-1 rounded-md text-left" type="text">{{ selected }}</button>
@@ -10,9 +10,9 @@
       
         <div class="mt-2">
           <ul v-if="!exibir" class="bg-white grid rounded-md">
-              <button @mouseenter="active = index" @mouseleave="active = -1" @click="active = people.name , exibir=true" :class="[active === index ? 'bg-orange-200 rounded-md': '', 'inline-flex py-1.5']" v-for="(people,index) in peoples" :key="index">
+              <button @mouseenter="active = index" @mouseleave="active = -1" @click="selected = people.name , exibir=true" :class="[active === index ? 'bg-blue-200 rounded-md': '', 'inline-flex py-1.5']" v-for="(people,index) in peoples" :key="index">
                 <div v-if="selected === people.name" class="pl-2 inline-flex">
-                  <CheckIcon class="h-5 w-5 mt-0.5 text-yellow-500"/>
+                  <CheckIcon class="h-5 w-5 mt-0.5 text-blue-500"/>
                   <div class="pl-3">
                     {{ people.name }}
                   </div>
@@ -26,7 +26,7 @@
      </div>
 
   </div>
-  <div class="h-4 bg-orange-300"></div>
+  <div class="h-4 bg-slate-600"></div>
 </template>
 
 <script>

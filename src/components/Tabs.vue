@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-blue-300">
+  <div class="bg-blue-500">
     <div class="w-full px-4 pt-16">
       <div class="mx-auto w-full max-w-md rounded-2xl bg-blue-400 p-2">
         <div class="grid grid-flow-col justify-stretch space-x-1">
@@ -12,7 +12,7 @@
         </div>
       </div>
     </div>
-    <div class="bg-blue-300 w-full pt-2">
+    <div class="bg-blue-500 w-full pt-2">
       <div class="mx-auto w-full max-w-md rounded-2xl bg-white px-5 relative hover:bg-gray-100">
           <div v-if="active === 1">
             <div v-for="(recent,index) in Recent" :key="index">
@@ -56,7 +56,7 @@
       </div>
     </div>
   </div>
-  <div class="bg-blue-300 w-full h-16"></div>
+  <div class="bg-blue-500 w-full h-16"></div>
 </template>
 
 <script>
