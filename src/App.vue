@@ -6,6 +6,7 @@
   <Combobox/>
   <Dialog/>
   <!-- <ComboHead/> -->
+  <Radio/>
 </template>
 
 <script>
@@ -16,11 +17,13 @@ import Select from './components/Select.vue'
 import Combobox from './components/Combobox.vue'
 import Dialog from './components/Dialog.vue'
 import ComboHead from './components/ComboHead.vue'
+import Radio from './components/Radio.vue'
 
 export default {
   components: {
     Disclosure, Tabs, Menu,
-    Select, Combobox, Dialog, ComboHead
+    Select, Combobox, Dialog, 
+    ComboHead, Radio
   }
 }
 </script>
