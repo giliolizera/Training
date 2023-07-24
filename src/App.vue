@@ -6,6 +6,7 @@
   <Combobox/>
   <Dialog/>
   <Radio/>
+  <Popover/>
 </template>
 
 <script>
@@ -16,11 +17,13 @@ import Select from './components/Select.vue'
 import Combobox from './components/Combobox.vue'
 import Dialog from './components/Dialog.vue'
 import Radio from './components/Radio.vue'
+import Popover from './components/Popover.vue'
 
 export default {
   components: {
     Disclosure, Tabs, Menu,
-    Select, Combobox, Dialog, Radio
+    Select, Combobox, Dialog, 
+    Radio, Popover
   }
 }
 </script>

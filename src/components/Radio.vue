@@ -33,8 +33,8 @@ export default {
       plans: [
          {
             name: 'Startup',
-            ram: '12GB',
-            cpus: '6 CPUs',
+            ram: '8GB',
+            cpus: '4 CPUs',
             disk: '256 GB SSD disk',
          },
          {
