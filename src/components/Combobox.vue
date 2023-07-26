@@ -4,6 +4,7 @@
       <div class="inline-flex bg-white w-72 rounded-md">
         <input class="w-full pl-3 px-1 py-1 rounded-md focus:outline-none text-left" type="text"
          v-model="query"
+         @click="exibir = !exibir"
          @keydown.prevent.esc="escape()" 
          @keydown.prevent.down="baixo()" 
          @keydown.prevent.up="cima()" 
@@ -21,13 +22,13 @@
       </div>
       <div class="mt-2 bg-white grid rounded-md">
         <ul v-if="!exibir">
-          <button @mouseenter="active = person.id -1 " 
+          <button @mouseenter="active = index " 
           @mouseleave="active = -1" 
           @click="selected = person.name, query = person.name, exibir=true"
-          :class="[active === person.id -1
+          :class="[active === index
           ? 'bg-blue-200 rounded-md'
           : '', 'inline-flex py-1.5 w-full']" 
-          v-for="person in filtredPeople" :key="person.id"
+          v-for="(person,index) in filtredPeople" :key="index"
           >
           <div v-if="selected === person.name" class="pl-2 inline-flex">
             <CheckIcon class="h-5 w-5 mt-0.5 text-blue-500"/>
@@ -67,6 +68,7 @@
         exibir: false,
         selected: 'Wade Cooper',
         active: -1,
+        index: -1,
       }
     },
     computed: {
@@ -74,24 +76,37 @@
         return this.query === ''
           ? this.people
           : this.people.filter((person) => {
-              this.cont = this.people.filter((person) => {
-                return person.name.toLowerCase().includes(this.query.toLowerCase())
-              }).length
+              // this.cont = this.people.filter((person) => {
+              //   return person.name.toLowerCase().includes(this.query.toLowerCase())
+              // }).length
               return person.name.toLowerCase().includes(this.query.toLowerCase())
             })
+      },
+      filtredPeopleLenght() {
+        return this.query === ''
+          ? this.people.length
+          : this.people.filter((person) => {
+              return person.name.toLowerCase().includes(this.query.toLowerCase())
+            }).length
       }
     },
     methods: {
       baixo(){
         this.active++;
-        if(this.active > this.people.length-1){
+        if (this.filteredPeopleLength === this.active) {
+          this.active = this.filtredPeopleLenght;
+        }
+        if(this.active > this.filteredPeopleLength){
           this.active = 0;
         }
       },
       cima() {
         this.active--;
-        if(this.active < 0){
-          this.active = this.people.length-1;
+        if (this.filteredPeopleLength === this.active) {
+          this.active = this.filtredPeopleLenght;
+        }
+        if(this.active < this.filteredPeopleLength){
+          this.active = this.filtredPeopleLenght -1;
         }
       },
       escape() {

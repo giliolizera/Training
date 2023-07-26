@@ -11,7 +11,7 @@
     "@heroicons/vue": "^2.0.18",
     "@truffle/hdwallet-provider": "^1.0.41-1",
     "vue": "^3.2.13",
-    "vue-router": "^4.2.4"
+    "vue-router": "4.0.12"
   },
   "devDependencies": {
     "@vue/cli-service": "~5.0.0",
