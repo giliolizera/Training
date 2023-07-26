@@ -68,7 +68,6 @@
         exibir: false,
         selected: 'Wade Cooper',
         active: -1,
-        index: -1,
       }
     },
     computed: {
@@ -76,9 +75,6 @@
         return this.query === ''
           ? this.people
           : this.people.filter((person) => {
-              // this.cont = this.people.filter((person) => {
-              //   return person.name.toLowerCase().includes(this.query.toLowerCase())
-              // }).length
               return person.name.toLowerCase().includes(this.query.toLowerCase())
             })
       },
@@ -99,6 +95,7 @@
         if(this.active > this.filteredPeopleLength){
           this.active = 0;
         }
+        console.log(this.filteredPeopleLength)
       },
       cima() {
         this.active--;
@@ -108,6 +105,10 @@
         if(this.active < this.filteredPeopleLength){
           this.active = this.filtredPeopleLenght -1;
         }
+        if( this.active === -1){
+          this.active = 0;
+        }
+        console.log(this.active)
       },
       escape() {
         this.exibir = true
