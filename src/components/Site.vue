@@ -1,6 +1,6 @@
 <template>
-   <div>
-      <h1 class="text-blue-600 font-medium text-3xl flex mt-5 justify-center">Training WebSite</h1>
+   <div class="bg-slate-800 text-white">
+      <h1 class="text-blue-600 font-medium text-3xl flex pt-5 justify-center">Training WebSite</h1>
       <div>
          <div class="flex justify-center font-medium mt-10">
             Sobre Nós
@@ -30,4 +30,5 @@
          </div>
       </div>
    </div>
+   <div class="bg-slate-800 h-72"></div>
 </template>

@@ -8,6 +8,7 @@
    <Dialog/>
    <Radio/>
    <Popover/>
+   <Baseboard/>
  </template>
  
  <script>
@@ -20,12 +21,13 @@
  import Dialog from './Dialog.vue'
  import Radio from './Radio.vue'
  import Popover from './Popover.vue'
+ import Baseboard from './Baseboard.vue'
  
  export default {
    components: {
      Disclosure, Tabs, Menu,
      Select, Combobox, Dialog, 
-     Radio, Popover, Upside
+     Radio, Popover, Upside, Baseboard
    }
  }
  </script>
