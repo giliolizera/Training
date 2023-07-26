@@ -1,4 +1,5 @@
 <template>
+   <Upside/>
    <Disclosure/>
    <Tabs/>
    <Select/>
@@ -10,6 +11,7 @@
  </template>
  
  <script>
+ import Upside from './Upside.vue'
  import Disclosure from './Disclosure.vue'
  import Tabs from './Tabs.vue'
  import Menu from './Menu.vue'
@@ -23,7 +25,7 @@
    components: {
      Disclosure, Tabs, Menu,
      Select, Combobox, Dialog, 
-     Radio, Popover
+     Radio, Popover, Upside
    }
  }
  </script>

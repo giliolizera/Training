@@ -5,6 +5,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 // routes
 import Home from './components/Home.vue'
+import Site from './components/Site.vue'
 import Combobox from './components/Combobox.vue'
 import Dialog from './components/Dialog.vue'
 import Disclosure from './components/Disclosure.vue'
@@ -17,6 +18,10 @@ import Tabs from './components/Tabs.vue'
 const routes = [
    {
       path: '/',
+      component: Site
+   },
+   {
+      path: '/home',
       component: Home
    },
    {
