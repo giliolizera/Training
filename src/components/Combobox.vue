@@ -65,7 +65,7 @@
           { id: 11, name: 'Hellen Schmidt',},
         ],
         exibir: false,
-        selected: 'Wade Cooper',
+        selected: 'Durward Reynolds',
         active: -1,
       }
     },
@@ -94,8 +94,6 @@
         if(this.active > this.filtredPeopleLenght-1){
           this.active = 0;
         }
-        console.log('baixo')
-        console.log(this.active)
       },
       cima() {
         this.active--;
@@ -105,8 +103,6 @@
         else if(this.active < 0 && this.filtredPeopleLenght < 10){
           this.active = this.filtredPeopleLenght-1;
         }
-        console.log('cima')
-        console.log(this.active)
       },
       escape() {
         this.exibir = true
