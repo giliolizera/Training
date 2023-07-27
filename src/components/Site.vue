@@ -21,7 +21,7 @@
       </div>
       <div class="flex justify-center font-medium mt-2">
          <div class="inline-flex space-x-2">
-            <img src="../assets/logo.png" class="h-8 w-8">
+            <img src="../assets/logo.png" class="h-7 w-7">
             <p>Vue.JS</p>
          </div>
          <div class="inline-flex pl-4 space-x-2">

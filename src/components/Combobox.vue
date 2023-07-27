@@ -4,8 +4,7 @@
       <div class="inline-flex bg-white w-72 rounded-md">
         <input class="w-full pl-3 px-1 py-1 rounded-md focus:outline-none text-left" type="text"
          v-model="query"
-         @click="exibir = !exibir"
-         @keydown.prevent.esc="escape()" 
+         @keydown.prevent.esc="escape()"
          @keydown.prevent.down="baixo()" 
          @keydown.prevent.up="cima()" 
          @keydown.prevent.enter="enter()" 
@@ -80,43 +79,44 @@
       },
       filtredPeopleLenght() {
         return this.query === ''
-          ? this.people.length
-          : this.people.filter((person) => {
-              return person.name.toLowerCase().includes(this.query.toLowerCase())
-            }).length
+          ? this.people
+          : this.cont = this.people.filter((person) => {
+                 return person.name.toLowerCase().includes(this.query.toLowerCase())
+               }).length
       }
     },
     methods: {
       baixo(){
         this.active++;
-        if (this.filteredPeopleLength === this.active) {
-          this.active = this.filtredPeopleLenght;
-        }
-        if(this.active > this.filteredPeopleLength){
+        if(this.active > this.people.length-1){
           this.active = 0;
         }
-        console.log(this.filteredPeopleLength)
+        if(this.active > this.filtredPeopleLenght-1){
+          this.active = 0;
+        }
+        console.log('baixo')
+        console.log(this.active)
       },
       cima() {
         this.active--;
-        if (this.filteredPeopleLength === this.active) {
-          this.active = this.filtredPeopleLenght;
+        if(this.active < 0 && this.query === ''){
+          this.active = this.people.length-1;
         }
-        if(this.active < this.filteredPeopleLength){
-          this.active = this.filtredPeopleLenght -1;
+        else if(this.active < 0 && this.filtredPeopleLenght < 10){
+          this.active = this.filtredPeopleLenght-1;
         }
-        if( this.active === -1){
-          this.active = 0;
-        }
+        console.log('cima')
         console.log(this.active)
       },
       escape() {
         this.exibir = true
       },
       enter(){
+        let pessoa = this.filtredPeople[this.active]
+        let id = pessoa.id -1
         this.exibir = true
-        this.selected = this.people[this.active].name
-        this.query = this.people[this.active].name
+        this.selected = this.people[id].name
+        this.query = this.people[id].name
       },
     }
   }
