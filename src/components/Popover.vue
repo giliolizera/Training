@@ -1,4 +1,5 @@
 <template>
+  <Upside/>
  <div class="pt-10 flex justify-center pl-60 bg-purple-500">
    <div class="relative inline-block">
       <button @click="exibir = !exibir" class="inline-flex w-full justify-center rounded-md bg-purple-600 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-60">
@@ -138,10 +139,14 @@
    },
    ]
 }),
+components: {
+   Upside
+},
 }
 </script>
 
 <script setup>
    import { ChevronDownIcon } from "@heroicons/vue/24/outline";
+import Upside from "./Upside.vue";
 </script>
 

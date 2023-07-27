@@ -1,4 +1,5 @@
 <template>
+   <Upside/>
    <div class="pt-10 flex justify-center pl-20 bg-purple-500">
       <div class="relative inline-block text-left">
          <button @click="exibir = !exibir" class="inline-flex w-full justify-center rounded-md bg-purple-600 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-60">
@@ -41,6 +42,9 @@
       data:() => ({
          exibir: true,
       }),
+      components: {
+         Upside
+      },
    }
 
 </script>
@@ -51,4 +55,5 @@
    import { DocumentDuplicateIcon } from "@heroicons/vue/24/outline";
    import { ArchiveBoxIcon } from "@heroicons/vue/24/outline";
    import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
+   import Upside from "./Upside.vue";
 </script>

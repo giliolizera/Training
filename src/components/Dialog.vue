@@ -1,4 +1,5 @@
 <template>
+   <Upside/>
    <div class="fixed inset-0 w-screen h-screen bg-neutral-500/50 z-40" @click.stop="exibir = false" v-show="exibir"></div>
    <div class="bg-green-400 pt-24">
       <div class="rounded-md flex items-center justify-center">
@@ -34,18 +35,22 @@
 </template>
 
 <script>
+import Upside from './Upside.vue';
+
    export default {
-      data: () => ({
-         exibir: false,
-      }),
-      watch: {
-         exibir: function (val) {
+    data: () => ({
+        exibir: false,
+    }),
+    watch: {
+        exibir: function (val) {
             if (val) {
-               document.body.style.overflow = 'hidden';
-            } else {
-               document.body.style.overflow = 'auto';
+                document.body.style.overflow = 'hidden';
             }
-         },
-      },
+            else {
+                document.body.style.overflow = 'auto';
+            }
+        },
+    },
+    components: { Upside }
 }
 </script>

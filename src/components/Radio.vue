@@ -1,4 +1,5 @@
 <template>
+   <Upside/>   
    <div class="bg-blue-500">
       <div class="mx-auto w-full max-w-md py-8">
          <div class="mx-auto w-full grid rounded-md">
@@ -52,10 +53,14 @@ export default {
       ],
       active: -1,
    }),
+   components: {
+      Upside
+   },
 }
 
 </script>
 
 <script setup>
    import { CheckCircleIcon } from "@heroicons/vue/24/outline";
+import Upside from "./Upside.vue";
 </script>

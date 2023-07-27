@@ -1,4 +1,5 @@
 <template>
+  <Upside/>
   <div class="bg-slate-600 py-16">
     <div class="mx-auto w-72 max-w-md rounded-md">
       <div class="inline-flex bg-white w-72 rounded-md">
@@ -69,6 +70,9 @@
         active: -1,
       }
     },
+    component:{
+      Upside
+    },
     computed: {
       filtredPeople() {
         return this.query === ''
@@ -119,6 +123,7 @@
 </script>
 
 <script setup>
+  import Upside from './Upside.vue'
   import { ChevronUpDownIcon } from '@heroicons/vue/20/solid'
   import { CheckIcon } from "@heroicons/vue/24/outline";
 </script> 
