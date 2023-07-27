@@ -1,4 +1,5 @@
 <template>
+  <Upside/>
   <div class="bg-purple-600">
   <div class="w-full px-4 pt-16">
     <div class="mx-auto w-full max-w-md rounded-2xl bg-white p-2">
@@ -19,11 +20,16 @@
 </template>
 
 <script>
+import Upside from './Upside.vue'
+
 export default {
   data:() => ({
     exibir: false,
     exibir2: false,
   }),
+  components: {
+    Upside
+  },
   methods: {
 
   }

@@ -10,7 +10,7 @@
          </div>
       </div>
       <div class="flex justify-center">
-         <router-link to="/home">
+         <router-link to="/disclosure">
             <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-10 ml-5">
             Home
             </button>

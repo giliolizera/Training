@@ -4,7 +4,6 @@ import './assets/main.css'
 import { createRouter, createWebHistory } from 'vue-router'
 
 // routes
-import Home from './components/Home.vue'
 import Site from './components/Site.vue'
 import Combobox from './components/Combobox.vue'
 import Dialog from './components/Dialog.vue'
@@ -19,10 +18,6 @@ const routes = [
    {
       path: '/',
       component: Site
-   },
-   {
-      path: '/home',
-      component: Home
    },
    {
       path: '/combobox',

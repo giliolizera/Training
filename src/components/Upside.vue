@@ -5,11 +5,6 @@
             Site
          </button>
       </router-link>
-      <router-link to="/home">
-         <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-xl m-2">
-            Home
-         </button>
-      </router-link>
       <router-link to="/disclosure">
          <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-xl m-2">
             Disclosure
