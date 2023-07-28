@@ -1,10 +1,10 @@
 <template>
    <Upside/>   
-   <div class="bg-blue-500">
+   <div class="bg-slate-700">
       <div class="mx-auto w-full max-w-md py-8">
          <div class="mx-auto w-full grid rounded-md">
             <button v-for="(plan,index) in plans" :key="index" @click="active = plan.name">
-               <div :class="[active === plan.name ? 'bg-sky-800 ring-2 ring-white ring-opacity-60 ring-offset-2 ring-offset-sky-300 text-white' : 'bg-white' , 'mx-auto w-full max-w-md rounded-md px-5 py-4 mt-3']">
+               <div :class="[active === plan.name ? 'bg-slate-800 ring-2 ring-white ring-opacity-60 ring-offset-2 ring-offset-slate-600 text-white' : 'bg-white' , 'mx-auto w-full max-w-md rounded-md px-5 py-4 mt-3']">
                   <ul class="justify-between flex">
                      <li class="text-left text-sm font-medium">
                         {{ plan.name }}
@@ -25,7 +25,7 @@
          </div>
       </div>
    </div>
-   <div class="bg-blue-500 w-full h-96"></div>
+   <div class="bg-slate-700 w-full h-96"></div>
 </template>
 
 <script>
