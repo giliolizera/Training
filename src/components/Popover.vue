@@ -1,8 +1,8 @@
 <template>
   <Upside/>
- <div class="pt-10 flex justify-center pl-60 bg-pink-500">
+ <div class="pt-10 flex justify-center pl-60 bg-slate-700">
    <div class="relative inline-block">
-      <button @click="exibir = !exibir" class="inline-flex w-full justify-center rounded-md bg-pink-600 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-60">
+      <button @click="exibir = !exibir" class="inline-flex w-full justify-center rounded-md bg-slate-800 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-60">
          Options
          <ChevronDownIcon class="ml-2 -mr-1 h-5 w-5 text-violet-200 hover:text-violet-100"/>
       </button> 
@@ -41,8 +41,8 @@
       </div>  
    </div>
  </div>
- <div class="h-96 bg-pink-500"></div>
-  <div class="h-48 bg-pink-500"></div>
+ <div class="h-96 bg-slate-700"></div>
+  <div class="h-48 bg-slate-700"></div>
 
 </template>
 
@@ -65,24 +65,24 @@
         aria-hidden="true"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <rect width="48" height="48" rx="8" fill="#FFEDD5" />
+        <rect width="48" height="48" rx="8" fill="#D3D3D3" />
         <path
           d="M24 11L35.2583 17.5V30.5L24 37L12.7417 30.5V17.5L24 11Z"
-          stroke="#FB923C"
+          stroke="#000"
           stroke-width="2"
         />
         <path
           fill-rule="evenodd"
           clip-rule="evenodd"
           d="M16.7417 19.8094V28.1906L24 32.3812L31.2584 28.1906V19.8094L24 15.6188L16.7417 19.8094Z"
-          stroke="#FDBA74"
+          stroke="#000"
           stroke-width="2"
         />
         <path
           fill-rule="evenodd"
           clip-rule="evenodd"
           d="M20.7417 22.1196V25.882L24 27.7632L27.2584 25.882V22.1196L24 20.2384L20.7417 22.1196Z"
-          stroke="#FDBA74"
+          stroke="#000"
           stroke-width="2"
         />
       </svg>
@@ -100,17 +100,17 @@
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <rect width="48" height="48" rx="8" fill="#FFEDD5" />
+        <rect width="48" height="48" rx="8" fill="#D3D3D3" />
         <path
           d="M28.0413 20L23.9998 13L19.9585 20M32.0828 27.0001L36.1242 34H28.0415M19.9585 34H11.8755L15.9171 27"
-          stroke="#FB923C"
+          stroke="#000"
           stroke-width="2"
         />
         <path
           fill-rule="evenodd"
           clip-rule="evenodd"
           d="M18.804 30H29.1963L24.0001 21L18.804 30Z"
-          stroke="#FDBA74"
+          stroke="#000"
           stroke-width="2"
         />
       </svg>
@@ -128,13 +128,13 @@
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <rect width="48" height="48" rx="8" fill="#FFEDD5" />
-        <rect x="13" y="32" width="2" height="4" fill="#FDBA74" />
-        <rect x="17" y="28" width="2" height="8" fill="#FDBA74" />
-        <rect x="21" y="24" width="2" height="12" fill="#FDBA74" />
-        <rect x="25" y="20" width="2" height="16" fill="#FDBA74" />
-        <rect x="29" y="16" width="2" height="20" fill="#FB923C" />
-        <rect x="33" y="12" width="2" height="24" fill="#FB923C" />
+        <rect width="48" height="48" rx="8" fill="#D3D3D3" />
+        <rect x="13" y="32" width="2" height="4" fill="#000" />
+        <rect x="17" y="28" width="2" height="8" fill="#000" />
+        <rect x="21" y="24" width="2" height="12" fill="#000" />
+        <rect x="25" y="20" width="2" height="16" fill="#000" />
+        <rect x="29" y="16" width="2" height="20" fill="#000" />
+        <rect x="33" y="12" width="2" height="24" fill="#000" />
       </svg>
     `,
    },

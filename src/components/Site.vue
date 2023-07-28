@@ -10,10 +10,8 @@
          <div class="flex justify-center font-bold text-xl mt-8">
             Sobre Nós
          </div>
-         <div class="text-justify font-medium mt-2">
+         <div class="text-center font-medium mt-3">
             O objetivo deste projeto é apenas treinar para aprender a usar o TailwindCSS e o Vue.JS
-            Fazendo esse tipo de documento, podemos entregar um site com um design mais bonito e mais
-            sofisticado para vosso cliente.
          </div>
       </div>
       <div class="flex justify-center mt-10">
