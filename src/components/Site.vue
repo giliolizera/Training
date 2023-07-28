@@ -1,26 +1,32 @@
 <template>
    <div class="h-full">
    <div class="bg-slate-800 text-white">
-      <h1 class="text-blue-600 bg-slate-900 font-medium text-3xl flex p-5 justify-center">Training WebSite</h1>
-      <div>
-         <div class="flex justify-center font-bold text-1xl mt-8">
+      <div class="w-full bg-slate-900">
+         <button class="text-blue-600 bg-slate-900 font-medium text-3xl flex p-5 justify-start">
+            Training WebSite
+         </button>
+      </div>
+      <div class="max-w-md mx-auto">
+         <div class="flex justify-center font-bold text-xl mt-8">
             Sobre Nós
          </div>
-         <div class="flex justify-center font-medium mt-2">
+         <div class="text-justify font-medium mt-2">
             O objetivo deste projeto é apenas treinar para aprender a usar o TailwindCSS e o Vue.JS
+            Fazendo esse tipo de documento, podemos entregar um site com um design mais bonito e mais
+            sofisticado para vosso cliente.
          </div>
       </div>
-      <div class="flex justify-center">
+      <div class="flex justify-center mt-10">
          <router-link to="/disclosure">
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-10 ml-5">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
             Go to project
             </button>
          </router-link> 
       </div>
-      <div class="flex justify-center text-2xl mb-5 font-medium mt-10">
+      <div class="flex justify-center text-xl mb-5 font-medium mt-10">
          Tecnologias usadas
       </div>
-      <div class="flex justify-center font-medium mt-2">
+      <div class="flex justify-center mt-2">
          <div class="inline-flex space-x-2">
             <img src="../assets/logo.png" class="h-7 w-7">
             <p>Vue.JS</p>

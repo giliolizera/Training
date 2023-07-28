@@ -1,5 +1,5 @@
 <template>
-   <div class="flex justify-center bg-opacity-30 bg-slate-600">
+   <div class="flex justify-center max-wd-16 bg-opacity-30 bg-slate-600">
       <router-link to="/">
          <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-xl m-2">
             Site
