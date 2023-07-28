@@ -3,7 +3,7 @@
    <div class="bg-slate-800 text-white">
       <h1 class="text-blue-600 font-medium text-3xl flex pt-5 justify-center">Training WebSite</h1>
       <div>
-         <div class="flex justify-center font-medium mt-10">
+         <div class="flex justify-center font-bold text-1xl mt-10">
             Sobre Nós
          </div>
          <div class="flex justify-center font-medium mt-2">
