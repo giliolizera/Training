@@ -1,7 +1,7 @@
 <template>
    <Upside/>
    <div class="fixed inset-0 w-screen h-screen bg-neutral-500/50 z-40" @click.stop="exibir = false" v-show="exibir"></div>
-   <div class="bg-green-400 pt-24">
+   <div class="bg-green-400 pt-36">
       <div class="rounded-md flex items-center justify-center">
          <TransitionGroup
          enter-active-class="transition duration-500 ease-out"
@@ -30,7 +30,8 @@
          </div>
       </TransitionGroup>
    </div>
-   <div class="bg-green-400 h-24"></div>
+   <div class="bg-green-400 h-96"></div>
+   <div class="bg-green-400 h-96"></div>
 
 </template>
 

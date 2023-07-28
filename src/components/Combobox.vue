@@ -44,7 +44,8 @@
       </div>
     </div>
   </div>
-  <div class="h-4 bg-slate-600"></div>
+  <div class="h-96 bg-slate-600"></div>
+  <div class="h-12 bg-slate-600"></div>
 </template>
 
 <script>

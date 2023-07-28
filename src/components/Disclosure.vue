@@ -16,7 +16,8 @@
     </div>
   </div>
   </div>
-  <div class="bg-purple-600 w-full h-16"></div>
+  <div class="bg-purple-600 h-96"></div>
+  <div class="bg-purple-600 h-12"></div>
 </template>
 
 <script>

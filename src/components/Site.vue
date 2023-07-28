@@ -1,4 +1,5 @@
 <template>
+   <div class="h-full">
    <div class="bg-slate-800 text-white">
       <h1 class="text-blue-600 font-medium text-3xl flex pt-5 justify-center">Training WebSite</h1>
       <div>
@@ -12,7 +13,7 @@
       <div class="flex justify-center">
          <router-link to="/disclosure">
             <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-10 ml-5">
-            Home
+            Go to project
             </button>
          </router-link> 
       </div>
@@ -29,6 +30,7 @@
             <p>TailwindCSS</p>
          </div>
       </div>
+   </div>
    </div>
    <div class="bg-slate-800 h-72"></div>
 </template>

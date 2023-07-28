@@ -33,7 +33,8 @@
          </div>
       </div>
    </div>
-   <div class="h-64 bg-purple-500"></div>
+   <div class="h-96 bg-purple-500"></div>
+   <div class="h-48 bg-purple-500"></div>
 </template>
 
 <script>

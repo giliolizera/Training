@@ -25,6 +25,7 @@
          </div>
       </div>
    </div>
+   <div class="bg-blue-500 w-full h-96"></div>
 </template>
 
 <script>
