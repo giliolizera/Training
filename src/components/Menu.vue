@@ -7,10 +7,18 @@
             Options
             <ChevronDownIcon class="ml-2 -mr-1 h-5 w-5 text-violet-200 hover:text-violet-100" />
          </button>
+         <TransitionGroup 
+         enter-active-class="transition duration-500 ease-out" 
+         enter-from-class="opacity-0"
+         enter-to-class="opacity-100" 
+         leave-active-class="transition duration-500 ease-in" 
+         leave-from-class="opacity-100"
+         leave-to-class="opacity-0"
+         >
          <div v-if="exibir" class="rounded-lg">
             <ul
-               class="absolute right-0 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none px-1 py-1.5">
-               <button @click="exibir = false" class="w-full inline-flex px-3 py-1.5 mt-2 hover:bg-slate-500 text-sm rounded-md ">
+               class="absolute right-0 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none px-1 py-1">
+               <button @click="exibir = false" class="w-full inline-flex px-3 py-1.5 mt-0.5 hover:bg-slate-500 text-sm rounded-md ">
                   <PencilIcon class="mt-0.5 text-gray-600 mr-2 h-4 w-4" />
                   Edit
                </button>
@@ -18,7 +26,7 @@
                   <DocumentDuplicateIcon class="mt-0.5 text-gray-600 mr-2 h-4 w-4" />
                   Duplicate
                </button>
-               <li class="px-1 py-1.5 divide-y divide-gray-100"></li>
+               <li class="px-1 py-1 divide-y divide-gray-200"></li>
                <button @click="exibir = false" class="w-full inline-flex px-3 py-1.5 hover:bg-slate-500 text-sm rounded-md">
                   <ArchiveBoxIcon class="mt-0.5 text-gray-600 mr-2 h-4 w-4" />
                   Archive
@@ -27,13 +35,14 @@
                   <ArrowTopRightOnSquareIcon class="mt-0.5 text-gray-600 mr-2 h-4 w-4" />
                   Move
                </button>
-               <li class="px-1 py-1.5 divide-y divide-gray-100"></li>
-               <button @click="exibir = false" class="w-full inline-flex px-3 py-1.5 mb-2 hover:bg-slate-500 text-sm rounded-md">
+               <li class="px-1 py-1 divide-y divide-gray-200"></li>
+               <button @click="exibir = false" class="w-full inline-flex px-3 pt-1.5 pb-1.5 mb-0 hover:bg-slate-500 text-sm rounded-md">
                   <TrashIcon class="mt-0.5 text-gray-600 mr-2 h-4 w-4" />
                   Delete
                </button>
             </ul>
          </div>
+         </TransitionGroup>
       </div>
    </div>
    <div class="h-96 bg-slate-700"></div>
