@@ -11,25 +11,25 @@
             <ul
                class="absolute right-0 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none px-1 py-1">
                <button @click="exibir = false" class="w-full inline-flex px-3 py-1 mt-2 hover:bg-slate-500 rounded-md ">
-                  <PencilIcon class="mt-1 mr-1 h-4 w-4" />
+                  <PencilIcon class="mt-1 mr-2 h-4 w-4" />
                   Edit
                </button>
                <button @click="exibir = false" class="w-full inline-flex px-3 py-1 hover:bg-slate-500 rounded-md">
-                  <DocumentDuplicateIcon class="mt-1 mr-1 h-4 w-4" />
+                  <DocumentDuplicateIcon class="mt-1 mr-2 h-4 w-4" />
                   Duplicate
                </button>
                <li class="px-1 py-1 divide-y divide-gray-100"></li>
                <button @click="exibir = false" class="w-full inline-flex px-3 py-1 hover:bg-slate-500 rounded-md">
-                  <ArchiveBoxIcon class="mt-1 mr-1 h-4 w-4" />
+                  <ArchiveBoxIcon class="mt-1 mr-2 h-4 w-4" />
                   Archive
                </button>
                <button @click="exibir = false" class="w-full inline-flex px-3 py-1 hover:bg-slate-500 rounded-md">
-                  <ArrowTopRightOnSquareIcon class="mt-1 mr-1 h-4 w-4" />
+                  <ArrowTopRightOnSquareIcon class="mt-1 mr-2 h-4 w-4" />
                   Move
                </button>
                <li class="px-1 py-1 divide-y divide-gray-100"></li>
                <button @click="exibir = false" class="w-full inline-flex px-3 py-1 mb-2 hover:bg-slate-500 rounded-md">
-                  <TrashIcon class="mt-1 mr-1 h-4 w-4" />
+                  <TrashIcon class="mt-1 mr-2 h-4 w-4" />
                   Delete
                </button>
             </ul>

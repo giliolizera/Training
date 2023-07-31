@@ -15,44 +15,50 @@
     </div>
     <div class="bg-slate-700 w-full pt-2">
       <div class="mx-auto w-full max-w-md rounded-2xl bg-white px-5 relative hover:bg-gray-100">
-          <div v-if="active === 1">
+        <div v-if="active === 1">
+          <TransitionGroup enter-active-class="transition duration-300 ease-out" enter-from-class="opacity-0" enter-to-class="opacity-100">
             <div v-for="(recent,index) in Recent" :key="index">
               <div class="pt-5">
-                <h3 class="mt-1 text-sm font-medium leading-5">{{ recent.title }}</h3>
-                <ul class="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-500">
+                <h3 class="mt-1 text-sm font-medium">{{ recent.title }}</h3>
+                <ul class="mt-1 flex space-x-1 text-xs font-normal text-gray-500">
                   <li>{{ recent.date }}</li>
                   <li>{{ recent.commentCount }} comments</li>
                   <li>{{ recent.shareCount }} shares</li>
                 </ul>
               </div>
             </div>
-            <div class="py-4"></div>
+          </TransitionGroup>
+            <div class="py-3.5"></div>
           </div>
           <div v-if="active === 2">
+            <TransitionGroup enter-active-class="transition duration-300 ease-out" enter-from-class="opacity-0" enter-to-class="opacity-100">
             <div v-for="(popular,index) in Popular" :key="index">
               <div class="pt-5">
-                <h3 class="mt-1 text-sm font-medium leading-5">{{ popular.title }}</h3>
-                <ul class="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-500">
+                <h3 class="mt-1 text-sm font-medium">{{ popular.title }}</h3>
+                <ul class="mt-1 flex space-x-1 text-xs font-normal text-gray-500">
                   <li>{{ popular.date }}</li>
                   <li>{{ popular.commentCount }} comments</li>
                   <li>{{ popular.shareCount }} shares</li>
                 </ul>
               </div>
             </div>
-            <div class="py-4"></div>
+            <div class="py-3.5"></div>
+            </TransitionGroup>
           </div>
           <div v-if="active === 3">
+            <TransitionGroup enter-active-class="transition duration-300 ease-out" enter-from-class="opacity-0" enter-to-class="opacity-100">
             <div v-for="(trending, index) in Trending" :key="index">
               <div class="pt-5">
-                <h3 class="mt-1 text-sm font-medium leading-5">{{ trending.title }}</h3>
-                <ul class="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-500">
+                <h3 class="mt-1 text-sm font-medium">{{ trending.title }}</h3>
+                <ul class="mt-1 flex space-x-1 text-xs font-normal text-gray-500">
                   <li>{{ trending.date }}</li>
                   <li>{{ trending.commentCount }} comments</li>
                   <li>{{ trending.shareCount }} shares</li>
                 </ul>
               </div>
             </div>
-            <div class="py-4"></div>
+            <div class="py-3.5"></div>
+          </TransitionGroup>
           </div>
       </div>
     </div>

@@ -14,7 +14,7 @@
          v-for="item in solutions"
          :key="item.name"
          :href="item.href"
-         class="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
+         class="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-200 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
        >
          <div
            class="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12"
@@ -31,10 +31,10 @@
          </div>
        </a>
      </div>
-     <div class="bg-gray-50 p-4">
+     <div class="bg-gray-300 p-4">
        <a
          href="##"
-         class="flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
+         class="flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-200 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
        >
          <span class="flex items-center">
            <span class="text-sm font-medium text-gray-900">

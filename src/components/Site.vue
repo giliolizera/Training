@@ -22,7 +22,7 @@
                </router-link>
          </div>
          <div class="flex justify-center text-xl mb-5 font-medium mt-10">
-            Tecnologias usadas
+            Tecnologias utilizadas
          </div>
          <div class="flex justify-center mt-2">
             <div class="inline-flex space-x-2">
