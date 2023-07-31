@@ -1,10 +1,11 @@
 <template>
-   <Upside/>   
+   <Upside />
    <div class="bg-slate-700">
       <div class="mx-auto w-full max-w-md py-8">
          <div class="mx-auto w-full grid rounded-md">
-            <button v-for="(plan,index) in plans" :key="index" @click="active = plan.name">
-               <div :class="[active === plan.name ? 'bg-slate-800 ring-2 ring-white ring-opacity-60 ring-offset-2 ring-offset-slate-600 text-white' : 'bg-white' , 'mx-auto w-full max-w-md rounded-md px-5 py-4 mt-3']">
+            <button v-for="(plan, index) in plans" :key="index" @click="active = plan.name">
+               <div
+                  :class="[active === plan.name ? 'bg-slate-800 ring-2 ring-white ring-opacity-60 ring-offset-2 ring-offset-slate-600 text-white' : 'bg-white', 'mx-auto w-full max-w-md rounded-md px-5 py-4 mt-3']">
                   <ul class="justify-between flex">
                      <li class="text-left text-sm font-medium">
                         {{ plan.name }}
@@ -13,9 +14,10 @@
                         <CheckCircleIcon class="h-8 w-8 mt-1 text-black-500" />
                      </button>
                   </ul>
-                  <ul>   
-                     <li :class="[active === plan.name ? 'static text-left text-sm text-gray' : 'static text-left text-sm text-gray-600']">
-                        {{ plan.ram }}/{{ plan.cpus }} 
+                  <ul>
+                     <li
+                        :class="[active === plan.name ? 'static text-left text-sm text-gray' : 'static text-left text-sm text-gray-600']">
+                        {{ plan.ram }}/{{ plan.cpus }}
                         <span aria-hidden="true"> &middot; </span>
                         {{ plan.disk }}
                      </li>
@@ -62,6 +64,6 @@ export default {
 </script>
 
 <script setup>
-   import { CheckCircleIcon } from "@heroicons/vue/24/outline";
+import { CheckCircleIcon } from "@heroicons/vue/24/outline";
 import Upside from "./Upside.vue";
 </script>

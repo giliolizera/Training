@@ -9,10 +9,10 @@
          <button class="bg-slate-600 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded-xl">
             Disclosure
          </button>
-      </router-link> 
+      </router-link>
       <router-link to="/tabs" class="m-2 mt-3.5">
          <button class="bg-slate-600 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded-xl">
-            Tabs   
+            Tabs
          </button>
       </router-link>
       <router-link to="/select" class="m-2 mt-3.5">
@@ -22,32 +22,32 @@
       </router-link>
       <router-link to="/menu" class="m-2 mt-3.5">
          <button class="bg-slate-600 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded-xl">
-         Menu
+            Menu
          </button>
       </router-link>
       <router-link to="/combobox" class="m-2 mt-3.5">
          <button class="bg-slate-600 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded-xl">
-         Combobox
+            Combobox
          </button>
       </router-link>
       <router-link to="/dialog" class="m-2 mt-3.5">
          <button class="bg-slate-600 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded-xl">
-         Dialog
+            Dialog
          </button>
       </router-link>
       <router-link to="/popover" class="m-2 mt-3.5">
          <button class="bg-slate-600 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded-xl">
-         Popover
-      </button>
-      </router-link>
-      <router-link to="/radio" class="m-2 mt-3.5"  >
-         <button class="bg-slate-600 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded-xl">
-         Radio
+            Popover
          </button>
       </router-link>
-      <router-link to="/popovers" class="m-2 mt-3.5"  >
+      <router-link to="/radio" class="m-2 mt-3.5">
          <button class="bg-slate-600 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded-xl">
-         PopTeste
+            Radio
+         </button>
+      </router-link>
+      <router-link to="/popovers" class="m-2 mt-3.5">
+         <button class="bg-slate-600 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded-xl">
+            PopTeste
          </button>
       </router-link>
    </div>

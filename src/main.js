@@ -65,4 +65,4 @@ const router = createRouter({
 
 const Vue = createApp(App)
 Vue.use(router)
-.mount('#app')
+   .mount('#app')

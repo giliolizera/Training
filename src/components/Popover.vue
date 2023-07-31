@@ -1,62 +1,59 @@
 <template>
-  <Upside/>
- <div class="pt-10 flex justify-center pl-60 bg-slate-700">
-   <div class="relative inline-block">
-      <button @click="exibir = !exibir" class="inline-flex w-full justify-center rounded-md bg-slate-800 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-60">
-         Options
-         <ChevronDownIcon class="ml-2 -mr-1 h-5 w-5 text-violet-200 hover:text-violet-100"/>
-      </button> 
-      <div v-if="exibir" class="absolute right-0 mt-2 w-96 origin-top-right rounded-md bg-white  shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none px-4 py-4">
-         <button v-for="item in solutions" 
-         :key="item.name"
-         :href="item.href"
-         class="w-full"
-         >
-         <div class="inline-flex w-full mt-4 hover:rounded-md bg-white">
+  <Upside />
+  <div class="pt-10 flex justify-center pl-60 bg-slate-700">
+    <div class="relative inline-block">
+      <button @click="exibir = !exibir"
+        class="inline-flex w-full justify-center rounded-md bg-slate-800 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-60">
+        Options
+        <ChevronDownIcon class="ml-2 -mr-1 h-5 w-5 text-violet-200 hover:text-violet-100" />
+      </button>
+      <div v-if="exibir"
+        class="absolute right-0 mt-2 w-96 origin-top-right rounded-md bg-white  shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none px-4 py-4">
+        <button v-for="item in solutions" :key="item.name" :href="item.href" class="w-full">
+          <div class="inline-flex w-full mt-4 hover:rounded-md bg-white">
             <div class="flex-shrink-0">
-               <div v-html="item.icon" class="h-5 w-5 ml-4 text-gray-400"></div>
+              <div v-html="item.icon" class="h-5 w-5 ml-4 text-gray-400"></div>
             </div>
             <div class=" ml-10 mt-1 inline text-left text-sm">
-               <a :href="item.href" class="font-medium text-gray-900">
-                  {{ item.name }}
-               </a>
-               <p class="text-gray-500">
-                  {{ item.description }}
-               </p>
+              <a :href="item.href" class="font-medium text-gray-900">
+                {{ item.name }}
+              </a>
+              <p class="text-gray-500">
+                {{ item.description }}
+              </p>
             </div>
-         </div>
-         </button>
-         <div class="p-4">
-            <a class="flow-root rounded-md px-2 pt-2">
-              <span class="flex items-center">
-                <span class="text-sm font-medium text-gray-900">
-                  Documentation
-                </span>
-              </span>
-              <span class="block text-sm text-gray-500">
-                Start integrating products and tools
-              </span>
-            </a>
           </div>
-      </div>  
-   </div>
- </div>
- <div class="h-96 bg-slate-700"></div>
+        </button>
+        <div class="p-4">
+          <a class="flow-root rounded-md px-2 pt-2">
+            <span class="flex items-center">
+              <span class="text-sm font-medium text-gray-900">
+                Documentation
+              </span>
+            </span>
+            <span class="block text-sm text-gray-500">
+              Start integrating products and tools
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="h-96 bg-slate-700"></div>
   <div class="h-48 bg-slate-700"></div>
-
 </template>
 
 <script>
-   export default {
-      data:() => ({
-         exibir: true,
+export default {
+  data: () => ({
+    exibir: true,
 
-   solutions: [
-   {
-    name: 'Insights',
-    description: 'Measure actions your users take',
-    href: '##',
-    icon: `
+    solutions: [
+      {
+        name: 'Insights',
+        description: 'Measure actions your users take',
+        href: '##',
+        icon: `
       <svg
         width="48"
         height="48"
@@ -87,12 +84,12 @@
         />
       </svg>
     `,
-   },
-   {
-    name: 'Automations',
-    description: 'Create your own targeted content',
-    href: '##',
-    icon: `
+      },
+      {
+        name: 'Automations',
+        description: 'Create your own targeted content',
+        href: '##',
+        icon: `
       <svg
         width="48"
         height="48"
@@ -115,12 +112,12 @@
         />
       </svg>
     `,
-   },
-   {
-    name: 'Reports',
-    description: 'Keep track of your growth',
-    href: '##',
-    icon: `
+      },
+      {
+        name: 'Reports',
+        description: 'Keep track of your growth',
+        href: '##',
+        icon: `
       <svg
         width="48"
         height="48"
@@ -137,17 +134,17 @@
         <rect x="33" y="12" width="2" height="24" fill="#000" />
       </svg>
     `,
-   },
-   ]
-}),
-components: {
-   Upside
-},
+      },
+    ]
+  }),
+  components: {
+    Upside
+  },
 }
 </script>
 
 <script setup>
-   import { ChevronDownIcon } from "@heroicons/vue/24/outline";
+import { ChevronDownIcon } from "@heroicons/vue/24/outline";
 import Upside from "./Upside.vue";
 </script>
 
