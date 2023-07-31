@@ -15,11 +15,11 @@
             </div>
          </div>
          <div class="flex justify-center mt-10">
-            <router-link to="/disclosure">
-               <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                  Go to project
-               </button>
-            </router-link>
+               <router-link to="/disclosure">
+                  <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                     Go to project
+                  </button>
+               </router-link>
          </div>
          <div class="flex justify-center text-xl mb-5 font-medium mt-10">
             Tecnologias usadas

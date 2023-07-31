@@ -8,7 +8,7 @@
    </button>
   </div>
   <div class="absolute left-1/2 z-10 mt-3 w-screen max-w-sm -translate-x-1/2 transform px-4 sm:px-0">
-   <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+   <div v-if="exibir" class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
      <div class="relative grid gap-8 bg-white p-7">
        <a
          v-for="item in solutions"
