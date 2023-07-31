@@ -13,7 +13,6 @@ import Popover from './components/Popover.vue'
 import Radio from './components/Radio.vue'
 import Select from './components/Select.vue'
 import Tabs from './components/Tabs.vue'
-import Popovers from './components/Popovers.vue'
 
 const routes = [
    {
@@ -52,10 +51,6 @@ const routes = [
       path: '/tabs',
       component: Tabs
    },
-   {
-      path: '/popovers',
-      component: Popovers
-   }
 ]
 
 const router = createRouter({
