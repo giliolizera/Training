@@ -14,7 +14,7 @@
         <ul v-if="!exibir" class="bg-white grid rounded-md">
           <button @mouseenter="active = index" @mouseleave="active = -1" @click="selected = people.name, exibir = true"
             :class="[active === index
-              ? 'bg-blue-200 rounded-md'
+              ? 'bg-slate-400 rounded-md'
               : '', 'inline-flex py-1.5']" v-for="(people, index) in peoples" :key="index">
             <div v-if="selected === people.name" class="pl-2 inline-flex">
               <CheckIcon class="h-5 w-5 mt-0.5 text-blue-500" />

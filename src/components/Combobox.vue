@@ -9,24 +9,26 @@
          @keydown.prevent.down="baixo()" 
          @keydown.prevent.up="cima()" 
          @keydown.prevent.enter="enter()" 
-        />
+         @keydown.prevent.backspace="backspace()" 
+         />
         <button @click="exibir = !exibir"
          @keydown.prevent.esc="escape()" 
          @keydown.prevent.down="baixo()" 
          @keydown.prevent.up="cima()" 
-         @keydown.prevent.enter="enter()" 
+         @keydown.prevent.enter="enter()"
+         @keydown.prevent.backspace="backspace()" 
          class="px-1 py-1 rounded-md focus:outline-none" type="text"
          >
           <ChevronUpDownIcon class="h-5 w-5 text-gray-500"/> 
         </button>
       </div>
       <div class="mt-2 bg-white grid rounded-md">
-        <ul v-if="!exibir">
+        <ul v-if="!exibir" class="pt-0.5 pb-0.5">
           <button @mouseenter="active = index " 
           @mouseleave="active = -1" 
           @click="selected = person.name, query = person.name, exibir=true"
           :class="[active === index
-          ? 'bg-blue-200 rounded-md'
+          ? 'bg-slate-400 rounded-md'
           : '', 'inline-flex py-1.5 w-full']" 
           v-for="(person,index) in filtredPeople" :key="index"
           >
@@ -40,6 +42,11 @@
             {{ person.name }} 
           </div>
           </button>
+        </ul>
+        <ul v-if="this.filtredPeopleLenght === 0">
+          <div class="pl-8 p-2 text-base rounded-md bg-white">
+            Nothing Found.
+          </div>
         </ul>
       </div>
     </div>
@@ -119,6 +126,10 @@
         this.selected = this.people[id].name
         this.query = this.people[id].name
       },
+      backspace(){
+        this.query = this.query.slice(0, -1)
+        this.exibir = false;
+      }
     }
   }
 </script>

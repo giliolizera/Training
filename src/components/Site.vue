@@ -36,5 +36,21 @@
          </div>
       </div>
    </div>
+   <div class="grid grid-cols-2 gap-4 p-2 text-center">
+      <div class="col-span-1 mt-2 text-xl text-blue-700 font-medium">
+         Descubra as vantagens em utilizar o Traning para gerenciar seus negócios!
+      </div>
+      <div class="col-span-1 pr-10">
+         <div>
+            <input type="text" class="w-full rounded-md mt-2 p-2" placeholder="Nome">
+         </div>
+         <div>
+            <input type="email" class="w-full rounded-md p-2 mt-2" placeholder="Email">
+         </div>
+         <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-2">
+            Me inscrever
+         </button>
+      </div>
+   </div>
    <div class="bg-slate-800 h-72"></div>
 </template>
