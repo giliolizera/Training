@@ -13,11 +13,16 @@ import Popover from './components/Popover.vue'
 import Radio from './components/Radio.vue'
 import Select from './components/Select.vue'
 import Tabs from './components/Tabs.vue'
+import Login from './components/Login.vue'
 
 const routes = [
    {
       path: '/',
       component: Site
+   },
+   {
+      path: '/login',
+      component: Login
    },
    {
       path: '/combobox',
