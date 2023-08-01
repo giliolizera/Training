@@ -2,6 +2,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import './assets/main.css'
 import { createRouter, createWebHistory } from 'vue-router'
+import Maska from 'maska'
 
 // routes
 import Site from './components/Site.vue'
@@ -65,4 +66,5 @@ const router = createRouter({
 
 const Vue = createApp(App)
 Vue.use(router)
-   .mount('#app')
+Vue.use(Maska)
+Vue.mount('#app')
