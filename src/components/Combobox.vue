@@ -56,7 +56,8 @@
 </template>
 
 <script>
-  export default {
+  
+  export default {  
     data() {
       return {
         query: '',
@@ -135,7 +136,7 @@
 </script>
 
 <script setup>
-  import Upside from './Upside.vue'
+import Upside from './Upside.vue'
   import { ChevronUpDownIcon } from '@heroicons/vue/20/solid'
   import { CheckIcon } from "@heroicons/vue/24/outline";
-</script> 
+</script>
