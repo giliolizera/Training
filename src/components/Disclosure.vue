@@ -36,8 +36,6 @@
       </div>
     </div>
   </div>
-  <div class="bg-slate-700 h-96"></div>
-  <div class="bg-slate-700 h-12"></div>
 </template>
 
 <script>
@@ -53,22 +51,3 @@ export default {
   },
 }
 </script>
-
-<!-- 
-<style scoped>
-
-.v-enter-from {
-  opacity: 0;
-}
-.v-enter-active {
-  transition: opacity 1s;
-}
-.v-enter-to {
-  opacity: 1;
-}
-
-</style> -->
-
-div tela inteira
-
-input required

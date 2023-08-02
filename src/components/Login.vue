@@ -15,25 +15,25 @@
             <div class="text-white text-sm font-medium flex pl-1">
                Nome
             </div>
-            <input type="text" class="w-full text-gray-200 border-blue-600 border bg-slate-700 rounded-md mt-1 p-2" v-model="form.nome" >
+            <input type="text" class="w-full text-gray-200 border-blue-600 border bg-slate-700 rounded-md mt-1 pl-3 p-2" v-model="form.nome" >
          </div>
          <div>
             <div class="text-white text-sm font-medium flex pl-1 mt-2">
                Email
             </div>
-            <input type="email" class="w-full text-gray-200 border-blue-600 border bg-slate-700 rounded-md p-2 mt-1" v-model="form.email">
+            <input type="email" class="w-full text-gray-200 border-blue-600 border bg-slate-700 rounded-md p-2 pl-3 mt-1" v-model="form.email">
          </div>
          <div>
             <div class="text-white text-sm font-medium flex pl-1 mt-2">
                Telefone
             </div>
-            <input type="text" class="w-full text-gray-200 border-blue-600 border bg-slate-700 rounded-md p-2 mt-1" v-model="form.telefone" v-maska="'(##) #####-####'">
+            <input type="text" class="w-full text-gray-200 border-blue-600 border bg-slate-700 rounded-md p-2 pl-3 mt-1" v-model="form.telefone" v-maska="'(##) #####-####'">
          </div>
          <div>
             <div class="text-white text-sm font-medium flex pl-1 mt-2">
                CPF
             </div>
-            <input type="text" class="w-full text-gray-200 border-blue-600 border bg-slate-700 rounded-md p-2 mt-1" v-model="form.cpf"  v-maska="'###.###.###-##'">
+            <input type="text" class="w-full text-gray-200 border-blue-600 border bg-slate-700 rounded-md p-2 pl-3 mt-1" v-model="form.cpf"  v-maska="'###.###.###-##'">
          </div>
          <div class="flex justify-end">
             <router-link to="/disclosure">
@@ -44,7 +44,6 @@
          </div>
       </div>
    </div>
-   <div class="bg-slate-800 h-72"></div>
 </template>
 
 <script>

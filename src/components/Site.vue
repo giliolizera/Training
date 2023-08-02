@@ -53,7 +53,6 @@
             </div>
          </div>
       </div>  
-      <div class="bg-slate-800 h-48"></div>
 </template>
 
 <style>

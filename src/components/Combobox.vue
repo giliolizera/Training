@@ -51,8 +51,6 @@
       </div>
     </div>
   </div>
-  <div class="h-96 bg-slate-700"></div>
-  <div class="h-12 bg-slate-700"></div>
 </template>
 
 <script>

@@ -27,7 +27,6 @@
          </div>
       </div>
    </div>
-   <div class="bg-slate-700 w-full h-96"></div>
 </template>
 
 <script>

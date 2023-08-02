@@ -26,8 +26,6 @@
          </div>
       </TransitionGroup>
    </div>
-   <div class="bg-slate-700 h-96"></div>
-   <div class="bg-slate-700 h-96"></div>
 </template>
 
 <script>
