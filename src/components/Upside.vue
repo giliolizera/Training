@@ -6,22 +6,22 @@
          </button>
       </router-link>
       <router-link to="/disclosure" class="m-2 mt-3.5">
-         <button class="bg-slate-600 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded-xl">
+         <button class="bg-slate-600 hover:bg-slate-700 text-white font-bold ml-4 py-2 px-4 rounded-xl">
             Disclosure
          </button>
       </router-link>
       <router-link to="/tabs" class="m-2 mt-3.5">
-         <button class="bg-slate-600 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded-xl">
+         <button class="bg-slate-600 hover:bg-slate-700 text-white font-bold py-2 px-8 rounded-xl">
             Tabs
          </button>
       </router-link>
       <router-link to="/select" class="m-2 mt-3.5">
-         <button class="bg-slate-600 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded-xl">
+         <button class="bg-slate-600 hover:bg-slate-700 text-white font-bold py-2 px-8 rounded-xl">
             Select
          </button>
       </router-link>
       <router-link to="/menu" class="m-2 mt-3.5">
-         <button class="bg-slate-600 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded-xl">
+         <button class="bg-slate-600 hover:bg-slate-700 text-white font-bold py-2 px-8 rounded-xl">
             Menu
          </button>
       </router-link>
@@ -31,17 +31,17 @@
          </button>
       </router-link>
       <router-link to="/dialog" class="m-2 mt-3.5">
-         <button class="bg-slate-600 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded-xl">
+         <button class="bg-slate-600 hover:bg-slate-700 text-white font-bold py-2 px-8 rounded-xl">
             Dialog
          </button>
       </router-link>
       <router-link to="/popover" class="m-2 mt-3.5">
-         <button class="bg-slate-600 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded-xl">
+         <button class="bg-slate-600 hover:bg-slate-700 text-white font-bold py-2 px-7 rounded-xl">
             Popover
          </button>
       </router-link>
       <router-link to="/radio" class="m-2 mt-3.5">
-         <button class="bg-slate-600 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded-xl">
+         <button class="bg-slate-600 hover:bg-slate-700 text-white font-bold py-2 px-8 rounded-xl">
             Radio
          </button>
       </router-link>

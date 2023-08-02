@@ -12,26 +12,26 @@
             </div>
          </div>
             <div class="grid grid-cols-2 p-10">
-               <div class="col-span-1 ml-48">
+               <div class="col-span-1 ml-60">
                   <div class="text-center font-medium mt-6">
-                     Para entrar anônimamente, clique no botão abaixo
+                     Para entrar anônimamente, <br> clique no botão abaixo
                   </div>
                   <div class="flex justify-center mt-2">
                      <router-link to="/disclosure">
-                        <button class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2 px-4 rounded">
-                           Entrar
+                        <button class="bg-gray-200 hover:bg-gray-300 text-gray-900 text-sm font-medium py-2 px-8 rounded">
+                           ENTRAR
                         </button>
                      </router-link>
                   </div>
                </div>   
-               <div class="col-span-1 mr-48">
+               <div class="col-span-1 mr-60">
                   <div class="text-center font-medium mt-6">
-                     Para cadastrar uma conta, clique no botão abaixo
+                     Para cadastrar no sistema, <br> clique no botão abaixo
                   </div>
                   <div class="flex justify-center mt-2">
                      <router-link to="/login">
-                        <button class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2 px-4 rounded">
-                           Cadastrar
+                        <button class="bg-gray-200 hover:bg-gray-300 text-gray-900 text-sm font-medium py-2 px-5 rounded">
+                           CADASTRAR
                         </button>
                      </router-link>
                   </div>

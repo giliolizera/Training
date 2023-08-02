@@ -8,26 +8,40 @@
    </div>
    <div class="bg-slate-800 grid grid-cols-2 gap-4 p-2 text-center">
       <div class="col-span-1 mt-2 text-xl text-white font-medium">
-         Descubra as vantagens em utilizar o Traning para gerenciar seus negócios!
+         Junte-se conosco e descubra as vantagens em utilizar o Traning para gerenciar seus negócios!
       </div>
       <div class="col-span-1 pr-10">
          <div>
-            <input type="text" class="w-full border bg-slate-700 rounded-md mt-2 p-2" v-model="form.nome" placeholder="Nome">
+            <div class="text-white text-sm font-medium flex pl-1">
+               Nome
+            </div>
+            <input type="text" class="w-full text-gray-200 border-blue-600 border bg-slate-700 rounded-md mt-1 p-2" v-model="form.nome" >
          </div>
          <div>
-            <input type="email" class="w-full border bg-slate-700 rounded-md p-2 mt-2" v-model="form.email" placeholder="Email">
+            <div class="text-white text-sm font-medium flex pl-1 mt-2">
+               Email
+            </div>
+            <input type="email" class="w-full text-gray-200 border-blue-600 border bg-slate-700 rounded-md p-2 mt-1" v-model="form.email">
          </div>
          <div>
-            <input type="text" class="w-full border bg-slate-700 rounded-md p-2 mt-2" v-model="form.telefone" placeholder="Telefone" v-maska="'(##) #####-####'">
+            <div class="text-white text-sm font-medium flex pl-1 mt-2">
+               Telefone
+            </div>
+            <input type="text" class="w-full text-gray-200 border-blue-600 border bg-slate-700 rounded-md p-2 mt-1" v-model="form.telefone" v-maska="'(##) #####-####'">
          </div>
          <div>
-            <input type="text" class="w-full border bg-slate-700 rounded-md p-2 mt-2" v-model="form.cpf" placeholder="CPF" v-maska="'###.###.###-##'">
+            <div class="text-white text-sm font-medium flex pl-1 mt-2">
+               CPF
+            </div>
+            <input type="text" class="w-full text-gray-200 border-blue-600 border bg-slate-700 rounded-md p-2 mt-1" v-model="form.cpf"  v-maska="'###.###.###-##'">
          </div>
-         <router-link to="/disclosure">
-            <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-2">
-               Me inscrever
-            </button>
-         </router-link>
+         <div class="flex justify-end">
+            <router-link to="/disclosure">
+               <button class="bg-gray-200 hover:bg-gray-300 max-md:24 text-gray-900 font-medium text-sm py-2 px-6 rounded mt-3">
+                  ENTRAR
+               </button>
+            </router-link>
+         </div>
       </div>
    </div>
    <div class="bg-slate-800 h-72"></div>

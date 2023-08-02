@@ -45,8 +45,8 @@ import Upside from './Upside.vue'
 
 export default {
   data: () => ({
-    exibir: false,
-    exibir2: false,
+    exibir: true,
+    exibir2: true,
   }),
   components: {
     Upside
@@ -68,3 +68,7 @@ export default {
 }
 
 </style> -->
+
+div tela inteira
+
+input required
