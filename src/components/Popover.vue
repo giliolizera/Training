@@ -1,8 +1,8 @@
 <template>
   <Upside />
-  <div class="pt-10 flex justify-center pl-60 bg-slate-700">
+  <div class="pt-10 flex justify-center pl-60 bg-slate-800">
    <button @click="exibir = !exibir"
-     class="relative inline-flex rounded-md bg-slate-800 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-60">
+     class="relative inline-flex rounded-md bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-60">
      Options
      <ChevronDownIcon class="ml-2 -mr-1 h-5 w-5 text-violet-200 hover:text-violet-100" />
    </button>

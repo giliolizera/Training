@@ -1,19 +1,19 @@
 <template>
   <Upside />
-  <div class="bg-slate-700">
+  <div class="bg-slate-800">
     <div class="w-full px-4 pt-16">
-      <div class="mx-auto w-full max-w-md rounded-2xl bg-slate-800 p-2">
+      <div class="mx-auto w-full max-w-md rounded-2xl bg-slate-900 p-2">
         <div class="grid grid-flow-col justify-stretch space-x-1">
           <button v-for="(tab,index) in tabs" :key="index" @click="active = tab.id"
             type="button"
-            :class="['rounded-lg px-4 py-2 text-center text-sm text-white font-medium hover: hover:text-white hover:bg-slate-600 focus:outline-none', active === tab.id ? 'bg-slate-900' : 'bg-slate-800']"
+            :class="['rounded-lg px-4 py-2 text-center text-sm text-white font-medium hover:bg-white/[0.12] focus:outline-none', active === tab.id ? 'bg-white text-slate-700 ' : 'bg-slate-900']"
           >
             {{ tab.descricao }}
           </button>
         </div>
       </div>
     </div>
-    <div class="bg-slate-700 w-full pt-2">
+    <div class="bg-slate-800 w-full pt-2">
       <div class="mx-auto w-full max-w-md rounded-2xl bg-white px-5 relative hover:bg-gray-100">
           <div v-if="active === 1">
             <div v-for="(recent,index) in Recent" :key="index">

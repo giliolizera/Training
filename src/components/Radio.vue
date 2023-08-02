@@ -1,11 +1,11 @@
 <template>
    <Upside />
-   <div class="bg-slate-700">
+   <div class="bg-slate-800">
       <div class="mx-auto w-full max-w-md py-8">
          <div class="mx-auto w-full grid rounded-md">
             <button v-for="(plan, index) in plans" :key="index" @click="active = plan.name">
                <div
-                  :class="[active === plan.name ? 'bg-slate-800 ring-2 ring-white ring-opacity-60 ring-offset-2 ring-offset-slate-600 text-white' : 'bg-white', 'mx-auto w-full max-w-md rounded-md px-5 py-4 mt-3']">
+                  :class="[active === plan.name ? 'bg-slate-900 ring-2 ring-white ring-opacity-60 ring-offset-2 ring-offset-slate-600 text-white' : 'bg-white', 'mx-auto w-full max-w-md rounded-md px-5 py-4 mt-3']">
                   <ul class="justify-between flex">
                      <li class="text-left text-sm font-medium">
                         {{ plan.name }}

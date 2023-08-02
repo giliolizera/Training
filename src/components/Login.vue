@@ -1,4 +1,7 @@
 <template>
+   <head>
+      <title>Training - Login</title>
+   </head>
    <div class="w-full bg-slate-900">
       <router-link to="/">
          <button class="text-blue-600 bg-slate-900 font-medium text-3xl flex p-4 justify-start">

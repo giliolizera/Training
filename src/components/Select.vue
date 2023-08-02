@@ -1,11 +1,11 @@
 <template>
   <Upside />
-  <div class="bg-slate-700 py-16">
+  <div class="bg-slate-800 py-16">
     <div class="mx-auto w-72 max-w-md rounded-md">
       <div class="inline-flex bg-white w-72 rounded-md">
         <button @click="exibir = !exibir" @keypress="!exibir" @keydown.prevent.esc="escape()"
           @keydown.prevent.down="baixo()" @keydown.prevent.up="cima()" @keydown.prevent.enter="enter()"
-          class="w-full inline-flex justify-between pl-3 px-1 py-1 rounded-md text-left focus:outline-none" type="text">
+          class="w-full inline-flex justify-between pl-4 p-1 px-1 py-1 rounded-md text-left focus:outline-none" type="text">
           {{ selected }}
           <ChevronUpDownIcon class="h-5 zw-5 mt-0.5 text-gray-500" />
         </button>
