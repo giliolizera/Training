@@ -1,49 +1,51 @@
 <template>
-   <div class="flex justify-start bg-slate-900">
-      <router-link to="/">
-         <button class="text-blue-600 bg-slate-900 font-medium text-3xl flex p-4 justify-start">
-            Training WebSite
-         </button>
-      </router-link>
-      <router-link to="/disclosure" class="m-2 mt-3.5">
-         <button class="bg-slate-600 hover:bg-slate-700 text-gray-100 font-medium ml-4 py-2 px-4 rounded-xl">
-            Disclosure
-         </button>
-      </router-link>
-      <router-link to="/tabs" class="m-2 mt-3.5">
-         <button class="bg-slate-600 hover:bg-slate-700 text-gray-100 font-medium py-2 px-8 rounded-xl">
-            Tabs
-         </button>
-      </router-link>
-      <router-link to="/select" class="m-2 mt-3.5">
-         <button class="bg-slate-600 hover:bg-slate-700 text-gray-100 font-medium py-2 px-8 rounded-xl">
-            Select
-         </button>
-      </router-link>
-      <router-link to="/menu" class="m-2 mt-3.5">
-         <button class="bg-slate-600 hover:bg-slate-700 text-gray-100 font-medium py-2 px-8 rounded-xl">
-            Menu
-         </button>
-      </router-link>
-      <router-link to="/combobox" class="m-2 mt-3.5">
-         <button class="bg-slate-600 hover:bg-slate-700 text-gray-100 font-medium py-2 px-4 rounded-xl">
-            Combobox
-         </button>
-      </router-link>
-      <router-link to="/dialog" class="m-2 mt-3.5">
-         <button class="bg-slate-600 hover:bg-slate-700 text-gray-100 font-medium py-2 px-8 rounded-xl">
-            Dialog
-         </button>
-      </router-link>
-      <router-link to="/popover" class="m-2 mt-3.5">
-         <button class="bg-slate-600 hover:bg-slate-700 text-gray-100 font-medium py-2 px-7 rounded-xl">
-            Popover
-         </button>
-      </router-link>
-      <router-link to="/radio" class="m-2 mt-3.5">
-         <button class="bg-slate-600 hover:bg-slate-700 text-gray-100 font-medium py-2 px-8 rounded-xl">
-            Radio
-         </button>
-      </router-link>
+   <div>
+      <div class="lg:flex lg:justify-start bg-slate-900">
+         <router-link to="/">
+            <button class="text-blue-600 bg-slate-900 font-medium text-2xl flex p-4 justify-start">
+               Training WebSite
+            </button>
+         </router-link>
+         <router-link to="/disclosure" class="mt-3">
+            <button class="bg-slate-900 text-gray-100 font-medium py-2 px-5 mb-2 rounded-xl">
+               Disclosure
+            </button>
+         </router-link>
+         <router-link to="/tabs" class="mt-3">
+            <button class="bg-slate-900 text-gray-100 font-medium py-2 px-5 mb-2 rounded-xl">
+               Tabs
+            </button>
+         </router-link>
+         <router-link to="/select" class="mt-3">
+            <button class="bg-slate-900 text-gray-100 font-medium py-2 px-5 mb-2 rounded-xl">
+               Select
+            </button>
+         </router-link>
+         <router-link to="/menu" class="mt-3">
+            <button class="bg-slate-900 text-gray-100 font-medium py-2 px-5 mb-2 rounded-xl">
+               Menu
+            </button>
+         </router-link>
+         <router-link to="/combobox" class="mt-3">
+            <button class="bg-slate-900 text-gray-100 font-medium py-2 px-5 mb-2 rounded-xl">
+               Combobox
+            </button>
+         </router-link>
+         <router-link to="/dialog" class="mt-3">
+            <button class="bg-slate-900 text-gray-100 font-medium py-2 px-5 mb-2 rounded-xl">
+               Dialog
+            </button>
+         </router-link>
+         <router-link to="/popover" class="mt-3">
+            <button class="bg-slate-900 text-gray-100 font-medium py-2 px-5 mb-2 rounded-xl">
+               Popover
+            </button>
+         </router-link>
+         <router-link to="/radio" class="mt-3">
+            <button class="bg-slate-900 text-gray-100 font-medium py-2 px-5 mb-2 rounded-xl">
+               Radio
+            </button>
+         </router-link>
+      </div>
    </div>
 </template>

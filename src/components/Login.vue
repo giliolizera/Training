@@ -6,19 +6,19 @@
          </button>
       </router-link>
    </div>
-   <div class="bg-slate-800 grid grid-cols-3 gap-4 p-2 text-center">
-      <div class="col-span-1 mt-2 text-xl text-white font-medium">
+   <div class="bg-slate-800 grid grid-cols-1 gap-4 p-2 text-center lg:grid-cols-3 md:grid-cols-3">
+      <div class="col-span-1 mt-2 text-lg text-white font-medium">
          Junte-se conosco e descubra as vantagens em utilizar o Traning para gerenciar seus negócios!
       </div>
-      <div class="col-span-2 grid lg:grid-cols-2 gap-4 pr-10">
+      <div class="col-span-2 grid lg:grid-cols-2 gap-4 pr-10 pl-2">
          <div>
-            <div class="text-white text-sm font-medium mt-2 flex pl-1">
+            <div class="text-white text-sm font-medium flex pl-1">
                Nome
             </div>
             <input type="text" class="w-full text-gray-200 border-blue-600 border bg-slate-700 rounded-md mt-1 pl-3 p-2" v-model="form.nome" >
          </div>
          <div>
-            <div class="text-white text-sm font-medium  mt-2 flex pl-1">
+            <div class="text-white text-sm font-medium flex pl-1">
                Email
             </div>
             <input type="email" class="w-full text-gray-200 border-blue-600 border bg-slate-700 rounded-md p-2 pl-3 mt-1" v-model="form.email">
@@ -27,19 +27,19 @@
             <div class="text-white text-sm font-medium flex pl-1 mt-2">
                Telefone
             </div>
-            <input type="text" class="w-full text-gray-200 border-blue-600 border bg-slate-700 rounded-md p-2 pl-3 mt-1" v-model="form.telefone" v-maska="'(##) #####-####'">
+            <input type="text" class="w-full text-gray-200 border-blue-600 border bg-slate-700 rounded-md p-2 mt-1" v-model="form.telefone" v-maska="'(##) #####-####'">
          </div>
          <div>
             <div class="text-white text-sm font-medium flex pl-1 mt-2">
                CPF
             </div>
-            <input type="text" class="w-full text-gray-200 border-blue-600 border bg-slate-700 rounded-md p-2 pl-3 mt-1" v-model="form.cpf"  v-maska="'###.###.###-##'">
+            <input type="text" class="w-full text-gray-200 border-blue-600 border bg-slate-700 rounded-md p-2 mt-1" v-model="form.cpf"  v-maska="'###.###.###-##'">
          </div>
          <div class="flex justify-end lg:col-span-2" v-if="exibir">
             <div>
                <router-link to="/disclosure">
                   <button @click="validar()" class="bg-gray-200 hover:bg-gray-300 max-md:24 text-gray-900 font-medium text-sm py-2 px-6 rounded mt-3">
-                     ENTRAR
+                        ENTRAR
                   </button>
                </router-link>
             </div>
