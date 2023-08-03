@@ -1,7 +1,7 @@
 <template>
    <div class="w-full bg-slate-900">
       <router-link to="/">
-         <button class="text-blue-600 bg-slate-900 font-medium w-auto text-3xl flex p-4 justify-start">
+         <button class="text-blue-600 bg-slate-900 font-medium w-auto text-2xl flex p-4 justify-start">
             Training WebSite
          </button>
       </router-link>

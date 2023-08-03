@@ -13,7 +13,7 @@
             <div class="inline-flex p-10">
                <div class="ml-24">
                   <div class="text-center font-medium mt-6">
-                     Para entrar anônimamente, <br> clique no botão abaixo
+                     Para entrar anonimamente, <br> clique no botão abaixo
                </div>
                <div class="flex justify-center mt-2">
                   <router-link to="/disclosure">
@@ -23,7 +23,7 @@
                   </router-link>
                </div>
                <div class="text-center font-medium mt-6">
-                  Para cadastrar no sistema, <br> clique no botão abaixo
+                  Para cadastrar-se no sistema, <br> clique no botão abaixo
                </div>
                <div class="flex justify-center mt-2">
                   <router-link to="/login">
@@ -36,7 +36,7 @@
          </div>
          
          <div class="flex justify-center text-xl mb-5 font-medium mt-10">
-            Tecnologias utilizadas
+            Tecnologias utilizadas no projeto
          </div>
          <div class="flex justify-center mt-2">
             <div class="inline-flex space-x-2">
