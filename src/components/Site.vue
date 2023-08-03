@@ -2,7 +2,7 @@
    <div class="h-full">
       <div class="bg-slate-800 text-white">
          <div class="w-full bg-slate-900">
-            <button class="text-blue-600 bg-slate-900 font-medium text-3xl flex p-4 justify-start">
+            <button class="text-blue-600 bg-slate-900 font-medium text-2xl flex p-4 justify-start">
                Training WebSite
             </button>
          </div>
