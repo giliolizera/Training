@@ -44,7 +44,7 @@
           </button>
         </ul>
         <ul v-if="this.filtredPeopleLenght === 0">
-          <div class="pl-8 p-2 text-base rounded-md bg-white">
+          <div class="pl-10 p-1 pb-2 rounded-md bg-white">
             Nothing Found.
           </div>
         </ul>
