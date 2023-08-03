@@ -6,7 +6,7 @@
         <div class="grid grid-flow-col justify-stretch space-x-1">
           <button v-for="(tab,index) in tabs" :key="index" @click="active = tab.id"
             type="button"
-            :class="['rounded-lg px-4 py-2 text-center text-sm text-white font-medium hover:bg-white/[0.12] focus:outline-none', active === tab.id ? 'bg-white text-slate-700 ' : 'bg-slate-900']"
+            :class="['rounded-lg px-4 py-2 text-center text-sm text-white font-medium hover:bg-white/[0.12] focus:outline-none', active === tab.id ? 'bg-white text-black ' : 'bg-slate-900']"
             @keydown.prevent.right="dir()" 
             @keydown.prevent.left="esq()"
           >
