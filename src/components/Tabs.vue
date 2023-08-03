@@ -7,6 +7,8 @@
           <button v-for="(tab,index) in tabs" :key="index" @click="active = tab.id"
             type="button"
             :class="['rounded-lg px-4 py-2 text-center text-sm text-white font-medium hover:bg-white/[0.12] focus:outline-none', active === tab.id ? 'bg-white text-slate-700 ' : 'bg-slate-900']"
+            @keydown.prevent.right="dir()" 
+            @keydown.prevent.left="esq()"
           >
             {{ tab.descricao }}
           </button>
@@ -130,6 +132,30 @@ export default{
             ],
             active: 1
         };
+    },
+    methods:{
+      dir(){
+        if(this.active === 1){
+          this.active = 2
+        }
+        else if(this.active === 2){
+          this.active = 3
+        }
+        else if(this.active === 3){
+          this.active = 1
+        }
+      },
+      esq(){
+        if(this.active === 3){
+          this.active = 2
+        }
+        else if(this.active === 2){
+          this.active = 1
+        }
+        else if(this.active === 1){
+          this.active = 3
+        }
+      }
     },
     components: { Upside }
 }

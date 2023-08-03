@@ -12,7 +12,7 @@
             </div>
          </div>
             <div class="grid grid-cols-2 p-10">
-               <div class="col-span-1 ml-60">
+               <div class="col-span-1 ml-56">
                   <div class="text-center font-medium mt-6">
                      Para entrar anônimamente, <br> clique no botão abaixo
                   </div>
@@ -24,7 +24,7 @@
                      </router-link>
                   </div>
                </div>   
-               <div class="col-span-1 mr-60">
+               <div class="col-span-1 mr-56">
                   <div class="text-center font-medium mt-6">
                      Para cadastrar no sistema, <br> clique no botão abaixo
                   </div>
