@@ -19,10 +19,10 @@ import Login from './components/Login.vue'
 const routes = [
    {
       path: '/',
-      component: Site
+      component: Site,
    },
    {
-      path: '/cadastro',
+      path: '/login',
       component: Login
    },
    {
