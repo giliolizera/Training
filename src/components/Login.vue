@@ -82,7 +82,7 @@ export default {
    }),
    methods: {
       validar() {
-         if (this.form.nome != '' && this.form.email != '' && this.form.telefone != '' && this.form.cpf != '') {
+         if (this.form.nome != '' && this.form.email != '' && this.form.telefone.length > 13 && this.form.cpf.length > 13) {
             this.avançar = true
             console.log('validar')
             console.log(this.avançar)
