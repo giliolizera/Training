@@ -56,6 +56,8 @@ export default {
    components: {
       Upside
    },
+   methods:{
+   }
 }
 
 </script>
