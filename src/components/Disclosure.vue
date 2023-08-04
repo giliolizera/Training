@@ -51,3 +51,7 @@ export default {
   },
 }
 </script>
+
+<script setup>
+   document.title = "Disclosure - Training"
+</script>

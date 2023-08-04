@@ -67,4 +67,5 @@ import { DocumentDuplicateIcon } from "@heroicons/vue/24/outline";
 import { ArchiveBoxIcon } from "@heroicons/vue/24/outline";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
 import Upside from "./Upside.vue";
+document.title="Menu - Training"
 </script>

@@ -48,3 +48,7 @@ export default {
    components: { Upside }
 }
 </script>
+
+<script setup>
+   document.title = "Dialog - Training"
+</script>

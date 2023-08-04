@@ -62,9 +62,7 @@
 </template>
 
 <script>
-import Upside from './Upside.vue';
-
-
+import Upside from './Upside.vue'
 export default{
     data() {
         return {
@@ -159,4 +157,8 @@ export default{
     },
     components: { Upside }
 }
+</script>
+
+<script setup>
+   document.title = "Tabs - Training"
 </script>

@@ -116,3 +116,7 @@ export default {
    },
 }
 </script>
+
+<script setup>
+   document.title = "Cadastro - Training"
+</script>

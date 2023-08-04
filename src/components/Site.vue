@@ -26,7 +26,7 @@
                   Para cadastrar-se no sistema, <br> clique no botão abaixo
                </div>
                <div class="flex justify-center mt-2">
-                  <router-link to="/login">
+                  <router-link to="/cadastro">
                      <button class="bg-gray-200 hover:bg-gray-300 text-gray-900 text-sm font-medium py-2 px-5 rounded">
                         CADASTRAR
                      </button>
@@ -69,3 +69,7 @@
    background-color: #393939;
 }
 </style>
+
+<script setup>
+   document.title = "Home - Training"
+</script>

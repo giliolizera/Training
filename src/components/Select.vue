@@ -79,3 +79,7 @@ export default {
   }
 }
 </script>
+
+<script setup>
+   document.title = "Select - Training"
+</script>

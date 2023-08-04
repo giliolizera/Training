@@ -65,4 +65,5 @@ export default {
 <script setup>
 import { CheckCircleIcon } from "@heroicons/vue/24/outline";
 import Upside from "./Upside.vue";
+document.title="Radio - Training"
 </script>

@@ -153,6 +153,7 @@ export default {
 <script setup>
 import { ChevronDownIcon } from "@heroicons/vue/24/outline";
 import Upside from "./Upside.vue";
+document.title="Popover - Training"
 </script>
 
   
