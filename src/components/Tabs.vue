@@ -1,6 +1,5 @@
 <template>
   <Upside />
-  <Switch/> 
   <div class="bg-slate-800">
     <div class="w-full px-4 pt-16">
       <div class="mx-auto w-full max-w-md rounded-2xl bg-slate-900 p-2">
@@ -156,7 +155,7 @@ export default {
     }
   },
   components: {
-    Upside, Switch
+    Upside
   }
 }
 </script>

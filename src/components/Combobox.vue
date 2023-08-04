@@ -118,7 +118,7 @@
         if(this.active < 0 && this.query === ''){
           this.active = this.people.length-1;
         }
-        else if(this.active < 0 && this.filtredPeopleLenght < 10){
+        else if(this.active < 0){
           this.active = this.filtredPeopleLenght-1;
         }
       },

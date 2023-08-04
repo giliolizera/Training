@@ -70,15 +70,6 @@
 }
 </style>
 
-<script>
-import { Switch } from '../components/Switch.vue'
-export default {
-   components: {
-      Switch
-   }
-}
-</script>
-
 <script setup>
    document.title = "Home - Training"
 </script>

@@ -22,7 +22,7 @@ const routes = [
       component: Site,
    },
    {
-      path: '/login',
+      path: '/cadastro',
       component: Login
    },
    {

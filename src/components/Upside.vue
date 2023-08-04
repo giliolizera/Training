@@ -1,11 +1,13 @@
 <template>
    <div>
       <div class="lg:flex lg:justify-start bg-slate-900">
-         <router-link to="/">
-            <button class="text-blue-600 bg-slate-900 font-medium text-2xl flex p-4 justify-start">
-               Training WebSite
-            </button>
-         </router-link>
+         <div class="lg:inline-flex">
+            <router-link to="/">
+               <button class="text-blue-600 bg-slate-900 font-medium text-2xl flex p-4 justify-start">
+                  Training WebSite
+               </button>
+            </router-link>
+         </div>
          <router-link to="/disclosure" class="mt-3">
             <button class="bg-slate-900 text-gray-100 font-medium py-2 px-5 mb-2 rounded-xl">
                Disclosure
@@ -46,6 +48,18 @@
                Radio
             </button>
          </router-link>
+         <div class="ml-2 mt-5 lg:visible">
+            <Switch class="h-5 w-5"></Switch>
+         </div>
       </div>
    </div>
 </template>
+
+<script>
+   import Switch from './Switch.vue'
+   export default{
+      components: {
+         Switch
+      }
+   }
+</script>
