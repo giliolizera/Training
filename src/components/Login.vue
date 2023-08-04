@@ -55,12 +55,10 @@
          </div>
          <div class="flex justify-end lg:col-span-2">
             <div>
-               <router-link to="/disclosure">
-                  <button @click="validar(), confereSenha()"
+                  <button @click="validar(), confereSenha(), trocarRota()"
                      class="bg-gray-200 hover:bg-gray-300 max-md:24 text-gray-900 font-medium text-sm py-2 px-6 rounded mt-3">
                      ENTRAR
                   </button>
-               </router-link>
             </div>
          </div>
 
@@ -94,6 +92,7 @@ export default {
             console.log('validar')
             console.log(this.avançar)
          }
+         
       },
       confereSenha() {
          if (this.form.senha != this.form.confirmarSenha || this.form.senha == '' || this.form.confirmarSenha == '') {
@@ -107,6 +106,11 @@ export default {
                console.log('senha')
                console.log(this.exibir)
             }
+         }
+      },
+      trocarRota() {
+         if (this.exibir === true && this.avançar === true) {
+            this.$router.push('/disclosure')
          }
       }
    },
