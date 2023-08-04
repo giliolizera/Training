@@ -14,7 +14,7 @@ import Popover from './components/Popover.vue'
 import Radio from './components/Radio.vue'
 import Select from './components/Select.vue'
 import Tabs from './components/Tabs.vue'
-import Login from './components/Login.vue'
+import Cadastro from './components/Cadastro.vue'
 
 const routes = [
    {
@@ -23,7 +23,7 @@ const routes = [
    },
    {
       path: '/cadastro',
-      component: Login
+      component: Cadastro
    },
    {
       path: '/combobox',
