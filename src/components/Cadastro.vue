@@ -8,7 +8,7 @@
          </router-link>
          <Switch class="mt-6"/>
       </div>
-      <div class="grid grid-cols-1 gap-4 p-2 text-center lg:grid-cols-3 md:grid-cols-3">
+      <div class="grid grid-cols-1 gap-4 p-2 pl-2.5 pl- text-center lg:grid-cols-3 md:grid-cols-3">
          <div class="col-span-1 mt-4 text-lg font-medium">
             Junte-se conosco e descubra as vantagens em utilizar o Traning para gerenciar seus negócios!
          </div>
