@@ -10,7 +10,7 @@
       <div class="col-span-1 mt-4 text-lg text-white font-medium">
          Junte-se conosco e descubra as vantagens em utilizar o Traning para gerenciar seus negócios!
       </div>
-      <div class="col-span-2 grid lg:grid-cols-2 gap-4 pr-10 pl-2">
+      <form class="col-span-2 grid lg:grid-cols-2 gap-4 pr-10 pl-2">
          <div>
             <div class="text-white text-sm font-medium flex pl-1 mt-2">
                Nome
@@ -43,30 +43,32 @@
             <div class="text-white text-sm font-medium flex pl-1 mt-2">
                Senha
             </div>
-            <input type="text" class="w-full text-gray-200 border-blue-600 border bg-slate-700 rounded-md p-2 mt-1"
-               v-model="form.senha">
-         </div>
-         <div>
-            <div class="text-white text-sm font-medium flex pl-1 mt-2">
-               Confirmar Senha
+            <div class="relative w-full">
+               <input :type="typePassword ? 'password' : 'text'"
+                  class="w-full text-gray-200 border-blue-600 border bg-slate-700 rounded-md p-2 mt-1"
+                  v-model="form.senha">
+               <button class="absolute inset-y-0 right-0 pt-1 pr-3" @click.prevent.stop="typePassword = !typePassword">
+                  <EyeIcon v-if="typePassword" class="h-5 w-5 text-neutral-500" />
+                  <EyeSlashIcon v-if="!typePassword" class="h-5 w-5 text-neutral-500" />
+               </button>
             </div>
-            <input type="text" class="w-full text-gray-200 border-blue-600 border bg-slate-700 rounded-md p-2 mt-1"
-               v-model="form.confirmarSenha">
          </div>
          <div class="flex justify-end lg:col-span-2">
             <div>
-                  <button @click="validar(), confereSenha(), trocarRota()"
-                     class="bg-gray-200 hover:bg-gray-300 max-md:24 text-gray-900 font-medium text-sm py-2 px-6 rounded mt-3">
-                     ENTRAR
-                  </button>
+               <button @click="validar(), trocarRota()"
+                  class="bg-gray-200 hover:bg-gray-300 max-md:24 text-gray-900 font-medium text-sm py-2 px-6 rounded mt-3">
+                  ENTRAR
+               </button>
             </div>
          </div>
 
-      </div>
+      </form>
    </div>
 </template>
 
 <script>
+import { EyeIcon, EyeSlashIcon } from "@heroicons/vue/24/outline"
+
 export default {
    data: () => ({
       form: {
@@ -75,41 +77,22 @@ export default {
          telefone: '',
          cpf: '',
          senha: '',
-         confirmarSenha: ''
       },
       avançar: false,
       exibir: false,
+      typePassword: true,
    }),
    methods: {
       validar() {
-         if (this.form.nome != '' && this.form.email != '' && this.form.telefone.length > 13 && this.form.cpf.length > 13) {
+         if (this.form.nome != '' && this.form.email > 10 && this.form.telefone.length > 13 && this.form.cpf.length > 13 && this.form.senha > 5) {
             this.avançar = true
-            console.log('validar')
-            console.log(this.avançar)
          }
          else {
             this.avançar = false
-            console.log('validar')
-            console.log(this.avançar)
-         }
-         
-      },
-      confereSenha() {
-         if (this.form.senha != this.form.confirmarSenha || this.form.senha == '' || this.form.confirmarSenha == '') {
-            this.exibir = false
-            console.log('senha')
-            console.log(this.exibir)
-         }
-         else {
-            if (this.form.senha != '' && this.form.confirmarSenha != '') {
-               this.exibir = true
-               console.log('senha')
-               console.log(this.exibir)
-            }
          }
       },
       trocarRota() {
-         if (this.exibir === true && this.avançar === true) {
+         if (this.avançar) {
             this.$router.push('/disclosure')
          }
       }
