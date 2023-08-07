@@ -1,23 +1,23 @@
 <template>
   <Upside />
-  <div class="bg-slate-800">
+  <div class="text-slate-800 bg-white rounded dark:bg-slate-800 dark:text-white">
     <div class="w-full px-4 pt-16">
-      <div class="mx-auto w-full max-w-md rounded-2xl bg-slate-900 p-2">
+      <div class="mx-auto w-full max-w-md rounded-2xl dark:bg-slate-900 p-2">
         <div class="grid grid-flow-col justify-stretch space-x-1">
           <button v-for="(tab, index) in tabs" :key="index" @click="active = tab.id" type="button"
-            :class="['rounded-lg px-4 py-2 text-center text-sm text-white font-medium hover:bg-white/[0.12] focus:outline-none', active === tab.id ? 'bg-white text-zinc-950' : 'bg-slate-900']"
+            :class="['rounded-lg px-4 py-2 text-center text-sm dark:text-white font-medium hover:bg-white/[0.12] focus:outline-none', active === tab.id ? 'dark:bg-white dark:text-zinc-950' : 'dark:bg-slate-900']"
             @keydown.prevent.right="dir()" @keydown.prevent.left="esq()">
             {{ tab.descricao }}
           </button>
         </div>
       </div>
     </div>
-    <div class="bg-slate-800 w-full pt-2">
+    <div class="text-slate-800 bg-white rounded dark:bg-slate-800 dark:text-white w-full pt-2">
       <div class="mx-auto w-full max-w-md rounded-2xl bg-white px-5 relative">
         <div v-if="active === 1">
           <button v-for="(recent, index) in Recent" :key="index">
             <div class="pt-5">
-              <h3 class="mt-1 text-sm font-medium leading-5">{{ recent.title }}</h3>
+              <h3 class="mt-1 text-sm font-medium leading-5 text-black">{{ recent.title }}</h3>
               <ul class="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-500">
                 <li>{{ recent.date }}</li>
                 <li>{{ recent.commentCount }} comments</li>
@@ -30,7 +30,7 @@
         <div v-if="active === 2">
           <button v-for="(popular, index) in Popular" :key="index">
             <div class="pt-5">
-              <h3 class="mt-1 text-sm font-medium leading-5">{{ popular.title }}</h3>
+              <h3 class="mt-1 text-sm font-medium leading-5 text-black">{{ popular.title }}</h3>
               <ul class="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-500">
                 <li>{{ popular.date }}</li>
                 <li>{{ popular.commentCount }} comments</li>
@@ -43,7 +43,7 @@
         <div v-if="active === 3">
           <button v-for="(trending, index) in Trending" :key="index">
             <div class="pt-5">
-              <h3 class="mt-1 text-sm font-medium leading-5">{{ trending.title }}</h3>
+              <h3 class="mt-1 text-sm font-medium leading-5 text-black">{{ trending.title }}</h3>
               <ul class="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-500">
                 <li>{{ trending.date }}</li>
                 <li>{{ trending.commentCount }} comments</li>

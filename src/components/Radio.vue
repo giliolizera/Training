@@ -1,6 +1,6 @@
 <template>
    <Upside />
-   <div class="bg-slate-800">
+   <div class="text-slate-800 bg-white rounded dark:bg-slate-800 dark:text-white">
       <div class="mx-auto w-full max-w-md py-8">
          <div class="mx-auto w-full grid rounded-md">
             <button v-for="(plan, index) in plans" :key="index" @click="active = plan.name">

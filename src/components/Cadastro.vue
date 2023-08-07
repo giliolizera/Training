@@ -1,12 +1,12 @@
 <template>
-   <div class="w-full bg-gray-200 dark:bg-slate-900">
-      <router-link to="/">
-         <button class="text-blue-600 bg-gray-200 dark:bg-slate-900 font-medium text-2xl flex p-4 justify-start">
-            Training WebSite
-         </button>
-      </router-link>
-   </div>
    <div class=" text-slate-800 bg-white rounded dark:bg-slate-800 dark:text-white">
+      <div class="w-full bg-gray-200 dark:bg-slate-900">
+         <router-link to="/">
+            <button class="text-blue-600 bg-gray-200 dark:bg-slate-900 font-medium text-2xl flex p-4 justify-start">
+               Training WebSite
+            </button>
+         </router-link>
+      </div>
       <div class="grid grid-cols-1 gap-4 p-2 text-center lg:grid-cols-3 md:grid-cols-3">
          <div class="col-span-1 mt-4 text-lg font-medium">
             Junte-se conosco e descubra as vantagens em utilizar o Traning para gerenciar seus negócios!
@@ -86,7 +86,7 @@ export default {
    }),
    methods: {
       validar() {
-         if (this.form.nome != '' && this.form.email > 10 && this.form.telefone.length > 13 && this.form.cpf.length > 13 && this.form.senha > 5) {
+         if (this.form.nome != '' && this.form.email.length > 10 && this.form.telefone.length > 13 && this.form.cpf.length > 13 && this.form.senha.length > 5) {
             this.avançar = true
          }
          else {

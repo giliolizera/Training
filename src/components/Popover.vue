@@ -1,53 +1,55 @@
 <template>
   <Upside />
-  <div class="pt-10 flex justify-center pl-60 bg-slate-800">
-   <button @click="exibir = !exibir"
-     class="relative inline-flex rounded-md bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-60">
-     Options
-     <ChevronDownIcon class="ml-2 -mr-1 h-5 w-5 text-violet-200 hover:text-violet-100" />
-   </button>
+  <div class="text-slate-800 bg-white rounded dark:bg-slate-800 dark:text-white">
+    <div class="pt-10 flex justify-center pl-60">
+    <button @click="exibir = !exibir"
+      class="relative inline-flex rounded-md dark:bg-slate-900 bg-gray-400 text-white px-4 py-2 text-sm font-medium hover:bg-opacity-60">
+      Options
+      <ChevronDownIcon class="ml-2 -mr-1 h-5 w-5 text-violet-200 hover:text-violet-100" />
+    </button>
+    </div>
+    <div class="absolute left-1/2 z-10 mt-3 w-screen max-w-sm -translate-x-1/2 transform px-4 sm:px-0">
+    <div v-if="exibir" class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+      <div class="relative grid gap-8 bg-white p-7">
+        <a
+          v-for="item in solutions"
+          :key="item.name"
+          :href="item.href"
+          class="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
+        >
+          <div
+            class="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12"
+          >
+            <div v-html="item.icon"></div>
+          </div>
+          <div class="ml-4">
+            <p class="text-sm font-medium text-gray-900">
+              {{ item.name }}
+            </p>
+            <p class="text-sm text-gray-500">
+              {{ item.description }}
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="bg-gray-300 p-4">
+        <a
+          href="##"
+          class="flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-200 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
+        >
+          <span class="flex items-center">
+            <span class="text-sm font-medium text-gray-900">
+              Documentation
+            </span>
+          </span>
+          <span class="block text-sm text-gray-500">
+            Start integrating products and tools
+          </span>
+        </a>
+      </div>
+    </div>
+    </div> 
   </div>
-  <div class="absolute left-1/2 z-10 mt-3 w-screen max-w-sm -translate-x-1/2 transform px-4 sm:px-0">
-   <div v-if="exibir" class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-     <div class="relative grid gap-8 bg-white p-7">
-       <a
-         v-for="item in solutions"
-         :key="item.name"
-         :href="item.href"
-         class="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-200 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
-       >
-         <div
-           class="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12"
-         >
-           <div v-html="item.icon"></div>
-         </div>
-         <div class="ml-4">
-           <p class="text-sm font-medium text-gray-900">
-             {{ item.name }}
-           </p>
-           <p class="text-sm text-gray-500">
-             {{ item.description }}
-           </p>
-         </div>
-       </a>
-     </div>
-     <div class="bg-gray-300 p-4">
-       <a
-         href="##"
-         class="flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-200 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
-       >
-         <span class="flex items-center">
-           <span class="text-sm font-medium text-gray-900">
-             Documentation
-           </span>
-         </span>
-         <span class="block text-sm text-gray-500">
-           Start integrating products and tools
-         </span>
-       </a>
-     </div>
-   </div>
-  </div> 
 </template>
 
 <script>

@@ -1,6 +1,6 @@
 <template>
   <Upside />
-  <div class="bg-slate-800">
+  <div class="text-slate-800 bg-white rounded dark:bg-slate-800 dark:text-white">
     <div class="w-full px-4 pt-16">
       <div class="mx-auto w-full max-w-md rounded-2xl bg-gray-100 p-2">
         <button 
