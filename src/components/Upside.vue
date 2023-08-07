@@ -48,7 +48,7 @@
                Radio
             </button>
          </router-link>
-         <div class="ml-2 mt-5 lg:visible">
+         <div class="ml-2 mt-5">
             <Switch/>
          </div>
       </div>

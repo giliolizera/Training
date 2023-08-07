@@ -1,6 +1,6 @@
 <template>
   <Upside/>
-  <div class="bg-gray-100 rounded dark:bg-slate-800 py-16">
+  <div class="h-screen bg-gray-100 rounded dark:bg-slate-800 py-16">
     <div class="mx-auto w-72 max-w-md rounded-md">
       <div class="inline-flex bg-white text-black w-72 rounded-md">
         <input class="w-full bg-white pl-3 px-1 py-1 rounded-md focus:outline-none text-left" type="text"

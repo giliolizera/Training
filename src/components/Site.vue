@@ -1,5 +1,5 @@
 <template>
-   <div class="h-full">
+   <div class="h-full text-center justify-center">
       <div class=" text-slate-800 bg-white rounded dark:bg-slate-800 dark:text-white">
          <div class="w-full bg-gray-200 dark:bg-slate-900 inline-flex">
             <button class="text-blue-600 bg-gray-200 dark:bg-slate-900 font-medium text-2xl flex p-4 justify-start">
@@ -7,12 +7,12 @@
             </button>
             <Switch class="mt-6"/>
          </div>
-         <div class="max-w-md mx-auto">
+         <div class="max-w-md mx-auto justify-center">
             <div class="text-center font-medium text-xl mt-6">
                O objetivo deste projeto é apenas treinar para aprender a usar o TailwindCSS e o Vue.JS
             </div>
-            <div class="inline-flex p-10">
-               <div class="ml-24">
+            <div class="inline-flex text-center justify-center p-10">
+               <div class="">
                   <div class="text-center font-medium mt-6">
                      Para entrar anonimamente, <br> clique no botão abaixo
                </div>

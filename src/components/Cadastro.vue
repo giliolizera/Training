@@ -12,7 +12,7 @@
          <div class="col-span-1 mt-4 text-lg font-medium">
             Junte-se conosco e descubra as vantagens em utilizar o Traning para gerenciar seus negócios!
          </div>
-         <form class="col-span-2 grid lg:grid-cols-2 gap-4 pr-10 pl-2">
+         <form class="col-span-2 grid lg:grid-cols-2 gap-4 pr-2 pl-2">
             <div>
                <div class="text-sm font-medium flex pl-1 mt-2">
                   Nome
