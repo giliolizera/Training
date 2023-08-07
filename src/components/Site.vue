@@ -1,10 +1,11 @@
 <template>
    <div class="h-full">
       <div class=" text-slate-800 bg-white rounded dark:bg-slate-800 dark:text-white">
-         <div class="w-full bg-gray-200 dark:bg-slate-900">
+         <div class="w-full bg-gray-200 dark:bg-slate-900 inline-flex">
             <button class="text-blue-600 bg-gray-200 dark:bg-slate-900 font-medium text-2xl flex p-4 justify-start">
                Training WebSite
             </button>
+            <Switch class="mt-6"/>
          </div>
          <div class="max-w-md mx-auto">
             <div class="text-center font-medium text-xl mt-6">
@@ -71,4 +72,13 @@
 
 <script setup>
    document.title = "Home - Training"
+</script>
+
+<script>
+import Switch from './Switch.vue'
+export default {
+   components: {
+      Switch
+   }
+}
 </script>

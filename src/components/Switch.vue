@@ -1,5 +1,6 @@
 <template>
-     <Switch
+     <Switch 
+       @click="toggleDark()"
        v-model="enabled"
        :class="enabled ? 'bg-gray-700' : 'bg-gray-300'"
        class="relative inline-flex h-[18px] w-[34px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
@@ -12,10 +13,14 @@
      </Switch>
  </template>
  
- <script setup>
+<script setup>
  import { ref } from 'vue'
  import { Switch } from '@headlessui/vue'
  
  const enabled = ref(false)
- </script>
+ import { useDark, useToggle } from '@vueuse/core'
+
+ const isDark = useDark()
+ const toggleDark = useToggle(isDark)
+</script>
  

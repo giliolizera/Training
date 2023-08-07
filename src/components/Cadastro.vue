@@ -1,11 +1,12 @@
 <template>
    <div class=" text-slate-800 bg-white rounded dark:bg-slate-800 dark:text-white">
-      <div class="w-full bg-gray-200 dark:bg-slate-900">
+      <div class="w-full bg-gray-200 dark:bg-slate-900 inline-flex">
          <router-link to="/">
             <button class="text-blue-600 bg-gray-200 dark:bg-slate-900 font-medium text-2xl flex p-4 justify-start">
                Training WebSite
             </button>
          </router-link>
+         <Switch class="mt-6"/>
       </div>
       <div class="grid grid-cols-1 gap-4 p-2 text-center lg:grid-cols-3 md:grid-cols-3">
          <div class="col-span-1 mt-4 text-lg font-medium">
@@ -70,6 +71,7 @@
 
 <script>
 import { EyeIcon, EyeSlashIcon } from "@heroicons/vue/24/outline"
+import Switch from '../components/Switch.vue'
 
 export default {
    data: () => ({
@@ -99,6 +101,9 @@ export default {
          }
       }
    },
+   components: {
+      Switch,
+   }
 }
 </script>
 

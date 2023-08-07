@@ -49,17 +49,19 @@
             </button>
          </router-link>
          <div class="ml-2 mt-5 lg:visible">
-            <Switch class="h-5 w-5"></Switch>
+            <Switch/>
          </div>
       </div>
    </div>
 </template>
 
 <script>
-   import Switch from './Switch.vue'
-   export default{
-      components: {
-         Switch
-      }
+import Switch from './Switch.vue'
+export default {
+   components: {
+      Switch
    }
+}
 </script>
+
+
