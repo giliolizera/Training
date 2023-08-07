@@ -1,6 +1,6 @@
 <template>
    <Upside />
-   <div class="pt-10 flex justify-center pl-20 text-slate-800 bg-white rounded dark:bg-slate-800 dark:text-white">
+   <div class="h-screen pt-10 flex justify-center pl-20 text-slate-800 bg-gray-100 rounded dark:bg-slate-800 dark:text-white">
       <div class="relative inline-block text-left">
          <button @click="exibir = !exibir"
             class="inline-flex w-full justify-center rounded-md dark:bg-slate-900 px-4 py-2 text-sm font-medium dark:text-white bg-gray-200 hover:bg-opacity-60">
@@ -17,7 +17,7 @@
          >
          <div v-if="exibir" class="rounded-lg">
             <ul
-               class="absolute right-0 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none px-1 py-1">
+               class="absolute right-0 mt-2 w-56 origin-top-right rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none px-1 py-1 bg-white">
                <button @click="exibir = false" class="w-full inline-flex px-3 py-1.5 mt-0.5 hover:bg-slate-500 text-sm rounded-md text-black">
                   <PencilIcon class="mt-0.5 text-gray-600 mr-2 h-4 w-4" />
                   Edit
