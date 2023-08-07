@@ -1,8 +1,8 @@
 <template>
    <div class="h-full">
       <div class=" text-slate-800 bg-white rounded dark:bg-slate-800 dark:text-white">
-         <div class="w-full bg-slate-900">
-            <button class="text-blue-600 bg-slate-900 font-medium text-2xl flex p-4 justify-start">
+         <div class="w-full bg-gray-200 dark:bg-slate-900">
+            <button class="text-blue-600 bg-gray-200 dark:bg-slate-900 font-medium text-2xl flex p-4 justify-start">
                Training WebSite
             </button>
          </div>
@@ -17,7 +17,7 @@
                </div>
                <div class="flex justify-center mt-2">
                   <router-link to="/disclosure">
-                     <button class="bg-gray-200 hover:bg-gray-300 text-gray-900 text-sm font-medium py-2 px-7 rounded">
+                     <button class="dark:bg-gray-200 dark:hover:bg-gray-300 hover:bg-sky-600 bg-sky-800 text-white dark:text-gray-900 text-sm font-medium py-2 px-7 rounded">
                         ENTRAR
                      </button>
                   </router-link>
@@ -27,7 +27,7 @@
                </div>
                <div class="flex justify-center mt-2">
                   <router-link to="/cadastro">
-                     <button class="bg-gray-200 hover:bg-gray-300 text-gray-900 text-sm font-medium py-2 px-5 rounded">
+                     <button class="dark:bg-gray-200 dark:hover:bg-gray-300 hover:bg-sky-600 bg-sky-800 text-white dark:text-gray-900 text-sm font-medium py-2 px-5 rounded">
                         CADASTRAR
                      </button>
                   </router-link>
