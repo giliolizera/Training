@@ -2,10 +2,10 @@
   <Upside />
   <div class="text-slate-800 bg-white rounded dark:bg-slate-800 dark:text-white">
     <div class="w-full px-4 pt-16">
-      <div class="mx-auto w-full max-w-md rounded-2xl dark:bg-slate-900 p-2">
+      <div class="mx-auto w-full max-w-md rounded-2xl border border-gray-200 dark:border-none dark:bg-slate-900 bg-gray-200 p-2">
         <div class="grid grid-flow-col justify-stretch space-x-1">
           <button v-for="(tab, index) in tabs" :key="index" @click="active = tab.id" type="button"
-            :class="['rounded-lg px-4 py-2 text-center text-sm dark:text-white font-medium hover:bg-white/[0.12] focus:outline-none', active === tab.id ? 'dark:bg-white dark:text-zinc-950' : 'dark:bg-slate-900']"
+            :class="['rounded-lg px-4 py-2 text-center text-sm dark:text-white font-medium dark:hover:bg-white/[0.12] hover:bg-gray-100 focus:outline-none', active === tab.id ? 'dark:bg-white dark:text-zinc-950 bg-gray-300' : 'dark:bg-slate-900 bg-gray-200']"
             @keydown.prevent.right="dir()" @keydown.prevent.left="esq()">
             {{ tab.descricao }}
           </button>
@@ -13,7 +13,7 @@
       </div>
     </div>
     <div class="text-slate-800 bg-white rounded dark:bg-slate-800 dark:text-white w-full pt-2">
-      <div class="mx-auto w-full max-w-md rounded-2xl bg-white px-5 relative">
+      <div class="mx-auto w-full max-w-md rounded-2xl dark:bg-white bg-gray-100 dark:border-none border border-gray-200 px-5 relative">
         <div v-if="active === 1">
           <button v-for="(recent, index) in Recent" :key="index">
             <div class="pt-5">

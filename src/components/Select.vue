@@ -1,8 +1,8 @@
 <template>
   <Upside />
-  <div class="text-slate-800 bg-white rounded dark:bg-slate-800 dark:text-white py-16">
+  <div class="bg-white rounded dark:bg-slate-800 py-16">
     <div class="mx-auto w-72 max-w-md rounded-md">
-      <div class="inline-flex bg-white w-72 rounded-md">
+      <div class="inline-flex bg-gray-200 dark:bg-white text-black w-72 rounded-md">
         <button @click="exibir = !exibir" @keypress="!exibir" @keydown.prevent.esc="escape()"
           @keydown.prevent.down="baixo()" @keydown.prevent.up="cima()" @keydown.prevent.enter="enter()"
           class="w-full inline-flex justify-between pl-4 p-1 px-1 py-1 rounded-md text-left focus:outline-none" type="text">
@@ -10,8 +10,8 @@
           <ChevronUpDownIcon class="h-5 zw-5 mt-0.5 text-gray-500" />
         </button>
       </div>
-      <div class="mt-2">
-        <ul v-if="!exibir" class="bg-white grid rounded-md">
+      <div class="mt-2 text-black">
+        <ul v-if="!exibir" class="bg-gray-200 dark:bg-white grid rounded-md">
           <button @mouseenter="active = index" @mouseleave="active = -1" @click="selected = people.name, exibir = true"
             :class="[active === index
               ? 'bg-slate-400 rounded-md'

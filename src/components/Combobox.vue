@@ -1,9 +1,9 @@
 <template>
   <Upside/>
-  <div class="text-slate-800 bg-white rounded dark:bg-slate-800 dark:text-white py-16">
+  <div class="bg-white rounded dark:bg-slate-800 py-16">
     <div class="mx-auto w-72 max-w-md rounded-md">
-      <div class="inline-flex bg-white w-72 rounded-md">
-        <input class="w-full pl-3 px-1 py-1 rounded-md focus:outline-none text-left" type="text"
+      <div class="inline-flex dark:bg-white text-black bg-gray-200 w-72 rounded-md">
+        <input class="w-full bg-gray-200 dark:bg-white pl-3 px-1 py-1 rounded-md focus:outline-none text-left" type="text"
          v-model="query"
          @keydown.prevent.esc="escape()"
          @keydown.prevent.down="baixo()" 
@@ -22,7 +22,7 @@
           <ChevronUpDownIcon class="h-5 w-5 text-gray-500"/> 
         </button>
       </div>
-      <div class="mt-2 bg-white grid rounded-md">
+      <div class="mt-2 bg-gray-200 dark:bg-white text-black grid rounded-md">
         <ul v-if="!exibir" class="pt-0.5 pb-0.5">
           <button @mouseenter="active = index " 
           @mouseleave="active = -1" 
@@ -44,7 +44,7 @@
           </button>
         </ul>
         <ul v-if="this.filtredPeopleLenght === 0">
-          <div class="pl-10 p-1 pb-2 rounded-md bg-white">
+          <div class="pl-10 p-1 pb-2 rounded-md">
             Nothing Found.
           </div>
         </ul>

@@ -57,7 +57,6 @@
 ::-webkit-scrollbar {
    width: 8px;
    height: 2px;
-   /* A altura só é vista quando a rolagem é horizontal */
 }
 
 ::-webkit-scrollbar-track {
