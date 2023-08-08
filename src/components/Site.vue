@@ -1,28 +1,32 @@
 <template>
+   <div class=" text-slate-800 bg-white rounded dark:bg-slate-800 dark:text-white">
       <div class="flex justify-between bg-gray-200 dark:bg-slate-900">
-         <button class="text-blue-600 bg-gray-200 dark:bg-slate-900 font-medium text-2xl flex p-4 justify-start">
-            Training WebSite
-         </button>
+         <router-link to="/">
+            <button class="text-blue-600 bg-gray-200 dark:bg-slate-900 font-medium text-2xl flex p-4 justify-start">
+               Training WebSite
+            </button>
+         </router-link>
          <button @click="exibir = !exibir">
             <EllipsisVerticalIcon class="h-6 w-6 mr-2 text-white" />
          </button>
-      </div> 
-         <div class="flex justify-end bg-white  dark:bg-slate-900 space-x-2" v-if="exibir">
-            <p>Dark Mode</p>
-            <Switch class="mt-1"/>
+      </div>
+      <div v-if="exibir" class="flex justify-end bg-white  dark:bg-slate-900 space-x-2">
+         <p>Dark Mode</p>
+         <Switch class="mt-1" />
+      </div>
+      <div class="text-center justify-center max-w-md mx-auto">
+         <div class="text-center font-medium text-xl mt-6">
+            O objetivo deste projeto é apenas treinar para aprender a usar o TailwindCSS e o Vue.JS
          </div>
-         <div class="text-center justify-center max-w-md mx-auto">
-            <div class="text-center font-medium text-xl mt-6">
-               O objetivo deste projeto é apenas treinar para aprender a usar o TailwindCSS e o Vue.JS
-            </div>
-            <div class="inline-flex text-center justify-center p-10">
-               <div class="">
-                  <div class="text-center font-medium mt-6">
-                     Para entrar anonimamente, <br> clique no botão abaixo
+         <div class="inline-flex text-center justify-center p-10">
+            <div class="">
+               <div class="text-center font-medium mt-6">
+                  Para entrar anonimamente, <br> clique no botão abaixo
                </div>
                <div class="flex justify-center mt-2">
                   <router-link to="/disclosure">
-                     <button class="dark:bg-gray-200 dark:hover:bg-gray-300 hover:bg-sky-600 bg-sky-800 text-white dark:text-gray-900 text-sm font-medium py-2 px-7 rounded">
+                     <button
+                        class="dark:bg-gray-200 dark:hover:bg-gray-300 hover:bg-sky-600 bg-sky-800 text-white dark:text-gray-900 text-sm font-medium py-2 px-7 rounded">
                         ENTRAR
                      </button>
                   </router-link>
@@ -32,14 +36,15 @@
                </div>
                <div class="flex justify-center mt-2">
                   <router-link to="/cadastro">
-                     <button class="dark:bg-gray-200 dark:hover:bg-gray-300 hover:bg-sky-600 bg-sky-800 text-white dark:text-gray-900 text-sm font-medium py-2 px-5 rounded">
+                     <button
+                        class="dark:bg-gray-200 dark:hover:bg-gray-300 hover:bg-sky-600 bg-sky-800 text-white dark:text-gray-900 text-sm font-medium py-2 px-5 rounded">
                         CADASTRAR
                      </button>
                   </router-link>
                </div>
             </div>
          </div>
-         
+
          <div class="flex justify-center text-xl mb-5 font-medium mt-10">
             Tecnologias utilizadas no projeto
          </div>
@@ -54,6 +59,7 @@
             </div>
          </div>
       </div>
+   </div>
 </template>
 
 <style>
@@ -72,10 +78,6 @@
 }
 </style>
 
-<script setup>
-   document.title = "Home - Training"
-</script>
-
 <script>
 import Switch from './Switch.vue'
 import { EllipsisVerticalIcon } from "@heroicons/vue/24/outline";
@@ -83,6 +85,12 @@ export default {
    components: {
       Switch, EllipsisVerticalIcon
    },
-   exibir: false,
+   data:() => ({
+      exibir: false,
+   }),
 }
+</script>
+
+<script setup>
+   document.title = "Home - Training"
 </script>

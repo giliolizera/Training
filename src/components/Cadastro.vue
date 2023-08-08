@@ -9,11 +9,11 @@
          <button @click="exibir = !exibir">
             <EllipsisVerticalIcon class="h-6 w-6 mr-2 text-white" />
          </button>
-      </div> 
-         <div class="flex justify-end bg-white  dark:bg-slate-900 space-x-2" v-if="exibir">
-            <p>Dark Mode</p>
-            <Switch class="mt-1"/>
-         </div>
+      </div>
+      <div class="flex justify-end bg-white  dark:bg-slate-900 space-x-2" v-if="exibir">
+         <p>Dark Mode</p>
+         <Switch class="mt-1" />
+      </div>
       <div class="grid grid-cols-1 gap-4 p-2 pl-2.5 pl- text-center lg:grid-cols-3 md:grid-cols-3">
          <div class="col-span-1 mt-4 text-lg font-medium">
             Junte-se conosco e descubra as vantagens em utilizar o Traning para gerenciar seus negócios!
@@ -23,28 +23,32 @@
                <div class="text-sm font-medium flex pl-1 mt-2">
                   Nome
                </div>
-               <input type="text" class="w-full dark:text-gray-200 dark:border-blue-600 border-black border dark:bg-slate-700 bg-white rounded-md mt-1 pl-3 p-2"
+               <input type="text"
+                  class="w-full dark:text-gray-200 dark:border-blue-600 border-black border dark:bg-slate-700 bg-white rounded-md mt-1 pl-3 p-2"
                   v-model="form.nome">
             </div>
             <div>
                <div class="text-sm font-medium flex pl-1 mt-2">
                   Email
                </div>
-               <input type="email" class="w-full dark:text-gray-200 dark:border-blue-600 border-black border dark:bg-slate-700 bg-white rounded-md p-2 pl-3 mt-1"
+               <input type="email"
+                  class="w-full dark:text-gray-200 dark:border-blue-600 border-black border dark:bg-slate-700 bg-white rounded-md p-2 pl-3 mt-1"
                   v-model="form.email">
             </div>
             <div>
                <div class="text-sm font-medium flex pl-1 mt-2">
                   Telefone
                </div>
-               <input type="text" class="w-full dark:text-gray-200 dark:border-blue-600 border-black border dark:bg-slate-700 bg-white rounded-md p-2 mt-1"
+               <input type="text"
+                  class="w-full dark:text-gray-200 dark:border-blue-600 border-black border dark:bg-slate-700 bg-white rounded-md p-2 mt-1"
                   v-model="form.telefone" v-maska="'(##) #####-####'">
             </div>
             <div>
                <div class="text-sm font-medium flex pl-1 mt-2">
                   CPF
                </div>
-               <input type="text" class="w-full dark:text-gray-200 dark:border-blue-600 border-black border dark:bg-slate-700 bg-white rounded-md p-2 mt-1"
+               <input type="text"
+                  class="w-full dark:text-gray-200 dark:border-blue-600 border-black border dark:bg-slate-700 bg-white rounded-md p-2 mt-1"
                   v-model="form.cpf" v-maska="'###.###.###-##'">
             </div>
             <div>
