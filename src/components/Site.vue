@@ -10,7 +10,7 @@
             <EllipsisVerticalIcon class="h-6 w-6 mr-2 text-white" />
          </button>
       </div>
-      <div v-if="exibir" class="flex justify-end bg-white  dark:bg-slate-900 space-x-2">
+      <div v-if="exibir" class="flex justify-end bg-gray-200 dark:bg-slate-900 space-x-2">
          <p>Dark Mode</p>
          <Switch class="mt-1" />
       </div>
