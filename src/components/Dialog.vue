@@ -1,5 +1,10 @@
 <template>
-   <Upside />
+   <div class="hidden lg:block">
+      <Upside/>
+   </div>
+   <div class="lg:hidden">
+      <UpSideMenu/>
+   </div>
    <div class="fixed inset-0 w-screen h-screen bg-neutral-500/50 z-40" @click.stop="exibir = false" v-show="exibir"></div>
    <div class="text-slate-800 bg-white rounded dark:bg-slate-800 dark:text-white pt-36">
       <div class="rounded-md flex items-center justify-center">
@@ -30,6 +35,7 @@
 
 <script>
 import Upside from './Upside.vue';
+import UpSideMenu from './UpSideMenu.vue';
 
 export default {
    data: () => ({
@@ -45,7 +51,9 @@ export default {
          }
       },
    },
-   components: { Upside }
+   large: 1024,
+   medium: 768,
+   components: { Upside, UpSideMenu }
 }
 </script>
 

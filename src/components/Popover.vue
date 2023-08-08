@@ -1,5 +1,10 @@
 <template>
-  <Upside />
+  <div class="hidden lg:block">
+      <Upside/>
+   </div>
+   <div class="lg:hidden">
+      <UpSideMenu/>
+   </div>
   <div class="text-slate-800 bg-white rounded dark:bg-slate-800 dark:text-white">
     <div class="pt-10 flex justify-center pl-60">
     <button @click="exibir = !exibir"
@@ -147,7 +152,7 @@ export default {
      ]
   }),
   components: {
-     Upside
+     Upside, UpSideMenu
   },
 }
 </script>
@@ -155,6 +160,7 @@ export default {
 <script setup>
 import { ChevronDownIcon } from "@heroicons/vue/24/outline";
 import Upside from "./Upside.vue";
+import UpSideMenu from "./UpSideMenu.vue";
 document.title="Popover - Training"
 </script>
 

@@ -1,63 +1,45 @@
 <template>
    <div>
-      <div class="flex justify-between p-4 bg-gray-200 dark:bg-slate-900">
-         <div class="">
+         <div class="flex justify-between p-4 bg-gray-200 dark:bg-slate-900">
             <router-link to="/">
                <button class="text-blue-600 bg-gray-200 dark:bg-slate-900 font-medium text-2xl justify-start">
                   Training WebSite
                </button>
             </router-link>
+            <button @click="exibeMenu()">
+               <EllipsisVerticalIcon class="h-6 w-6 text-white" />
+            </button>
          </div>
-         <button @click="exibir = !exibir">
-            <EllipsisVerticalIcon class="h-6 w-6 text-white" />
-         </button>
-         <div v-if="exibir">
-            <router-link to="/disclosure" class="mt-3">
-               <button class="dark:bg-slate-900 bg:gray-200 dark:text-gray-100 font-medium py-2 px-5 mb-2 rounded-xl">
+         <div class="inline-grid" v-if="exibir">
+            <router-link to="/disclosure">
                   Disclosure
-               </button>
             </router-link>
-            <router-link to="/tabs" class="mt-3">
-               <button class="dark:bg-slate-900 bg:gray-200 dark:text-gray-100 font-medium py-2 px-5 mb-2 rounded-xl">
+            <router-link to="/tabs">
                   Tabs
-               </button>
             </router-link>
-            <router-link to="/select" class="mt-3">
-               <button class="dark:bg-slate-900 bg:gray-200 dark:text-gray-100 font-medium py-2 px-5 mb-2 rounded-xl">
+            <router-link to="/select">
                   Select
-               </button>
             </router-link>
-            <router-link to="/menu" class="mt-3">
-               <button class="dark:bg-slate-900 bg:gray-200 dark:text-gray-100 font-medium py-2 px-5 mb-2 rounded-xl">
+            <router-link to="/menu">
                   Menu
-               </button>
             </router-link>
-            <router-link to="/combobox" class="mt-3">
-               <button class="dark:bg-slate-900 bg:gray-200 dark:text-gray-100 font-medium py-2 px-5 mb-2 rounded-xl">
+            <router-link to="/combobox">
                   Combobox
-               </button>
             </router-link>
-            <router-link to="/dialog" class="mt-3">
-            <button class="dark:bg-slate-900 bg:gray-200 dark:text-gray-100 font-medium py-2 px-5 mb-2 rounded-xl">
+            <router-link to="/dialog">
                Dialog
-            </button>
-         </router-link>
-         <router-link to="/popover" class="mt-3">
-            <button class="dark:bg-slate-900 bg:gray-200 dark:text-gray-100 font-medium py-2 px-5 mb-2 rounded-xl">
-               Popover
-            </button>
-         </router-link>
-         <router-link to="/radio" class="mt-3">
-            <button class="dark:bg-slate-900 bg:gray-200 dark:text-gray-100 font-medium py-2 px-5 mb-2 rounded-xl">
-               Radio
-            </button>
-         </router-link>
-         <div class="ml-2 mt-5">
-            <Switch/>
+            </router-link>
+            <router-link to="/popover">
+                  Popover
+            </router-link>
+            <router-link to="/radio">
+                  Radio
+            </router-link>
+            <div class="ml-2 mt-5">
+               <Switch/>
+            </div>
          </div>
       </div>
-      </div>
-   </div>
 </template>
 
 <script>
@@ -65,9 +47,15 @@ import { EllipsisVerticalIcon } from "@heroicons/vue/24/outline";
 import Switch from './Switch.vue'
 export default {
    components: {
-      Switch, EllipsisVerticalIcon
+      EllipsisVerticalIcon, Switch
    },
    exibir: false,
+   methods: {
+      exibeMenu() {
+         this.exibir = !this.exibir
+         console.log(this.exibir)
+      }
+   }
 }
 </script>
 

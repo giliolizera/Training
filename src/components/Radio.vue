@@ -1,5 +1,10 @@
 <template>
-   <Upside />
+   <div class="hidden lg:block">
+      <Upside/>
+   </div>
+   <div class="lg:hidden">
+      <UpSideMenu/>
+   </div>
    <div class="h-screen text-slate-800 bg-gray-100 rounded dark:bg-slate-800 dark:text-white">
       <div class="mx-auto w-full max-w-md py-8">
          <div class="mx-auto w-full grid rounded-md">
@@ -56,7 +61,7 @@ export default {
       active: -1,
    }),
    components: {
-      Upside
+      Upside, UpSideMenu
    },
 }
 
@@ -65,5 +70,6 @@ export default {
 <script setup>
 import { CheckCircleIcon } from "@heroicons/vue/24/outline";
 import Upside from "./Upside.vue";
+import UpSideMenu from "./UpSideMenu.vue";
 document.title="Radio - Training"
 </script>

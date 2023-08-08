@@ -1,5 +1,10 @@
 <template>
-   <Upside />
+   <div class="hidden lg:block">
+      <Upside/>
+   </div>
+   <div class="lg:hidden">
+      <UpSideMenu/>
+   </div>
    <div class="h-screen pt-10 flex justify-center pl-20 text-slate-800 bg-gray-100 rounded dark:bg-slate-800 dark:text-white">
       <div class="relative inline-block text-left">
          <button @click="exibir = !exibir"
@@ -54,7 +59,7 @@ export default {
       exibir: true,
    }),
    components: {
-      Upside
+      Upside, UpSideMenu
    },
 }
 
@@ -66,6 +71,7 @@ import { PencilIcon, TrashIcon } from "@heroicons/vue/24/outline";
 import { DocumentDuplicateIcon } from "@heroicons/vue/24/outline";
 import { ArchiveBoxIcon } from "@heroicons/vue/24/outline";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
+import UpSideMenu from "./UpSideMenu.vue";
 import Upside from "./Upside.vue";
 document.title="Menu - Training"
 </script>

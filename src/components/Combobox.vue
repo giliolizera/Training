@@ -1,5 +1,10 @@
 <template>
-  <Upside/>
+  <div class="hidden lg:block">
+      <Upside/>
+   </div>
+   <div class="lg:hidden">
+      <UpSideMenu/>
+   </div>
   <div class="h-screen bg-gray-100 rounded dark:bg-slate-800 py-16">
     <div class="mx-auto w-72 max-w-md rounded-md">
       <div class="inline-flex bg-white text-black w-72 rounded-md">
@@ -85,7 +90,7 @@
       }
     },
     component:{
-      Upside
+      Upside, UpSideMenu
     },
     computed: {
       filtredPeople() {
@@ -142,6 +147,7 @@
 
 <script setup>
   import Upside from './Upside.vue'
+  import UpSideMenu from './UpSideMenu.vue'
   import { ChevronUpDownIcon } from '@heroicons/vue/20/solid'
   import { CheckIcon } from "@heroicons/vue/24/outline";
   document.title = "Combobox - Training"

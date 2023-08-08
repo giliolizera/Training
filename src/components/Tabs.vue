@@ -1,5 +1,10 @@
 <template>
-  <Upside />
+  <div class="hidden lg:block">
+      <Upside/>
+   </div>
+   <div class="lg:hidden">
+      <UpSideMenu/>
+   </div>
   <div class="text-slate-800 bg-white rounded dark:bg-slate-800 dark:text-white">
     <div class="w-full px-4 pt-16">
       <div class="mx-auto w-full max-w-md rounded-2xl border border-gray-200 dark:border-none dark:bg-slate-900 bg-gray-200 p-2">
@@ -59,6 +64,7 @@
 </template>
 
 <script>
+import UpSideMenu from './UpSideMenu.vue'
 import Upside from './Upside.vue'
 import Switch from './Switch.vue'
 
@@ -155,7 +161,7 @@ export default {
     }
   },
   components: {
-    Upside
+    UpSideMenu, Upside, Switch
   }
 }
 </script>

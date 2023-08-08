@@ -1,5 +1,10 @@
 <template>
-  <Upside />
+  <div class="hidden lg:block">
+      <Upside/>
+   </div>
+   <div class="lg:hidden">
+      <UpSideMenu/>
+   </div>
   <div class="text-slate-800 bg-white rounded dark:bg-slate-800 dark:text-white">
     <div class="w-full px-4 pt-16">
       <div class="mx-auto w-full max-w-md rounded-2xl bg-gray-100 p-2">
@@ -40,6 +45,7 @@
 
 <script>
 import Upside from './Upside.vue'
+import UpSideMenu from './UpSideMenu.vue';
 
 export default {
   data: () => ({
@@ -47,7 +53,7 @@ export default {
     exibir2: true,
   }),
   components: {
-    Upside
+    Upside, UpSideMenu
   },
 }
 </script>

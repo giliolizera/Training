@@ -1,5 +1,5 @@
 <template>
-   <div>
+   <div class="">
       <div class="lg:flex lg:justify-start bg-gray-200 dark:bg-slate-900">
          <div class="lg:inline-flex">
             <router-link to="/">
