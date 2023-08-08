@@ -1,13 +1,17 @@
 <template>
-   <div class="h-full text-center justify-center">
-      <div class=" text-slate-800 bg-white rounded dark:bg-slate-800 dark:text-white">
-         <div class="w-full bg-gray-200 dark:bg-slate-900 inline-flex">
-            <button class="text-blue-600 bg-gray-200 dark:bg-slate-900 font-medium text-2xl flex p-4 justify-start">
-               Training WebSite
-            </button>
-            <Switch class="mt-6"/>
+      <div class="flex justify-between bg-gray-200 dark:bg-slate-900">
+         <button class="text-blue-600 bg-gray-200 dark:bg-slate-900 font-medium text-2xl flex p-4 justify-start">
+            Training WebSite
+         </button>
+         <button @click="exibir = !exibir">
+            <EllipsisVerticalIcon class="h-6 w-6 mr-2 text-white" />
+         </button>
+      </div> 
+         <div class="flex justify-end bg-white  dark:bg-slate-900 space-x-2" v-if="exibir">
+            <p>Dark Mode</p>
+            <Switch class="mt-1"/>
          </div>
-         <div class="max-w-md mx-auto justify-center">
+         <div class="text-center justify-center max-w-md mx-auto">
             <div class="text-center font-medium text-xl mt-6">
                O objetivo deste projeto é apenas treinar para aprender a usar o TailwindCSS e o Vue.JS
             </div>
@@ -50,8 +54,6 @@
             </div>
          </div>
       </div>
-   </div>
-   </div>
 </template>
 
 <style>
@@ -76,9 +78,11 @@
 
 <script>
 import Switch from './Switch.vue'
+import { EllipsisVerticalIcon } from "@heroicons/vue/24/outline";
 export default {
    components: {
-      Switch
-   }
+      Switch, EllipsisVerticalIcon
+   },
+   exibir: false,
 }
 </script>

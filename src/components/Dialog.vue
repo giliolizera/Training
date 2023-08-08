@@ -51,8 +51,6 @@ export default {
          }
       },
    },
-   large: 1024,
-   medium: 768,
    components: { Upside, UpSideMenu }
 }
 </script>

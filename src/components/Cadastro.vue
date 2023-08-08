@@ -1,13 +1,19 @@
 <template>
    <div class=" text-slate-800 bg-white rounded dark:bg-slate-800 dark:text-white">
-      <div class="w-full bg-gray-200 dark:bg-slate-900 inline-flex">
+      <div class="flex justify-between bg-gray-200 dark:bg-slate-900">
          <router-link to="/">
             <button class="text-blue-600 bg-gray-200 dark:bg-slate-900 font-medium text-2xl flex p-4 justify-start">
                Training WebSite
             </button>
          </router-link>
-         <Switch class="mt-6"/>
-      </div>
+         <button @click="exibir = !exibir">
+            <EllipsisVerticalIcon class="h-6 w-6 mr-2 text-white" />
+         </button>
+      </div> 
+         <div class="flex justify-end bg-white  dark:bg-slate-900 space-x-2" v-if="exibir">
+            <p>Dark Mode</p>
+            <Switch class="mt-1"/>
+         </div>
       <div class="grid grid-cols-1 gap-4 p-2 pl-2.5 pl- text-center lg:grid-cols-3 md:grid-cols-3">
          <div class="col-span-1 mt-4 text-lg font-medium">
             Junte-se conosco e descubra as vantagens em utilizar o Traning para gerenciar seus negócios!
@@ -72,6 +78,7 @@
 <script>
 import { EyeIcon, EyeSlashIcon } from "@heroicons/vue/24/outline"
 import Switch from '../components/Switch.vue'
+import { EllipsisVerticalIcon } from "@heroicons/vue/24/outline"
 
 export default {
    data: () => ({
@@ -102,7 +109,7 @@ export default {
       }
    },
    components: {
-      Switch,
+      Switch, EllipsisVerticalIcon
    }
 }
 </script>
