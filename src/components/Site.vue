@@ -7,7 +7,7 @@
             </button>
          </router-link>
          <button @click="exibir = !exibir">
-            <EllipsisVerticalIcon class="h-6 w-6 mr-2 text-white" />
+            <EllipsisVerticalIcon class="h-6 w-6 mr-2" />
          </button>
       </div>
       <div v-if="exibir" class="flex justify-end bg-gray-200 dark:bg-slate-900 space-x-2">

@@ -7,7 +7,7 @@
             </button>
          </router-link>
          <button @click="exibir = !exibir">
-            <EllipsisVerticalIcon class="h-6 w-6 mr-2 text-white" />
+            <EllipsisVerticalIcon class="h-6 w-6 mr-2" />
          </button>
       </div>
       <div class="flex justify-end bg-white  dark:bg-slate-900 space-x-2" v-if="exibir">
@@ -53,6 +53,14 @@
             </div>
             <div>
                <div class="text-sm font-medium flex pl-1 mt-2">
+                  Curso
+               </div>
+               <input type="text"
+                  class="w-full dark:text-gray-200 dark:border-blue-600 border-black border dark:bg-slate-700 bg-white rounded-md p-2 pl-3 mt-1"
+                  v-model="form.curso">
+            </div>
+            <div>
+               <div class="text-sm font-medium flex pl-1 mt-2">
                   Senha
                </div>
                <div class="relative w-full">
@@ -91,6 +99,7 @@ export default {
          email: '',
          telefone: '',
          cpf: '',
+         curso:'',
          senha: '',
       },
       avançar: false,
