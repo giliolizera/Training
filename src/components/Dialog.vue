@@ -9,7 +9,7 @@
    <div class="text-slate-800 bg-white rounded dark:bg-slate-800 dark:text-white pt-36">
       <div class="rounded-md flex items-center justify-center">
          <TransitionGroup enter-active-class="transition duration-500 ease-out" enter-from-class="opacity-0"
-            enter-to-class="opacity-100">
+            enter-to-class="opacity-100">             
             <button @click="exibir = true"
                class="rounded-md bg-black bg-opacity-40 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30">
                Open Dialog
@@ -20,7 +20,7 @@
          enter-to-class="opacity-100" leave-active-class="transition duration-500 ease-in" leave-from-class="opacity-100"
          leave-to-class="opacity-0">
          <div v-if="exibir"
-            class="fixed inset-1/4 w-full h-max max-w-md transform overflow-hidden rounded-2xl text-left shadow-xl transition-all bg-white p-4 space-y-2 items-center mx-auto z-50">
+            class="absolute top-32 inset-0 w-full h-max max-w-md transform overflow-hidden rounded-2xl text-left shadow-xl transition-all bg-white p-4 space-y-2 items-center mx-auto z-50">
             <p class="pl-1 font-medium text-black">Payment Successful</p>
             <p class="pl-1 text-sm text-gray-500">Your payment has been successfully submitted. We`ve sent you an email
                with all of the details of your order.</p>

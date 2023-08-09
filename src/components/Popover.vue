@@ -1,73 +1,65 @@
 <template>
   <div class="hidden lg:block">
-      <Upside/>
-   </div>
-   <div class="lg:hidden">
-      <UpSideMenu/>
-   </div>
+    <Upside />
+  </div>
+  <div class="lg:hidden">
+    <UpSideMenu />
+  </div>
   <div class="text-slate-800 bg-white rounded dark:bg-slate-800 dark:text-white">
-    <div class="pt-10 flex justify-center pl-60">
-    <button @click="exibir = !exibir"
-      class="relative inline-flex rounded-md dark:bg-slate-900 bg-gray-300 text-white px-4 py-2 text-sm font-medium hover:bg-opacity-60">
-      Options
-      <ChevronDownIcon class="ml-2 -mr-1 h-5 w-5 text-white" />
-    </button>
+    <div class="pt-10 flex justify-center">
+      <button @click="exibir = !exibir"
+        class="relative inline-flex rounded-md dark:bg-slate-900 bg-black bg-opacity-40 text-white px-4 py-2 text-sm font-medium hover:bg-opacity-80">
+        Options
+        <ChevronDownIcon class="ml-2 -mr-1 h-5 w-5 text-white" />
+      </button>
     </div>
     <div class="absolute left-1/2 z-10 mt-3 w-screen max-w-sm -translate-x-1/2 transform px-4 sm:px-0">
-    <div v-if="exibir" class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-      <div class="relative grid gap-8 bg-white p-7">
-        <a
-          v-for="item in solutions"
-          :key="item.name"
-          :href="item.href"
-          class="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-opacity-50"
-        >
-          <div
-            class="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12"
-          >
-            <div v-html="item.icon"></div>
-          </div>
-          <div class="ml-4">
-            <p class="text-sm font-medium text-gray-900">
-              {{ item.name }}
-            </p>
-            <p class="text-sm text-gray-500">
-              {{ item.description }}
-            </p>
-          </div>
-        </a>
-      </div>
-      <div class="bg-gray-200 p-4">
-        <a
-          href="##"
-          class="flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-opacity-50"
-        >
-          <span class="flex items-center">
-            <span class="text-sm font-medium text-gray-900">
-              Documentation
+      <div v-if="exibir" class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+        <div class="relative grid gap-8 bg-white p-7">
+          <a v-for="item in solutions" :key="item.name" :href="item.href"
+            class="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-opacity-50">
+            <div class="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12">
+              <div v-html="item.icon"></div>
+            </div>
+            <div class="ml-4">
+              <p class="text-sm font-medium text-gray-900">
+                {{ item.name }}
+              </p>
+              <p class="text-sm text-gray-500">
+                {{ item.description }}
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="bg-gray-200 p-4">
+          <a href="##"
+            class="flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-opacity-50">
+            <span class="flex items-center">
+              <span class="text-sm font-medium text-gray-900">
+                Documentation
+              </span>
             </span>
-          </span>
-          <span class="block text-sm text-gray-500">
-            Start integrating products and tools
-          </span>
-        </a>
+            <span class="block text-sm text-gray-500">
+              Start integrating products and tools
+            </span>
+          </a>
+        </div>
       </div>
     </div>
-    </div> 
   </div>
 </template>
 
 <script>
 export default {
   data: () => ({
-     exibir: true,
+    exibir: true,
 
-     solutions: [
-        {
-           name: 'Insights',
-           description: 'Measure actions your users take',
-           href: '##',
-           icon: `
+    solutions: [
+      {
+        name: 'Insights',
+        description: 'Measure actions your users take',
+        href: '##',
+        icon: `
       <svg
         width="48"
         height="48"
@@ -98,12 +90,12 @@ export default {
         />
       </svg>
     `,
-        },
-        {
-           name: 'Automations',
-           description: 'Create your own targeted content',
-           href: '##',
-           icon: `
+      },
+      {
+        name: 'Automations',
+        description: 'Create your own targeted content',
+        href: '##',
+        icon: `
       <svg
         width="48"
         height="48"
@@ -126,12 +118,12 @@ export default {
         />
       </svg>
     `,
-        },
-        {
-           name: 'Reports',
-           description: 'Keep track of your growth',
-           href: '##',
-           icon: `
+      },
+      {
+        name: 'Reports',
+        description: 'Keep track of your growth',
+        href: '##',
+        icon: `
       <svg
         width="48"
         height="48"
@@ -148,11 +140,11 @@ export default {
         <rect x="33" y="12" width="2" height="24" fill="#000" />
       </svg>
     `,
-        },
-     ]
+      },
+    ]
   }),
   components: {
-     Upside, UpSideMenu
+    Upside, UpSideMenu
   },
 }
 </script>
@@ -161,7 +153,7 @@ export default {
 import { ChevronDownIcon } from "@heroicons/vue/24/outline";
 import Upside from "./Upside.vue";
 import UpSideMenu from "./UpSideMenu.vue";
-document.title="Popover - Training"
+document.title = "Popover - Training"
 </script>
 
   

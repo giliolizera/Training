@@ -51,6 +51,7 @@ export default {
   data: () => ({
     exibir: true,
     exibir2: true,
+    exibir3: false,
   }),
   components: {
     Upside, UpSideMenu
