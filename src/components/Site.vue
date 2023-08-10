@@ -58,6 +58,7 @@
                <p>TailwindCSS</p>
             </div>
          </div>
+         <Switch class="absolute bottom-0 hidden" />
       </div>
    </div>
 </template>

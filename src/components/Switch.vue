@@ -22,5 +22,12 @@
 
  const isDark = useDark()
  const toggleDark = useToggle(isDark)
+
+ if(isDark.value) {
+   enabled.value = false
+ } else {
+   enabled.value = true
+ }
+
 </script>
  

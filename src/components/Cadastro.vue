@@ -99,7 +99,7 @@ export default {
          email: '',
          telefone: '',
          cpf: '',
-         curso:'',
+         curso: '',
          senha: '',
       },
       avançar: false,
@@ -128,5 +128,5 @@ export default {
 </script>
 
 <script setup>
-   document.title = "Cadastro - Training"
+document.title = "Cadastro - Training"
 </script>
