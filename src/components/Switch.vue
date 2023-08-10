@@ -8,7 +8,7 @@
        <span
          aria-hidden="true"
          :class="enabled ? '-translate-x-0.5' : 'translate-x-4'"
-         class="pointer-events-none inline-block h-[15px] w-[15px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out"
+         class="pointer-events-none inline-block h-[15px] w-[15px] transform rounded-full bg-white shadow-lg ring-0  transition duration-200 ease-in-out"
        />
      </Switch>
  </template>
@@ -16,7 +16,7 @@
 <script setup>
  import { ref } from 'vue'
  import { Switch } from '@headlessui/vue'
- 
+
  const enabled = ref(false)
  import { useDark, useToggle } from '@vueuse/core'
 

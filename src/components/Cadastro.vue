@@ -10,6 +10,7 @@
             <EllipsisVerticalIcon class="h-6 w-6 mr-2" />
          </button>
       </div>
+      
       <div class="flex justify-end bg-white  dark:bg-slate-900 space-x-2" v-if="exibir">
          <p>Dark Mode</p>
          <Switch class="mt-1" />
@@ -25,7 +26,16 @@
                </div>
                <input type="text"
                   class="w-full dark:text-gray-200 dark:border-blue-600 border-black border dark:bg-slate-700 bg-white rounded-md mt-1 pl-3 p-2"
-                  v-model="form.nome">
+                  v-model="form.nome"
+               >
+               <span class="relative w-full pt-0.5">
+                  <p
+                     v-if="required.data.nome"
+                     class="absolute truncate text-xs text-red-500"
+                  >
+                     *{{ required.data.nome}}
+                  </p>
+               </span>
             </div>
             <div>
                <div class="text-sm font-medium flex pl-1 mt-2">
@@ -79,6 +89,7 @@
                      class="dark:bg-gray-200 bg-sky-800 text-white hover:bg-gray-300 max-md:24 dark:text-gray-900 font-medium text-sm py-2 px-6 rounded mt-3">
                      ENTRAR
                   </button>
+                  <Switch class="absolute bottom-0 hidden" />
                </div>
             </div>
 
@@ -102,6 +113,11 @@ export default {
          curso: '',
          senha: '',
       },
+      required: {
+        data: [],
+        show: false,
+        error: false,
+      },
       avançar: false,
       exibir: false,
       typePassword: true,
@@ -119,7 +135,7 @@ export default {
          if (this.avançar) {
             this.$router.push('/disclosure')
          }
-      }
+      },
    },
    components: {
       Switch, EllipsisVerticalIcon
