@@ -28,14 +28,6 @@
                   class="w-full dark:text-gray-200 dark:border-blue-600 border-black border dark:bg-slate-700 bg-white rounded-md mt-1 pl-3 p-2"
                   v-model="form.nome"
                >
-               <span class="relative w-full pt-0.5">
-                  <p
-                     v-if="required.data.nome"
-                     class="absolute truncate text-xs text-red-500"
-                  >
-                     *{{ required.data.nome}}
-                  </p>
-               </span>
             </div>
             <div>
                <div class="text-sm font-medium flex pl-1 mt-2">
@@ -113,11 +105,6 @@ export default {
          curso: '',
          senha: '',
       },
-      required: {
-        data: [],
-        show: false,
-        error: false,
-      },
       avançar: false,
       exibir: false,
       typePassword: true,
@@ -134,6 +121,26 @@ export default {
       trocarRota() {
          if (this.avançar) {
             this.$router.push('/disclosure')
+         }
+         else {
+            if(this.form.nome === '' && this.form.email.length < 10 && this.form.telefone.length < 13 && this.form.cpf.length < 13 && this.form.senha.length < 5){
+               alert('Preencha todos os campos')
+            }
+            else if(this.form.nome === ''){
+               alert('Preencha o campo nome')
+            }
+            else if(this.form.email.length < 10){
+               alert('Preencha o campo email corretamente')
+            }
+            else if(this.form.telefone.length < 13){
+               alert('Preencha o campo telefone corretamente')
+            }
+            else if(this.form.cpf.length < 13){
+               alert('Preencha o campo cpf corretamente')
+            }
+            else if(this.form.senha.length < 5){
+               alert('A senha deve conter no mínimo 6 caracteres')
+            }
          }
       },
    },
