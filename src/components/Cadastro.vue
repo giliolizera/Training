@@ -1,3 +1,75 @@
+
+<script setup>
+   document.title = "Cadastro - Training"
+   // meuStorage = localStorage;
+   // localStorage.setItem("nome", form.nome);
+   // localStorage.setItem("email", form.email);
+   // localStorage.setItem("telefone", form.telefone);
+   // localStorage.setItem("cpf", form.cpf);
+   // localStorage.setItem("curso", form.curso);
+   // localStorage.setItem("senha", form.senha);
+</script>
+
+<script>
+import { EyeIcon, EyeSlashIcon } from "@heroicons/vue/24/outline"
+import Switch from '../components/Switch.vue'
+import { EllipsisVerticalIcon } from "@heroicons/vue/24/outline"
+
+export default {
+   data: () => ({
+      form: {
+         nome: '',
+         email: '',
+         telefone: '',
+         cpf: '',
+         curso: '',
+         senha: '',
+      },
+      avançar: false,
+      exibir: false,
+      typePassword: true,
+   }),
+   methods: {
+      validar() {
+         if (this.form.nome != '' && this.form.email.length > 10 && this.form.telefone.length > 13 && this.form.cpf.length > 13 && this.form.senha.length > 5) {
+            this.avançar = true
+         }
+         else {
+            this.avançar = false
+         }
+      },
+      trocarRota() {
+         if (this.avançar) {
+            this.$router.push('/disclosure')
+         }
+         else {
+            if (this.form.nome === '' && this.form.email.length < 10 && this.form.telefone.length < 13 && this.form.cpf.length < 13 && this.form.senha.length < 5) {
+               alert('Preencha todos os campos')
+            }
+            else if (this.form.nome === '') {
+               alert('Preencha o campo nome')
+            }
+            else if (this.form.email.length < 10) {
+               alert('Preencha o campo email corretamente')
+            }
+            else if (this.form.telefone.length < 13) {
+               alert('Preencha o campo telefone corretamente')
+            }
+            else if (this.form.cpf.length < 13) {
+               alert('Preencha o campo cpf corretamente')
+            }
+            else if (this.form.senha.length < 5) {
+               alert('A senha deve conter no mínimo 6 caracteres')
+            }
+         }
+      },
+   },
+   components: {
+      Switch, EllipsisVerticalIcon
+   }
+}
+</script>
+                     
 <template>
    <div class=" text-slate-800 bg-white rounded dark:bg-slate-800 dark:text-white">
       <div class="flex justify-between bg-gray-200 dark:bg-slate-900">
@@ -10,7 +82,7 @@
             <EllipsisVerticalIcon class="h-6 w-6 mr-2" />
          </button>
       </div>
-      
+
       <div class="flex justify-end bg-white  dark:bg-slate-900 space-x-2" v-if="exibir">
          <p>Dark Mode</p>
          <Switch class="mt-1" />
@@ -26,8 +98,7 @@
                </div>
                <input type="text"
                   class="w-full dark:text-gray-200 dark:border-blue-600 border-black border dark:bg-slate-700 bg-white rounded-md mt-1 pl-3 p-2"
-                  v-model="form.nome"
-               >
+                  v-model="form.nome">
             </div>
             <div>
                <div class="text-sm font-medium flex pl-1 mt-2">
@@ -89,67 +160,3 @@
       </div>
    </div>
 </template>
-
-<script>
-import { EyeIcon, EyeSlashIcon } from "@heroicons/vue/24/outline"
-import Switch from '../components/Switch.vue'
-import { EllipsisVerticalIcon } from "@heroicons/vue/24/outline"
-
-export default {
-   data: () => ({
-      form: {
-         nome: '',
-         email: '',
-         telefone: '',
-         cpf: '',
-         curso: '',
-         senha: '',
-      },
-      avançar: false,
-      exibir: false,
-      typePassword: true,
-   }),
-   methods: {
-      validar() {
-         if (this.form.nome != '' && this.form.email.length > 10 && this.form.telefone.length > 13 && this.form.cpf.length > 13 && this.form.senha.length > 5) {
-            this.avançar = true
-         }
-         else {
-            this.avançar = false
-         }
-      },
-      trocarRota() {
-         if (this.avançar) {
-            this.$router.push('/disclosure')
-         }
-         else {
-            if(this.form.nome === '' && this.form.email.length < 10 && this.form.telefone.length < 13 && this.form.cpf.length < 13 && this.form.senha.length < 5){
-               alert('Preencha todos os campos')
-            }
-            else if(this.form.nome === ''){
-               alert('Preencha o campo nome')
-            }
-            else if(this.form.email.length < 10){
-               alert('Preencha o campo email corretamente')
-            }
-            else if(this.form.telefone.length < 13){
-               alert('Preencha o campo telefone corretamente')
-            }
-            else if(this.form.cpf.length < 13){
-               alert('Preencha o campo cpf corretamente')
-            }
-            else if(this.form.senha.length < 5){
-               alert('A senha deve conter no mínimo 6 caracteres')
-            }
-         }
-      },
-   },
-   components: {
-      Switch, EllipsisVerticalIcon
-   }
-}
-</script>
-
-<script setup>
-document.title = "Cadastro - Training"
-</script>
