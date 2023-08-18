@@ -42,7 +42,7 @@ export default {
                alert('Preencha o campo nome')
             }
             else if (this.form.email.length < 10) {
-               alert('Preencha o campo email corretamente')
+               alert('Preencha o campo e-mail corretamente')
             }
             else if (this.form.telefone.length < 13) {
                alert('Preencha o campo telefone corretamente')
