@@ -1,13 +1,5 @@
-
 <script setup>
-   document.title = "Cadastro - Training"
-   // meuStorage = localStorage;
-   // localStorage.setItem("nome", form.nome);
-   // localStorage.setItem("email", form.email);
-   // localStorage.setItem("telefone", form.telefone);
-   // localStorage.setItem("cpf", form.cpf);
-   // localStorage.setItem("curso", form.curso);
-   // localStorage.setItem("senha", form.senha);
+document.title = "Cadastro - Training"
 </script>
 
 <script>
@@ -65,9 +57,10 @@ export default {
       },
    },
    components: {
-      Switch, EllipsisVerticalIcon
+      Switch, EllipsisVerticalIcon, EyeIcon, EyeSlashIcon
    }
 }
+
 </script>
                      
 <template>
