@@ -5,7 +5,7 @@
    <div class="lg:hidden">
       <UpSideMenu/>
    </div>
-   <div class="h-screen text-slate-800 bg-gray-100 rounded dark:bg-slate-800 dark:text-white">
+   <div class="h-screen text-slate-800 bg-gray-200 rounded dark:bg-slate-800 dark:text-white">
       <div class="mx-auto w-full max-w-md py-8">
          <div class="mx-auto w-full grid rounded-md">
             <button v-for="(plan, index) in plans" :key="index" @click="active = plan.name">
