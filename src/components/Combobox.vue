@@ -89,9 +89,6 @@
         active: -1,
       }
     },
-    component:{
-      Upside, UpSideMenu
-    },
     computed: {
       filtredPeople() {
         return this.query === ''
