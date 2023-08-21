@@ -16,7 +16,7 @@
                         {{ plan.name }}
                      </li>
                      <button v-if="active === plan.name" class="absolute pl-96">
-                        <CheckCircleIcon class="h-8 w-8 mt-1 text-black-500" />
+                        <CheckCircleIcon class="hidden sm:block h-8 w-8 mt-1 text-black-500" />
                      </button>
                   </ul>
                   <ul>
