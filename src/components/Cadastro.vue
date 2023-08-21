@@ -51,7 +51,7 @@ export default {
                alert('Preencha o campo cpf corretamente')
             }
             else if (this.form.senha.length < 5) {
-               alert('A senha deve conter mínimo 6 caracteres')
+               alert('A senha deve conter no mínimo 6 caracteres')
             }
          }
       },
