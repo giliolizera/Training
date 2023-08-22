@@ -10,7 +10,7 @@
             <EllipsisVerticalIcon class="h-6 w-6" />
          </button>
       </div>
-      <div v-if="exibir" class="inset-0 h-screen w-screen flex justify-end z-40 bg-neutral-500/80">
+      <div v-if="exibir" class="fixed inset-0 h-screen w-screen flex justify-end z-40 bg-neutral-500/80">
          <div
             class="fixed top-4 right-4 grid rounded-md w-56 h-max  bg-white text-black font-medium p-4 space-y-3 mr-4 z-50 transform overflow-hidden"
             v-if="exibir">
