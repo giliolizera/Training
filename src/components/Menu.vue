@@ -23,26 +23,26 @@
          <div v-if="exibir" class="rounded-lg">
             <ul
                class="absolute right-0 mt-2 w-48 md:w-56 lg:w-56 origin-top-right rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none px-1 py-1 bg-white">
-               <button @click="exibir = false" class="w-full inline-flex px-3 py-1.5 mt-0.5 hover:bg-slate-500 text-sm rounded-md text-black">
-                  <PencilIcon class="mt-0.5 text-gray-600 mr-2 h-4 w-4" />
+               <button @click="exibir = false" class="w-full inline-flex px-3 py-1.5 mt-0.5 hover:bg-slate-500 text-base rounded-md text-black">
+                  <PencilIcon class="mt-0.5 text-gray-600 mr-2 h-5 w-5" />
                   Edit
                </button>
-               <button @click="exibir = false" class="w-full inline-flex px-3 py-1.5 hover:bg-slate-500 text-sm rounded-md text-black">
-                  <DocumentDuplicateIcon class="mt-0.5 text-gray-600 mr-2 h-4 w-4" />
+               <button @click="exibir = false" class="w-full inline-flex px-3 py-1.5 hover:bg-slate-500 text-base rounded-md text-black">
+                  <DocumentDuplicateIcon class="mt-0.5 text-gray-600 mr-2 h-5 w-5" />
                   Duplicate
                </button>
                <li class="px-1 py-1 divide-y divide-gray-800"></li>
-               <button @click="exibir = false" class="w-full inline-flex px-3 py-1.5 hover:bg-slate-500 text-sm rounded-md text-black">
-                  <ArchiveBoxIcon class="mt-0.5 text-gray-600 mr-2 h-4 w-4" />
+               <button @click="exibir = false" class="w-full inline-flex px-3 py-1.5 hover:bg-slate-500 text-base rounded-md text-black">
+                  <ArchiveBoxIcon class="mt-0.5 text-gray-600 mr-2 h-5 w-5" />
                   Archive
                </button>
-               <button @click="exibir = false" class="w-full inline-flex px-3 py-1.5 hover:bg-slate-500 text-sm rounded-md text-black">
-                  <ArrowTopRightOnSquareIcon class="mt-0.5 text-gray-600 mr-2 h-4 w-4" />
+               <button @click="exibir = false" class="w-full inline-flex px-3 py-1.5 hover:bg-slate-500 text-base rounded-md text-black">
+                  <ArrowTopRightOnSquareIcon class="mt-0.5 text-gray-600 mr-2 h-5 w-5" />
                   Move
                </button>
                <li class="px-1 py-1 divide-y divide-gray-800"></li>
-               <button @click="exibir = false" class="w-full inline-flex px-3 pt-1.5 pb-1.5 mb-0 hover:bg-slate-500 text-sm rounded-md text-black">
-                  <TrashIcon class="mt-0.5 text-gray-600 mr-2 h-4 w-4" />
+               <button @click="exibir = false" class="w-full inline-flex px-3 pt-1.5 pb-1.5 mb-0 hover:bg-slate-500 text-base rounded-md text-black">
+                  <TrashIcon class="mt-0.5 text-gray-600 mr-2 h-5 w-5" />
                   Delete
                </button>
             </ul>
