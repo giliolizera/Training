@@ -1,9 +1,6 @@
 # Train-dw-erp 
 
-### Just only a project to training my skills in Vue.JS with TailwindCSS, doing the challenges of Headless UI
-### Just aprecciate it bro :)
-
-## Project setup
+### Project setup
 ```
 npm install
 ```
@@ -12,3 +9,5 @@ npm install
 ```
 npm run serve
 ```
+
+### Just apreciate it bro, rs
