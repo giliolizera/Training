@@ -8,7 +8,7 @@
    <div class="pt-10 flex justify-center text-slate-800 bg-white rounded dark:bg-slate-800 dark:text-white">
       <div class="relative inline-block text-left">
          <button @click="exibir = !exibir"
-            class="inline-flex w-full justify-center rounded-md dark:bg-slate-900 px-4 py-2 text-sm font-medium dark:text-white bg-gray-200 hover:bg-opacity-60">
+            class="inline-flex w-full justify-center rounded-md dark:bg-slate-900 px-4 py-2 text-sm font-medium dark:text-white bg-gray-200 hover:bg-gray-300">
             Options
             <ChevronDownIcon class="ml-2 -mr-1 h-5 w-5 dark:text-violet-200 text-slate-800 hover:text-violet-100" />
          </button>
