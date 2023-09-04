@@ -1,5 +1,3 @@
-# Train-dw-erp 
-
 ### Project setup
 ```
 npm install
@@ -9,5 +7,3 @@ npm install
 ```
 npm run serve
 ```
-
-### Just apreciate it bro, rs
