@@ -1,4 +1,4 @@
-### Project setu
+### Project setup
 ```
 npm install
 ```
