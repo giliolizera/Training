@@ -148,7 +148,6 @@ export default {
                   <Switch class="absolute bottom-0 hidden" />
                </div>
             </div>
-
          </form>
       </div>
    </div>
