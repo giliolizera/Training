@@ -48,7 +48,7 @@
          <div class="flex justify-center text-xl mb-5 font-medium mt-10">
             Tecnologias utilizadas no projeto
          </div>
-         <div class="flex justify-center mt-2">
+         <div class="font-medium flex justify-center mt-2">
             <div class="inline-flex space-x-2">
                <img src="../assets/logo.png" class="h-7 w-7">
                <p>Vue.JS</p>
