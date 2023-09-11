@@ -22,7 +22,7 @@
                   <ul>
                      <li
                         :class="[active === plan.name ? 'static text-left text-sm text-gray' : 'static text-left text-sm text-gray-600']">
-                        {{ plan.ram }}/{{ plan.cpus }}
+                        {{ plan.ram }} {{ plan.cpus }}
                         <span aria-hidden="true"> &middot; </span>
                         {{ plan.disk }}
                      </li>
@@ -42,21 +42,27 @@ export default {
          {
             name: 'Startup',
             ram: '8GB',
-            cpus: '4 CPUs',
-            disk: '256 GB SSD disk',
+            cpus: '4/8 CPU',
+            disk: '240GB SSD',
          },
          {
             name: 'Business',
             ram: '16GB',
-            cpus: '8 CPUs',
-            disk: '512 GB SSD disk',
+            cpus: '6/12 CPU',
+            disk: '480GB SSD',
          },
          {
             name: 'Enterprise',
             ram: '32GB',
-            cpus: '12 CPUs',
-            disk: '1024 GB SSD disk',
+            cpus: '12/24 CPU',
+            disk: '1TB SSD',
          },
+         {
+            name: 'Pro Gamer',
+            ram: '64GB',
+            cpus: '24/48 CPU',
+            disk: '2TB SSD',
+         }
       ],
       active: -1,
    }),
