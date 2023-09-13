@@ -8,7 +8,7 @@ npm install
 npm run serve
 ```
 
-### This is a server who do a representation of a headless UI
+# This is a server who do a representation of a headless UI
 ```
 made with Vue.JS 
 ```
