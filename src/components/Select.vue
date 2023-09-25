@@ -46,15 +46,15 @@ import { CheckIcon } from "@heroicons/vue/24/outline";
 export default {
   data: () => ({
     peoples: [
-      { name: 'Wade Cooper' },
-      { name: 'Arlene Mccoy' },
-      { name: 'Devon Webb' },
-      { name: 'Tom Cook' },
-      { name: 'Tanya Fox' },
-      { name: 'Hellen Schmidt' },
+      { name: 'Guilherme Gilioli' },
+      { name: 'João Vitor' },
+      { name: 'Bartolomeu Krautch' },
+      { name: 'Tom Riddle' },
+      { name: 'Taina Bitch' },
+      { name: 'Hellen Child' },
     ],
     active: -1,
-    selected: 'Wade Cooper',
+    selected: 'Guilherme Gilioli',
     exibir: false,
   }),
   components: {
