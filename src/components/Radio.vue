@@ -29,6 +29,13 @@
                   </ul>
                </div>
             </button>
+            <div class="flex justify-end">
+               <router-link to="/gpu">
+                  <button class="dark:bg-slate-900 bg:gray-200 dark:text-gray-100 mt-3 font-medium py-2 px-5 mb-2 rounded-xl">
+                     GPU
+                  </button>
+               </router-link>
+            </div>
          </div>
       </div>
    </div>
@@ -40,28 +47,34 @@ export default {
    data: () => ({
       plans: [
          {
-            name: 'Startup',
+            name: 'Intel Core i7 3770K 3.5GHz',
             ram: '8GB',
             cpus: '4/8 CPU',
             disk: '240GB SSD',
          },
          {
-            name: 'Business',
+            name: 'AMD Ryzen 5 5600G 3.4GHz',
             ram: '16GB',
             cpus: '6/12 CPU',
             disk: '480GB SSD',
          },
          {
-            name: 'Enterprise',
+            name: 'AMD Ryzen 7 5700X 3.8GHz',
             ram: '32GB',
-            cpus: '12/24 CPU',
+            cpus: '8/16 CPU',
             disk: '1TB SSD',
          },
          {
-            name: 'Pro Gamer',
+            name: 'AMD Ryzen 9 5950X 4.4GHz',
             ram: '64GB',
-            cpus: '24/48 CPU',
+            cpus: '12/24 CPU',
             disk: '2TB SSD',
+         },
+         {
+            name: 'Intel Core i9 13900KS 5.7GHz',
+            ram: '128GB',
+            cpus: '20/40 CPU',
+            disk: '4TB SSD',
          }
       ],
       active: -1,
