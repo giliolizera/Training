@@ -15,6 +15,7 @@ import Radio from './components/Radio.vue'
 import Select from './components/Select.vue'
 import Tabs from './components/Tabs.vue'
 import Cadastro from './components/Cadastro.vue'
+import Gpu from './components/Gpu.vue'
 
 const routes = [
    {
@@ -47,7 +48,11 @@ const routes = [
    },
    {
       path: '/radio',
-      component: Radio
+      component: Radio,
+   },
+   {
+      path: '/gpu',
+      component: Gpu
    },
    {
       path: '/select',
