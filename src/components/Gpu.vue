@@ -6,7 +6,14 @@
       <UpSideMenu/>
    </div>
    <div class="h-screen text-slate-800 bg-gray-100 rounded dark:bg-slate-800 dark:text-white">
-      <div class="mx-auto w-full max-w-md py-8">
+      <div class="flex justify-start">
+         <router-link to="/radio">
+            <button class="dark:bg-slate-900 bg:gray-200 dark:text-gray-100 ml-3 mt-3 font-medium py-2 px-5 mb-2 rounded-xl">
+               Voltar para Radio
+            </button>
+         </router-link>
+      </div>
+      <div class="mx-auto w-full max-w-md py-2">
          <div class="mx-auto w-full grid rounded-md">
             <button v-for="(plan, index) in plans" :key="index" @click="active = plan.name">
                <div

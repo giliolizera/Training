@@ -47,7 +47,7 @@ export default {
    data: () => ({
       plans: [
          {
-            name: 'Intel Core i7 3770K 3.5GHz',
+            name: 'Intel Core i7 3770K 3.2GHz',
             ram: '8GB',
             cpus: '4/8 CPU',
             disk: '240GB SSD',
@@ -65,13 +65,13 @@ export default {
             disk: '1TB SSD',
          },
          {
-            name: 'AMD Ryzen 9 5950X 4.4GHz',
+            name: 'AMD Ryzen 9 5950X 4.6GHz',
             ram: '64GB',
             cpus: '12/24 CPU',
             disk: '2TB SSD',
          },
          {
-            name: 'Intel Core i9 13900KS 5.7GHz',
+            name: 'Intel Core i9 13900KS 5.0GHz',
             ram: '128GB',
             cpus: '20/40 CPU',
             disk: '4TB SSD',
