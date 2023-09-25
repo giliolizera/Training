@@ -78,7 +78,7 @@
           { id: 11, name: 'Juarez Roberts'},
           { id: 12, name: 'Ronald Richards'},
           { id: 13, name: 'Suelen Bridger'},
-          { id: 14, name: 'Felipe Gonzatt'},
+          { id: 14, name: 'Alfredo Treutel'},
           { id: 15, name: 'Roman Reynolds'},
           { id: 16, name: 'William Mccoy'},
           { id: 17, name: 'Peemi Cooper'},
