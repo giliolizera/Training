@@ -3,12 +3,8 @@
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compiles and hot-reloads 
 ```
 npm run serve
 ```
 
-### This is a server who do a representation of a headless UI
-```
-made with Vue.JS 
-```
