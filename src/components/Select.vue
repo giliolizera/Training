@@ -52,6 +52,7 @@ export default {
       { name: 'Tom Riddle' },
       { name: 'Taina Bitch' },
       { name: 'Hellen Child' },
+      { name: 'Maik Sanaiott'}
     ],
     active: -1,
     selected: 'Guilherme Gilioli',
