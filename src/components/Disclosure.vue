@@ -26,7 +26,7 @@
         <div class="mt-2">
           <button @click="exibir2 = !exibir2"
             class="flex w-full justify-between rounded-lg bg-purple-100 px-4 py-2 text-left text-sm font-medium text-slate-900 hover:bg-purple-200 focus:outline-none">
-            Do you offer technical support?
+            
           </button>
           <transition 
           enter-active-class="transition duration-500 ease-out" 
