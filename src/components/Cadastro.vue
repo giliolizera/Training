@@ -1,5 +1,6 @@
 <script setup>
 document.title = "Cadastro - Training"
+
 </script>
 
 <script>
