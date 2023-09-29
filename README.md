@@ -8,8 +8,3 @@ npm install
 npm run serve
 ```
 
-### LocalHost
-```
-https://localhost:8080
-```
-
