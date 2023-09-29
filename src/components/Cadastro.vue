@@ -10,12 +10,12 @@ import { EllipsisVerticalIcon } from "@heroicons/vue/24/outline"
 export default {
    data: () => ({
       form: {
-         nome: '',
-         email: '',
-         telefone: '',
-         cpf: '',
-         curso: '',
-         senha: '',
+         nome: 'Guilherme',
+         email: 'guilhermegilioli@gmail.com',
+         telefone: '54 999741188',
+         cpf: '85657895236',
+         curso: 'Ciências da Computação',
+         senha: 'segredo123',
       },
       avançar: false,
       exibir: false,
