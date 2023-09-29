@@ -17,6 +17,7 @@ import Tabs from './components/Tabs.vue'
 import Cadastro from './components/Cadastro.vue'
 import Gpu from './components/Gpu.vue'
 
+
 const routes = [
    {
       path: '/',
