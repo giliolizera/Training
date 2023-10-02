@@ -31,7 +31,7 @@
             </button>
             <div class="flex justify-end">
                <router-link to="/gpu">
-                  <button class="dark:bg-slate-900 bg:gray-200 dark:text-gray-100 mt-3 font-medium py-2 px-5 mb-2 rounded-xl">
+                  <button class="dark:bg-slate-900 bg-gray-200 text-black dark:text-gray-100 mt-3 font-medium py-2 px-5 mb-2 rounded-xl">
                      GPU
                   </button>
                </router-link>

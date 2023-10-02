@@ -8,7 +8,7 @@
    <div class="h-screen text-slate-800 bg-gray-100 rounded dark:bg-slate-800 dark:text-white">
       <div class="flex justify-start">
          <router-link to="/radio">
-            <button class="dark:bg-slate-900 bg:gray-200 dark:text-gray-100 ml-3 mt-3 font-medium py-2 px-5 mb-2 rounded-xl">
+            <button class="dark:bg-slate-900 bg-gray-200 dark:text-gray-100 ml-3 mt-3 font-medium py-2 px-5 mb-2 rounded-xl">
                Voltar para Radio
             </button>
          </router-link>
