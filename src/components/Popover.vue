@@ -58,7 +58,6 @@ export default {
       {
         name: 'Insights',
         description: 'Measure actions your users take',
-        href: '##',
         icon: `
       <svg
         width="48"
@@ -94,7 +93,6 @@ export default {
       {
         name: 'Automations',
         description: 'Create your own targeted content',
-        href: '##',
         icon: `
       <svg
         width="48"
@@ -122,7 +120,6 @@ export default {
       {
         name: 'Reports',
         description: 'Keep track of your growth',
-        href: '##',
         icon: `
       <svg
         width="48"

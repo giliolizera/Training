@@ -74,7 +74,7 @@
           { id: 7, name: 'Arlene Mccoy',},
           { id: 8, name: 'Devon Webb',},
           { id: 9, name: 'Zolein Fretçer',},
-          { id: 10, name: 'Hellen Schmidt',},
+          { id: 10, name: 'Gina Whisley',},
           { id: 11, name: 'Juarez Roberts'},
           { id: 12, name: 'Ronald Richards'},
           { id: 13, name: 'Suelen Bridger'},
