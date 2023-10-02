@@ -81,8 +81,7 @@
          <p>Dark Mode</p>
          <Switch class="mt-1" />
       </div>
-
-      <div class="grid grid-cols-1 gap-4 p-2 pt-8 pl-2.5 text-center lg:grid-cols-3 md:grid-cols-3">
+      <div class="grid grid-cols-1 gap-4 p-2 pl-2.5 text-center lg:grid-cols-3 md:grid-cols-3">
          <div class="col-span-1 mt-4 text-lg font-medium">
             Junte-se conosco e descubra as vantagens em utilizar o Traning para gerenciar seus negócios!
          </div>
