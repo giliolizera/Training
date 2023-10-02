@@ -48,35 +48,35 @@ export default {
    data: () => ({
       plans: [
          {
-            name: 'Intel Core i7 3770K 3.2GHz',
+            name: 'Intel Core i5 3470 3.2GHz',
+            ram: '8GB',
+            cpus: '4/4 CPU',
+            disk: '1TB HDD',
+         },
+         {
+            name: 'Intel Core i7 3770K 3.4GHz',
             ram: '8GB',
             cpus: '4/8 CPU',
             disk: '240GB SSD',
          },
          {
-            name: 'AMD Ryzen 5 5600G 3.4GHz',
+            name: 'AMD Ryzen 5 5600G 3.9GHz',
             ram: '16GB',
             cpus: '6/12 CPU',
             disk: '480GB SSD',
          },
          {
-            name: 'AMD Ryzen 7 5700X 3.8GHz',
+            name: 'AMD Ryzen 7 5700X 4.7GHz',
             ram: '32GB',
             cpus: '8/16 CPU',
             disk: '1TB SSD',
          },
          {
-            name: 'AMD Ryzen 9 5950X 4.6GHz',
+            name: 'AMD Ryzen 9 5950X 5.3GHz',
             ram: '64GB',
             cpus: '12/24 CPU',
             disk: '2TB SSD',
          },
-         {
-            name: 'Intel Core i9 13900KS 5.0GHz',
-            ram: '128GB',
-            cpus: '20/40 CPU',
-            disk: '4TB SSD',
-         }
       ],
       active: -1,
    }),

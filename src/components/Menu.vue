@@ -23,39 +23,31 @@
          <div v-if="exibir" class="rounded-lg">
             <ul
                class="absolute right-0 mt-2 w-48 md:w-56 lg:w-56 origin-top-right rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none px-1 py-1 bg-white">
-               <button @click="exibir = false, edit = true" class="w-full inline-flex px-3 py-1.5 mt-0.5 hover:bg-slate-500 text-base rounded-md text-black">
+               <button @click="exibir = false" class="w-full inline-flex px-3 py-1.5 mt-0.5 hover:bg-slate-500 text-base rounded-md text-black">
                   <PencilIcon class="mt-0.5 text-gray-600 mr-2 h-5 w-5" />
                   Edit
                </button>
-               <button @click="exibir = false, duplicate = true" class="w-full inline-flex px-3 py-1.5 hover:bg-slate-500 text-base rounded-md text-black">
+               <button @click="exibir = false" class="w-full inline-flex px-3 py-1.5 hover:bg-slate-500 text-base rounded-md text-black">
                   <DocumentDuplicateIcon class="mt-0.5 text-gray-600 mr-2 h-5 w-5" />
                   Duplicate
                </button>
                <li class="px-1 py-1 divide-y divide-gray-800"></li>
-               <button @click="exibir = false, archive = true" class="w-full inline-flex px-3 py-1.5 hover:bg-slate-500 text-base rounded-md text-black">
+               <button @click="exibir = false" class="w-full inline-flex px-3 py-1.5 hover:bg-slate-500 text-base rounded-md text-black">
                   <ArchiveBoxIcon class="mt-0.5 text-gray-600 mr-2 h-5 w-5" />
                   Archive
                </button>
-               <button @click="exibir = false, move = true" class="w-full inline-flex px-3 py-1.5 hover:bg-slate-500 text-base rounded-md text-black">
+               <button @click="exibir = false" class="w-full inline-flex px-3 py-1.5 hover:bg-slate-500 text-base rounded-md text-black">
                   <ArrowTopRightOnSquareIcon class="mt-0.5 text-gray-600 mr-2 h-5 w-5" />
                   Move
                </button>
                <li class="px-1 py-1 divide-y divide-gray-800"></li>
-               <button @click="exibir = false, delet = true" class="w-full inline-flex px-3 pt-1.5 pb-1.5 mb-0 hover:bg-slate-500 text-base rounded-md text-black">
+               <button @click="exibir = false" class="w-full inline-flex px-3 pt-1.5 pb-1.5 mb-0 hover:bg-slate-500 text-base rounded-md text-black">
                   <TrashIcon class="mt-0.5 text-gray-600 mr-2 h-5 w-5" />
                   Delete
                </button>
             </ul>
          </div>
          </TransitionGroup>
-         <div class="pt-64">
-            <div v-if="edit" class="">
-               <div v-if="exibir === false">
-                  <input v-model="nome" type="text" class="w-full rounded-md px-3 py-1.5 mt-0.5 bg-slate-700/50 text-base" placeholder="Edit"/>
-               </div>
-               <div v-if="nome != 'Guilherme' ? exibir === true : exibir === false"/>
-            </div>
-         </div>
       </div>
    </div>
 </template>
@@ -65,12 +57,6 @@
 export default {
    data: () => ({
       exibir: true,
-      edit: false,
-      duplicate: false,
-      archive: false,
-      move: false,
-      delet: false,
-      nome: "Guilherme",
    }),
    components: {
       Upside, UpSideMenu
