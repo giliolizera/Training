@@ -1,67 +1,67 @@
-<script setup>
-document.title = "Cadastro - Training"
+<script>
+   import { EyeIcon, EyeSlashIcon } from "@heroicons/vue/24/outline"
+   import Switch from '../components/Switch.vue'
+   import { EllipsisVerticalIcon } from "@heroicons/vue/24/outline"
+
+   export default {
+      data: () => ({
+         form: {
+            nome: 'Guilherme',
+            email: 'guilhermegilioli@gmail.com',
+            telefone: '54 999741188',
+            cpf: '85657895236',
+            curso: 'Ciências da Computação',
+            senha: 'segredo123',
+            observation: 'I don`t know what to say, and what to do, I`m just a simple guy, who wants to learn more about the world, and about the people who lives in it.',
+         },
+         avançar: false,
+         exibir: false,
+         typePassword: true,
+      }),
+      methods: {
+         validar() {
+            if (this.form.nome != '' && this.form.email.length > 10 && this.form.telefone.length > 13 && this.form.cpf.length > 13 && this.form.senha.length > 5) {
+               this.avançar = true
+            }
+            else {
+               this.avançar = false
+            }
+         },
+         trocarRota() {
+            if (this.avançar) {
+               this.$router.push('/disclosure')
+            }
+            else {
+               if (this.form.nome === '' && this.form.email.length < 10 && this.form.telefone.length < 13 && this.form.cpf.length < 13 && this.form.senha.length < 5) {
+                  alert('Preencha todos os campos')
+               }
+               else if (this.form.nome === '') {
+                  alert('Preencha o campo nome')
+               }
+               else if (this.form.email.length < 10) {
+                  alert('Preencha o campo e-mail corretamente')
+               }
+               else if (this.form.telefone.length < 13) {
+                  alert('Preencha o campo telefone corretamente')
+               }
+               else if (this.form.cpf.length < 13) {
+                  alert('Preencha o campo cpf corretamente')
+               }
+               else if (this.form.senha.length < 5) {
+                  alert('A senha deve conter no mínimo 6 caracteres')
+               }
+            }
+         },
+      },
+      components: {
+         Switch, EllipsisVerticalIcon, EyeIcon, EyeSlashIcon
+      }
+   }
 
 </script>
 
-<script>
-import { EyeIcon, EyeSlashIcon } from "@heroicons/vue/24/outline"
-import Switch from '../components/Switch.vue'
-import { EllipsisVerticalIcon } from "@heroicons/vue/24/outline"
-
-export default {
-   data: () => ({
-      form: {
-         nome: 'Guilherme',
-         email: 'guilhermegilioli@gmail.com',
-         telefone: '54 999741188',
-         cpf: '85657895236',
-         curso: 'Ciências da Computação',
-         senha: 'segredo123',
-      },
-      avançar: false,
-      exibir: false,
-      typePassword: true,
-   }),
-   methods: {
-      validar() {
-         if (this.form.nome != '' && this.form.email.length > 10 && this.form.telefone.length > 13 && this.form.cpf.length > 13 && this.form.senha.length > 5) {
-            this.avançar = true
-         }
-         else {
-            this.avançar = false
-         }
-      },
-      trocarRota() {
-         if (this.avançar) {
-            this.$router.push('/disclosure')
-         }
-         else {
-            if (this.form.nome === '' && this.form.email.length < 10 && this.form.telefone.length < 13 && this.form.cpf.length < 13 && this.form.senha.length < 5) {
-               alert('Preencha todos os campos')
-            }
-            else if (this.form.nome === '') {
-               alert('Preencha o campo nome')
-            }
-            else if (this.form.email.length < 10) {
-               alert('Preencha o campo e-mail corretamente')
-            }
-            else if (this.form.telefone.length < 13) {
-               alert('Preencha o campo telefone corretamente')
-            }
-            else if (this.form.cpf.length < 13) {
-               alert('Preencha o campo cpf corretamente')
-            }
-            else if (this.form.senha.length < 5) {
-               alert('A senha deve conter no mínimo 6 caracteres')
-            }
-         }
-      },
-   },
-   components: {
-      Switch, EllipsisVerticalIcon, EyeIcon, EyeSlashIcon
-   }
-}
-
+<script setup>
+   document.title = "Cadastro - Training"
 </script>
                      
 <template>
@@ -139,6 +139,14 @@ export default {
                      <EyeSlashIcon v-if="!typePassword" class="h-5 w-5 text-neutral-500" />
                   </button>
                </div>
+            </div>
+            <div class="lg:col-span-2">
+               <div class="text-sm font-medium flex pl-1 mt-2">
+                  Observação
+               </div>
+               <textarea type="text"
+                  class="w-full dark:text-gray-200 dark:border-blue-600 border-black border dark:bg-slate-700 bg-white rounded-md p-2 mt-1"
+                  v-model="form.observation"></textarea>
             </div>
             <div class="flex justify-end lg:col-span-2">
                <div>
