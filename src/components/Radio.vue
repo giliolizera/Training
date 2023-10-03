@@ -5,7 +5,7 @@
    <div class="lg:hidden">
       <UpSideMenu/>
    </div>
-   <div class="h-screen text-slate-800 bg-gray-100 rounded dark:bg-slate-800 dark:text-white">
+   <div class="text-slate-800 bg-gray-100 rounded dark:bg-slate-800 dark:text-white">
       <div class="mx-auto w-full max-w-md py-8">
          <div class="mx-auto w-full grid rounded-md">
             <button v-for="(plan, index) in plans" :key="index" @click="active = plan.name">
@@ -22,16 +22,18 @@
                   <ul>
                      <li
                         :class="[active === plan.name ? 'static text-left text-sm text-gray' : 'static text-left text-sm text-gray-600']">
-                        {{ plan.ram }} {{ plan.cpus }}
+                        {{ plan.ram }} RAM
+                        <span aria-hidden="true"> &middot; </span>                        
+                        {{ plan.cpus }}
                         <span aria-hidden="true"> &middot; </span>
-                        {{ plan.disk }}
+                        {{ plan.price }} R$
                      </li>
                   </ul>
                </div>
             </button>
             <div class="flex justify-end">
                <router-link to="/gpu">
-                  <button class="dark:bg-slate-900 bg-gray-200 text-black dark:text-gray-100 mt-3 font-medium py-2 px-5 mb-2 rounded-xl">
+                  <button class="dark:bg-slate-900 bg-gray-200 text-black dark:text-gray-100 mt-3 font-medium py-2 px-5 rounded-xl">
                      GPU
                   </button>
                </router-link>
@@ -48,35 +50,41 @@ export default {
    data: () => ({
       plans: [
          {
-            name: 'Intel Core i5 3470 3.2GHz',
+            name: 'Intel Core i5 3470 3.6GHz',
             ram: '8GB',
             cpus: '4/4 CPU',
-            disk: '1TB HDD',
+            price: '139,99',
          },
          {
-            name: 'Intel Core i7 3770K 3.4GHz',
+            name: 'Intel Core i7 3770K 3.9GHz',
             ram: '8GB',
             cpus: '4/8 CPU',
-            disk: '240GB SSD',
+            price: '269,99',
          },
          {
-            name: 'AMD Ryzen 5 5600G 3.9GHz',
+            name: 'AMD Ryzen 5 5600G 4.3GHz',
             ram: '16GB',
             cpus: '6/12 CPU',
-            disk: '480GB SSD',
+            price: '899,99',
          },
          {
             name: 'AMD Ryzen 7 5700X 4.7GHz',
             ram: '32GB',
             cpus: '8/16 CPU',
-            disk: '1TB SSD',
+            price: '1249,99',
          },
          {
-            name: 'AMD Ryzen 9 5950X 5.3GHz',
+            name: 'AMD Ryzen 9 5950X 4.9GHz',
             ram: '64GB',
-            cpus: '12/24 CPU',
-            disk: '2TB SSD',
+            cpus: '16/32 CPU',
+            price: '3299,99',
          },
+         {
+            name: 'Intel Core i9 13900KS 6.0GHz',
+            ram: '64GB',
+            cpus: '24/32 CPU',
+            price: '4999,99',
+         }
       ],
       active: -1,
    }),

@@ -5,7 +5,7 @@
    <div class="lg:hidden">
       <UpSideMenu/>
    </div>
-   <div class="h-screen text-slate-800 bg-gray-100 rounded dark:bg-slate-800 dark:text-white">
+   <div class="text-slate-800 bg-gray-100 rounded dark:bg-slate-800 dark:text-white">
       <div class="flex justify-start">
          <router-link to="/radio">
             <button class="dark:bg-slate-900 bg-gray-200 dark:text-gray-100 ml-3 mt-3 font-medium py-2 px-5 mb-2 rounded-xl">
@@ -13,7 +13,7 @@
             </button>
          </router-link>
       </div>
-      <div class="mx-auto w-full max-w-md py-2">
+      <div class="mx-auto w-full max-w-md">
          <div class="mx-auto w-full grid rounded-md">
             <button v-for="(plan, index) in plans" :key="index" @click="active = plan.name">
                <div
@@ -48,29 +48,34 @@ export default {
    data: () => ({
       plans: [
          {
-            name: 'AMD RX 580',
+            name: 'AMD Radeon RX 580',
             vram: '4GB',
             price: '399,00',
          },
          {
-            name: 'Nvidia GTX 1650',
-            vram: '4GB',
-            price: '799,00',
+            name: 'Asus Nvidia GTX 1060',
+            vram: '6GB',
+            price: '499,00',
          },
          {
-            name: 'AMD RX 6600',
+            name: 'AMD Challenger RX 6600',
             vram: '8GB',
             price: '1199,00',
          },
          {
-            name: 'Nvidia RTX 4060',
+            name: 'Gigabyte Nvidia RTX 4060 Ti',
             vram: '8GB',
-            price: '1959,00',
+            price: '2499,00',
          },
          {
-            name: 'AMD RX 7700',
-            vram: '8GB',
-            price: '3249,00',
+            name: 'Saphire AMD RX 7800XT',
+            vram: '12GB',
+            price: '3799,00',
+         },
+         {
+            name: 'Rog Strix Nvidia RTX 4090',
+            vram: '24GB',
+            price: '10.999,00',
          }
       ],
       active: -1,
