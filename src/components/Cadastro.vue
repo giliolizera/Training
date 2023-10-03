@@ -12,7 +12,7 @@
             cpf: '85657895236',
             curso: 'Ciências da Computação',
             senha: 'segredo123',
-            observation: 'I don`t know what to say, and what to do, I`m just a simple guy, who wants to learn more about the world, and about the people who lives in it.',
+            observation: 'I don`t know what to say, and what to do. I`m just a simple guy, who wants to learn more about the world, and about the people who lives in it.',
          },
          avançar: false,
          exibir: false,
