@@ -73,9 +73,9 @@ export default {
             price: '3799,00',
          },
          {
-            name: 'Rog Strix Nvidia RTX 4090',
-            vram: '24GB',
-            price: '10.999,00',
+            name: 'Rog Strix Nvidia RTX 4080',
+            vram: '16GB',
+            price: '7299,00',
          }
       ],
       active: -1,
