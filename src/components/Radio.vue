@@ -54,25 +54,25 @@ export default {
       },
       plans: [
          {
-            name: 'Intel Core i5 3470 3.6GHz',
+            name: 'Intel Core i5 3470 3.60GHz',
             ram: '8GB',
             cpus: '4/4 CPU',
             price: '139,99',
          },
          {
-            name: 'Intel Core i7 3770K 3.9GHz',
+            name: 'Intel Core i7 4770K 3.90GHz',
             ram: '8GB',
             cpus: '4/8 CPU',
             price: '269,99',
          },
          {
-            name: 'AMD Ryzen 5 5600G 4.3GHz',
+            name: 'AMD Ryzen 5 5600G 4.40GHz',
             ram: '16GB',
             cpus: '6/12 CPU',
             price: '899,99',
          },
          {
-            name: 'AMD Ryzen 7 5700X 4.7GHz',
+            name: 'AMD Ryzen 7 5700X 4.60GHz',
             ram: '32GB',
             cpus: '8/16 CPU',
             price: '1249,99',
