@@ -5,57 +5,59 @@
    <div class="lg:hidden">
       <UpSideMenu/>
    </div>
-  <div class="h-screen bg-gray-100 rounded dark:bg-slate-800 py-16">
-    <div class="mx-auto w-72 max-w-md rounded-md">
-      <div class="inline-flex bg-white text-black w-72 rounded-md">
-        <input class="w-full bg-white pl-3 px-1 py-1 rounded-md focus:outline-none text-left" type="text"
-         v-model="query"
-         @keydown.prevent.esc="escape()"
-         @keydown.prevent.down="baixo()" 
-         @keydown.prevent.up="cima()" 
-         @keydown.prevent.enter="enter()" 
-         @keydown.prevent.backspace="backspace()" 
-         />
-        <button @click="exibir = !exibir"
-         @keydown.prevent.esc="escape()" 
-         @keydown.prevent.down="baixo()" 
-         @keydown.prevent.up="cima()" 
-         @keydown.prevent.enter="enter()"
-         @keydown.prevent.backspace="backspace()" 
-         class="px-1 py-1 rounded-md focus:outline-none" type="text"
-         >
-          <ChevronUpDownIcon class="h-5 w-5 text-gray-500"/> 
-        </button>
-      </div>
-      <div class="mt-2 bg-white text-black grid rounded-md">
-        <ul v-if="!exibir" class="pt-0.5 pb-0.5">
-          <button @mouseenter="active = index " 
-          @mouseleave="active = -1" 
-          @click="selected = person.name, query = person.name, exibir=true"
-          :class="[active === index
-          ? 'bg-slate-400 rounded-md'
-          : '', 'inline-flex py-1.5 w-full']" 
-          v-for="(person,index) in filtredPeople" :key="index"
-          >
-          <div v-if="selected === person.name" class="pl-2 inline-flex">
-            <CheckIcon class="h-5 w-5 mt-0.5 text-blue-500"/>
-            <div class="pl-3">
-              {{ person.name }} 
-            </div>
-          </div>
-          <div v-if="selected !== person.name" class="pl-10">
-            {{ person.name }} 
-          </div>
-          </button>
-        </ul>
-        <ul v-if="this.filtredPeopleLenght === 0">
-          <div class="pl-10 p-1 pb-2 rounded-md">
-            Nothing Found.
-          </div>
-        </ul>
-      </div>
-    </div>
-  </div>
+   <div class="h-screen bg-gray-100 rounded dark:bg-slate-800">
+     <div class="bg-gray-100 rounded dark:bg-slate-800 py-16">
+       <div class="mx-auto w-72 max-w-md rounded-md">
+         <div class="inline-flex bg-white text-black w-72 rounded-md">
+           <input class="w-full bg-white pl-3 px-1 py-1 rounded-md focus:outline-none text-left" type="text"
+            v-model="query"
+            @keydown.prevent.esc="escape()"
+            @keydown.prevent.down="baixo()" 
+            @keydown.prevent.up="cima()" 
+            @keydown.prevent.enter="enter()" 
+            @keydown.prevent.backspace="backspace()" 
+            />
+           <button @click="exibir = !exibir"
+            @keydown.prevent.esc="escape()" 
+            @keydown.prevent.down="baixo()" 
+            @keydown.prevent.up="cima()" 
+            @keydown.prevent.enter="enter()"
+            @keydown.prevent.backspace="backspace()" 
+            class="px-1 py-1 rounded-md focus:outline-none" type="text"
+            >
+             <ChevronUpDownIcon class="h-5 w-5 text-gray-500"/> 
+           </button>
+         </div>
+         <div class="mt-2 bg-white text-black grid rounded-md">
+           <ul v-if="!exibir" class="pt-0.5 pb-0.5">
+             <button @mouseenter="active = index " 
+             @mouseleave="active = -1" 
+             @click="selected = person.name, query = person.name, exibir=true"
+             :class="[active === index
+             ? 'bg-slate-400 rounded-md'
+             : '', 'inline-flex py-1.5 w-full']" 
+             v-for="(person,index) in filtredPeople" :key="index"
+             >
+             <div v-if="selected === person.name" class="pl-2 inline-flex">
+               <CheckIcon class="h-5 w-5 mt-0.5 text-blue-500"/>
+               <div class="pl-3">
+                 {{ person.name }} 
+               </div>
+             </div>
+             <div v-if="selected !== person.name" class="pl-10">
+               {{ person.name }} 
+             </div>
+             </button>
+           </ul>
+           <ul v-if="this.filtredPeopleLenght === 0">
+             <div class="pl-10 p-1 pb-2 rounded-md">
+               Nothing Found.
+             </div>
+           </ul>
+         </div>
+       </div>
+     </div>
+   </div>
 </template>
 
 <script>
@@ -97,7 +99,7 @@
           { id: 30, name: 'Severo Snape' },
           { id: 31, name: 'Axel Rhoades' },
           { id: 32, name: 'Bob Callistenic' },
-          { id: 33, name: 'Lupo Queli Young' },
+          { id: 33, name: 'Lupin Queli RJ' },
         ],
         exibir: false,
         selected: 'Durward Reynolds',
