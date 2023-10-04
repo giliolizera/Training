@@ -12,7 +12,7 @@
             cpf: '85657895236',
             curso: 'Ciências da Computação',
             senha: 'segredo123',
-            observation: 'Qual é o motivo da gente estar vivo? Será o mesmo que me mantém acordado até as 04:22am?',
+            observation: 'Qual é o motivo da gente estar vivo? Será o mesmo que me mantém acordado até as 04:20am?',
          },
          avançar: false,
          exibir: false,
