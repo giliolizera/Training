@@ -48,6 +48,10 @@
 
 export default {
    data: () => ({
+      props:{
+         title: 'Radio',
+         likes: String,
+      },
       plans: [
          {
             name: 'Intel Core i5 3470 3.6GHz',

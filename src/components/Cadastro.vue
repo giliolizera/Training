@@ -12,7 +12,7 @@
             cpf: '85657895236',
             curso: 'Ciências da Computação',
             senha: 'segredo123',
-            observation: 'I don`t know what to say, and what to do, I`m just a simple guy, who wants to learn more about the world, and about the people who lives in it.',
+            observation: 'Qual é o motivo da gente estar vivo? Será o mesmo que me mantém acordado até as 04:22am?',
          },
          avançar: false,
          exibir: false,
