@@ -32,11 +32,12 @@
                </div>
             </button>
             <div class="flex justify-end">
-               <router-link to="/gpu">
-                  <button class="dark:bg-slate-900 bg-gray-200 text-black dark:text-gray-100 mt-3 font-medium py-2 px-5 rounded-xl">
+                  <button @click="exibir = true" class="dark:bg-slate-900 bg-gray-200 text-black dark:text-gray-100 mt-3 font-medium py-2 px-5 rounded-xl">
                      GPU
                   </button>
-               </router-link>
+            </div>
+            <div v-if="exibir === true">
+               <Gpu />
             </div>
          </div>
       </div>
@@ -91,6 +92,7 @@ export default {
          }
       ],
       active: -1,
+      exibir: false,
    }),
    components: {
       Upside, UpSideMenu
@@ -103,5 +105,6 @@ export default {
 import { CheckCircleIcon } from "@heroicons/vue/24/outline";
 import Upside from "./Upside.vue";
 import UpSideMenu from "./UpSideMenu.vue";
+import Gpu from "./Gpu.vue";
 document.title="Radio - Training"
 </script>
