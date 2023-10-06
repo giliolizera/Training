@@ -6,7 +6,7 @@
             Voltar para Radio
          </button>
       </div>
-      <div v-if="exibir">
+      <div>
          <div class="mx-auto w-full max-w-md">
             <div class="mx-auto w-full grid rounded-md">
                <button v-for="(plan, index) in plans" :key="index" @click="active = plan.name">
@@ -39,6 +39,9 @@
 <script>
 export default {
    data: () => ({
+      props:{
+         exibir: Boolean,
+      },
       plans: [
          {
             name: 'AMD Radeon RX 580',
