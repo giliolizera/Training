@@ -76,7 +76,9 @@
             <EllipsisVerticalIcon class="h-6 w-6 mr-2" />
          </button>
       </div>
-
+      <div>
+         <!-- apenas um teste -->
+      </div>
       <div class="flex justify-end bg-white  dark:bg-slate-900 space-x-2" v-if="exibir">
          <p>Dark Mode</p>
          <Switch class="mt-1" />
