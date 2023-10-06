@@ -1,5 +1,2 @@
-### Fuck this shit about 17/05/2023
-### This project end in 29/09/2023
-### And fuck you everyone
-
+It´s sad when you continued a thing who you don´t think you´re good, people see you not it, and... FUCK
 
