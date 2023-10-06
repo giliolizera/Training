@@ -47,30 +47,35 @@
 export default {
    data: () => ({
       plans: [
-         {
-            name: 'AMD RX 580',
+      {
+            name: 'AMD Radeon RX 580',
             vram: '4GB',
             price: '399,00',
          },
          {
-            name: 'Nvidia GTX 1650',
-            vram: '4GB',
-            price: '799,00',
+            name: 'Asus Nvidia GTX 1060',
+            vram: '6GB',
+            price: '499,00',
          },
          {
-            name: 'AMD RX 6600',
+            name: 'AMD Challenger RX 6600',
             vram: '8GB',
             price: '1199,00',
          },
          {
-            name: 'Nvidia RTX 4060',
+            name: 'Gigabyte Nvidia RTX 4060 Ti',
             vram: '8GB',
-            price: '1959,00',
+            price: '2499,00',
          },
          {
-            name: 'AMD RX 7700',
-            vram: '8GB',
-            price: '3249,00',
+            name: 'Saphire AMD RX 7800XT',
+            vram: '12GB',
+            price: '3799,00',
+         },
+         {
+            name: 'Rog Strix Nvidia RTX 4080',
+            vram: '16GB',
+            price: '7299,00',
          }
       ],
       active: -1,

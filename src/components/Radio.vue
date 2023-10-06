@@ -47,35 +47,41 @@
 export default {
    data: () => ({
       plans: [
+      {
+            name: 'Intel Core i5 3470 3.60GHz',
+            ram: '8GB',
+            cpus: '4/4 CPU',
+            price: '139,99',
+         },
          {
-            name: 'Intel Core i7 3770K 3.2GHz',
+            name: 'Intel Core i7 4770K 3.90GHz',
             ram: '8GB',
             cpus: '4/8 CPU',
-            disk: '240GB SSD',
+            price: '269,99',
          },
          {
-            name: 'AMD Ryzen 5 5600G 3.4GHz',
+            name: 'AMD Ryzen 5 5600G 4.40GHz',
             ram: '16GB',
             cpus: '6/12 CPU',
-            disk: '480GB SSD',
+            price: '899,99',
          },
          {
-            name: 'AMD Ryzen 7 5700X 3.8GHz',
+            name: 'AMD Ryzen 7 5700X 4.60GHz',
             ram: '32GB',
             cpus: '8/16 CPU',
-            disk: '1TB SSD',
+            price: '1249,99',
          },
          {
-            name: 'AMD Ryzen 9 5950X 4.6GHz',
+            name: 'AMD Ryzen 9 5950X 4.9GHz',
             ram: '64GB',
-            cpus: '12/24 CPU',
-            disk: '2TB SSD',
+            cpus: '16/32 CPU',
+            price: '3299,99',
          },
          {
-            name: 'Intel Core i9 13900KS 5.0GHz',
-            ram: '128GB',
-            cpus: '20/40 CPU',
-            disk: '4TB SSD',
+            name: 'Intel Core i9 13900KS 6.0GHz',
+            ram: '64GB',
+            cpus: '24/32 CPU',
+            price: '4999,99',
          }
       ],
       active: -1,
