@@ -6,22 +6,22 @@
     <UpSideMenu />
   </div>
   <div
-    class="h-screen text-slate-800 bg-gray-100 rounded dark:bg-slate-800 dark:text-white"
+    class="h-screen text-slate-800 bg-gray-100 rounded dark:bg-slate-800 dark:text-white py-8"
   >
     <div
-      class="grid grid-cols-1 gap-4 p-2 pl-2.5 text-center lg:grid-cols-3 md:grid-cols-"
+      class="grid grid-cols-1 gap-4 p-2 pl-2.5 text-center lg:grid-cols-3 md:grid-cols-2"
     >
 
       <div class="col-span- grid-cols-1">
-        <h3 class="py-4">CPU</h3>
+        <h3>CPU</h3>
         <Cpu />
       </div>
       <div class="col-span- grid-cols-2">
-        <h3 class="py-4">GPU</h3>
+        <h3>GPU</h3>
         <Gpu />
       </div>
       <div class="col-span- grid-cols-3">
-        <h3 class="py-4">RAM + SSD</h3>
+        <h3>RAM + SSD</h3>
         <Memory />
       </div>
       <div class="col-span- grid-cols-1">
