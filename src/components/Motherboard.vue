@@ -34,36 +34,36 @@
  export default {
     data: () => ({
        plans: [
-       {
-             name: 'Fonte Duex 350W',
-             specs: 'Sem PFC',
-             price: '99,00',
-          },
-          {
-             name: 'Fonte Mancer 500W',
-             specs: 'PFC Ativo',
-             price: '199,00',
-          },
-          {
-            name: 'Fonte Gamemax 750W',
-            specs: 'PFC Ativo + 80 Plus White',
-            price: '309,00',
-          },
-          {
-             name: 'Fonte Rise Mode 600W',
-             specs: 'PFC Ativo + 80 Plus Bronze',
-             price: '349,00',
-          },
-          {
-             name: 'Fonte Corsair 750W',
-             specs: 'PFC Ativo + 80 Plus Gold',
-             price: '899,00',
-          },
-          {
-             name: 'Fonte Superframe 1000W',
-             specs: 'PFC Ativo + 80 Plus Platinum',
-             price: '1199,00',
-          },
+        {
+            name: 'H310M Asus',
+            specs: 'Socket LGA1155',
+            price: '199,00',
+        },
+        {
+            name: 'A520M Gigabyte',
+            specs: 'Socket AM4',
+            price: '399,00',
+        },
+        {
+            name: 'H510M Asus',
+            specs: 'Socket LGA1200',
+            price: '399,00',
+        },
+        {
+            name: 'H610M Mancer',
+            specs: 'Socket LGA1250',
+            price: '499,00',
+        },
+        {
+            name: 'B550M Aorus Elite',
+            specs: 'Socket AM4',
+            price: '899,00',
+        },
+        {
+            name: 'X570M Asus',
+            specs: 'Socket AM4',
+            price: '1299,00',
+        },
        ],
        active: -1,
     }),

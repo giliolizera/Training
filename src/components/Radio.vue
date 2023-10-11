@@ -49,6 +49,7 @@
           </button>  
          </div>
       </div>
+
       <div class="col-span- grid-cols-2">
         <Gpu />
       </div>
@@ -58,6 +59,10 @@
       <div class="col-span- grid-cols-1">
         <Power />
       </div>  
+      <div class="col-span- grid-cols-1">
+        <Motherboard />
+      </div>  
+
    </div>
 </div>
 </template>
@@ -119,5 +124,6 @@ import UpSideMenu from "./UpSideMenu.vue";
 import Gpu from "./Gpu.vue";
 import Memory from "./Memory.vue";
 import Power from "./Power.vue";
+import Motherboard from "./Motherboard.vue";
 document.title = "Radio - Training";
 </script>
