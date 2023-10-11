@@ -15,16 +15,16 @@
          <Switch class="mt-1" />
       </div>
       <div class="text-center justify-center max-w-md mx-auto">
-         <div class="text-center font-medium text-xl mt-6">
-            O objetivo deste projeto é apenas treinar para aprender a usar o TailwindCSS e o Vue.JS
-         </div>
-         <div class="inline-flex text-center justify-center p-10">
+         <div class="inline-flex text-center justify-center p-10 py-4">
             <div class="">
-               <div class="text-center font-medium mt-6">
+               <div class="text-center font-medium text-xl mt-6">
+                  O objetivo deste projeto é apenas treinar para aprender a usar o TailwindCSS e o Vue.JS
+               </div>
+               <div class="text-center font-medium mt-10">
                   Para entrar anonimamente, <br> clique no botão abaixo
                </div>
                <div class="flex justify-center mt-2">
-                  <router-link to="/disclosure">
+                  <router-link to="/radio">
                      <button
                         class="dark:bg-gray-200 dark:hover:bg-gray-300 hover:bg-sky-600 bg-sky-800 text-white dark:text-gray-900 text-sm font-medium py-2 px-7 rounded">
                         ENTRAR
@@ -37,14 +37,14 @@
                <div class="flex justify-center mt-2">
                   <router-link to="/cadastro">
                      <button
-                        class="dark:bg-gray-200 dark:hover:bg-gray-300 hover:bg-sky-600 bg-sky-800 text-white dark:text-gray-900 text-sm font-medium py-2 px-5 rounded">
-                        CADASTRAR
-                     </button>
+                     class="dark:bg-gray-200 dark:hover:bg-gray-300 hover:bg-sky-600 bg-sky-800 text-white dark:text-gray-900 text-sm font-medium py-2 px-5 rounded">
+                     CADASTRAR
+                  </button>
                   </router-link>
                </div>
             </div>
          </div>
-
+         
          <div class="flex justify-center text-xl mb-5 font-medium mt-10">
             Tecnologias utilizadas no projeto
          </div>
@@ -60,6 +60,10 @@
          </div>
          <Switch class="absolute bottom-0 hidden" />
       </div>
+      <!-- TODO: DARK DEIXAR ASSIM E NO LIGHT COLOCAR IMAGEM LIGHT -->
+      <!-- TODO: DEIXAR O BOTÃO DE ENTRAR E CADASTRAR MAIS BONITO -->
+      <!-- TODO: DEIXAR A IMAGEM FIXADA COMO SE FOSSE UM RODAPÉ -->
+      <img src="../assets/tailscreen.png" class="w-screen dark:opacity-10 py-10">
    </div>
 </template>
 
