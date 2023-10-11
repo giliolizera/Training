@@ -11,55 +11,17 @@
     <div
       class="grid grid-cols-1 gap-4 p-2 pl-2.5 text-center lg:grid-cols-3 md:grid-cols-"
     >
-      <div class="mx-auto w-full max-w-md py-8 col-span-1">
-        <div class="mx-auto w-full grid rounded-md">
-          <button
-            v-for="(plan, index) in plans"
-            :key="index"
-            @click="active = plan.name"
-          >
-            <div
-              :class="[
-                active === plan.name
-                  ? 'dark:bg-slate-900 bg-gray-500 ring-2 ring-white ring-opacity-60 ring-offset-2 ring-offset-slate-600 text-white'
-                  : 'bg-white text-black',
-                'mx-auto w-full max-w-md rounded-md px-5 py-4 mt-3',
-              ]"
-            >
-              <ul class="justify-between flex">
-                <li class="text-left text-sm font-medium">
-                  {{ plan.name }}
-                </li>
-                <button v-if="active === plan.name">
-                  <CheckCircleIcon
-                    class="hidden sm:block h-8 w-8 mt-1 text-black-500"
-                  />
-                </button>
-              </ul>
-              <ul>
-                <li
-                  :class="[
-                    active === plan.name
-                      ? 'static text-left text-sm text-gray'
-                      : 'static text-left text-sm text-gray-600',
-                  ]"
-                >
-                  {{ plan.ram }} {{ plan.cpus }}
-                  <span aria-hidden="true"> &middot; </span>
-                  {{ plan.price }} R$
-                </li>
-              </ul>
-            </div>
-          </button>
-        </div>
-      </div>
 
+      <div class="col-span- grid-cols-1">
+        <h3 class="py-4">CPU</h3>
+        <Cpu />
+      </div>
       <div class="col-span- grid-cols-2">
-        <h3>GPU</h3>
+        <h3 class="py-4">GPU</h3>
         <Gpu />
       </div>
       <div class="col-span- grid-cols-3">
-        <h3>RAM + SSD</h3>
+        <h3 class="py-4">RAM + SSD</h3>
         <Memory />
       </div>
       <div class="col-span- grid-cols-1">
@@ -132,6 +94,7 @@ export default {
 import { CheckCircleIcon } from "@heroicons/vue/24/outline";
 import Upside from "./Upside.vue";
 import UpSideMenu from "./UpSideMenu.vue";
+import Cpu from "./Cpu.vue";
 import Gpu from "./Gpu.vue";
 import Memory from "./Memory.vue";
 import Power from "./Power.vue";
