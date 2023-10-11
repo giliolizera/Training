@@ -5,11 +5,15 @@
   <div class="lg:hidden">
     <UpSideMenu />
   </div>
-  <div class="h-screen text-slate-800 bg-gray-100 rounded dark:bg-slate-800 dark:text-white">
-    <div class="grid grid-cols-1 gap-4 p-2 pl-2.5 text-center lg:grid-cols-3 md:grid-cols-">
-       <div class="mx-auto w-full max-w-md py-8 col-span-1">
-          <div class="mx-auto w-full grid rounded-md">
-             <button
+  <div
+    class="h-screen text-slate-800 bg-gray-100 rounded dark:bg-slate-800 dark:text-white"
+  >
+    <div
+      class="grid grid-cols-1 gap-4 p-2 pl-2.5 text-center lg:grid-cols-3 md:grid-cols-"
+    >
+      <div class="mx-auto w-full max-w-md py-8 col-span-1">
+        <div class="mx-auto w-full grid rounded-md">
+          <button
             v-for="(plan, index) in plans"
             :key="index"
             @click="active = plan.name"
@@ -36,7 +40,7 @@
                 <li
                   :class="[
                     active === plan.name
-                    ? 'static text-left text-sm text-gray'
+                      ? 'static text-left text-sm text-gray'
                       : 'static text-left text-sm text-gray-600',
                   ]"
                 >
@@ -46,8 +50,8 @@
                 </li>
               </ul>
             </div>
-          </button>  
-         </div>
+          </button>
+        </div>
       </div>
 
       <div class="col-span- grid-cols-2">
@@ -58,16 +62,15 @@
       </div>
       <div class="col-span- grid-cols-1">
         <Power />
-      </div>  
+      </div>
       <div class="col-span- grid-cols-1">
         <Motherboard />
-      </div>  
+      </div>
       <div class="col-span- grid-cols-1">
         <Gabinete />
-      </div>  
-
-   </div>
-</div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
