@@ -55,18 +55,23 @@
       </div>
 
       <div class="col-span- grid-cols-2">
+        <h3>GPU</h3>
         <Gpu />
       </div>
       <div class="col-span- grid-cols-3">
+        <h3>RAM + SSD</h3>
         <Memory />
       </div>
       <div class="col-span- grid-cols-1">
+        <h3>SOURCE</h3>
         <Power />
       </div>
       <div class="col-span- grid-cols-1">
+        <h3>MOTHERBOARD</h3>
         <Motherboard />
       </div>
       <div class="col-span- grid-cols-1">
+        <h3>CABINET</h3>
         <Gabinete />
       </div>
     </div>
