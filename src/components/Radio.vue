@@ -62,6 +62,9 @@
       <div class="col-span- grid-cols-1">
         <Motherboard />
       </div>  
+      <div class="col-span- grid-cols-1">
+        <Gabinete />
+      </div>  
 
    </div>
 </div>
@@ -125,5 +128,6 @@ import Gpu from "./Gpu.vue";
 import Memory from "./Memory.vue";
 import Power from "./Power.vue";
 import Motherboard from "./Motherboard.vue";
+import Gabinete from "./Gabinete.vue";
 document.title = "Radio - Training";
 </script>
