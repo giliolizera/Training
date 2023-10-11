@@ -35,9 +35,9 @@ export default {
    data: () => ({
       plans: [
       {
-            name: 'AMD Radeon RX 580',
+            name: 'AMD Radeon RX 570',
             vram: '4GB',
-            price: '399,00',
+            price: '299,00',
          },
          {
             name: 'Asus Nvidia GTX 1060',

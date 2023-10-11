@@ -55,6 +55,9 @@
       <div class="col-span- grid-cols-3">
         <Memory />
       </div>
+      <div class="col-span- grid-cols-1">
+        <Power />
+      </div>  
    </div>
 </div>
 </template>
@@ -115,5 +118,6 @@ import Upside from "./Upside.vue";
 import UpSideMenu from "./UpSideMenu.vue";
 import Gpu from "./Gpu.vue";
 import Memory from "./Memory.vue";
+import Power from "./Power.vue";
 document.title = "Radio - Training";
 </script>

@@ -35,27 +35,27 @@
     data: () => ({
        plans: [
        {
-             name: 'Kingston Fury Beast + Kingston A400',
-             specs: '8GB RAM + 240GB SSD',
+             name: 'Kingston DDR3 1333Mhz + Kingston A400',
+             specs: '16GB RAM + 240GB SSD',
              price: '399,00',
           },
           {
-             name: 'Rise mode DDR4 3200mhz + Adata XPG',
+             name: 'Rise mode DDR4 3200Mhz + Adata XPG',
              specs: '8GB RAM + 480GB SSD',
              price: '499,00',
           },
           {
-             name: 'Corsair Vengeance DDR4 3600mhz + Kingston A400',
+             name: 'Corsair Vengeance DDR4 3600Mhz + Kingston A400',
              specs: '16GB RAM + 960GB SSD',
              price: '899,00',
           },
           {
-             name: 'Asgard DDR4 3600mhz + Adata XPG',
+             name: 'Asgard DDR4 3600Mhz + Adata XPG',
              specs: '16GB RAM + 1TB SSD',
              price: '1299,00',
           },
           {
-             name: 'Superframe DDR4 3600mhz + WD Green NVME',
+             name: 'Superframe DDR4 3600Mhz + WD Green NVME',
              specs: '32GB RAM + 2TB SSD',
              price: '1999,00',
           },
