@@ -102,10 +102,10 @@ export default {
         price: "1249,99",
       },
       {
-        name: "AMD Ryzen 9 5950X 4.9GHz",
+        name: "Intel Core i5 13600KF 5.30GHz",
         ram: "64GB",
-        cpus: "16/32 CPU",
-        price: "3299,99",
+        cpus: "14/20 CPU",
+        price: "1999,99",
       },
       {
         name: "Intel Core i9 13900KS 6.0GHz",
