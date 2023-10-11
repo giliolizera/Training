@@ -12,7 +12,7 @@
           <div
             :class="[
               active === plan.name
-                ? 'dark:bg-slate-900 bg-gray-500 ring-2 ring-white ring-opacity-60 ring-offset-2 ring-offset-slate-600 text-white'
+                ? 'dark:bg-slate-900 bg-gray-500 ring-2 ring-white ring-opacity-60 ring-offset-2 ring-offset-slate-600 text-white relative'
                 : 'bg-white text-black',
               'mx-auto w-full max-w-md rounded-md px-5 py-4 mt-3',
             ]"
@@ -21,7 +21,7 @@
               <li class="text-left text-sm font-medium">
                 {{ plan.name }}
               </li>
-              <button v-if="active === plan.name">
+              <button v-if="active === plan.name" class="absolute flex 2xl:ml-96 xl:ml-80 lg:ml-64 md:ml-96 sm:ml-96">
                 <CheckCircleIcon
                   class="hidden sm:block h-8 w-8 mt-1 text-black-500"
                 />
