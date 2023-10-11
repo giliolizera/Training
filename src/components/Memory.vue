@@ -2,7 +2,7 @@
   <div
     class="text-slate-800 bg-gray-100 rounded dark:bg-slate-800 dark:text-white"
   >
-    <div class="mx-auto w-full max-w-md py-8">
+    <div class="mx-auto w-full max-w-md py-4">
       <div class="mx-auto w-full grid rounded-md">
         <button
           v-for="(plan, index) in plans"
@@ -52,7 +52,7 @@ export default {
   data: () => ({
     plans: [
       {
-        name: "Kingston DDR3 1333Mhz + Kingston A400",
+        name: "Kingston DDR3 + Kingston A400",
         specs: "16GB RAM + 240GB SSD",
         price: "399,00",
       },
@@ -62,7 +62,7 @@ export default {
         price: "499,00",
       },
       {
-        name: "Corsair Vengeance DDR4 3600Mhz + Kingston A400",
+        name: "Corsair Vengeance DDR4 + Kingston A400",
         specs: "16GB RAM + 960GB SSD",
         price: "899,00",
       },
@@ -72,7 +72,7 @@ export default {
         price: "1299,00",
       },
       {
-        name: "Superframe DDR4 3600Mhz + WD Green NVME",
+        name: "Superframe DDR4 3600Mhz + WD Green",
         specs: "32GB RAM + 2TB SSD",
         price: "1999,00",
       },
