@@ -51,11 +51,11 @@
          <div class="font-medium flex justify-center mt-2">
             <div class="inline-flex space-x-2">
                <img src="../assets/logo.png" class="h-7 w-7">
-               <p>Vue.JS</p>
+               <button @click="vue">Vue.JS</button>
             </div>
             <div class="inline-flex pl-4 space-x-2">
                <img src="../assets/tailwind.logo.png" class="h-7 w-7">
-               <p>TailwindCSS</p>
+               <button @click="tail">TailwindCSS</button>
             </div>
          </div>
          <Switch class="absolute bottom-0 hidden" />
@@ -94,4 +94,11 @@ export default {
 
 <script setup>
    document.title = "Home - Training"
+
+   function vue() {
+      window.open("https://vuejs.org/", "_blank")
+   }
+   function tail() {
+      window.open("https://tailwindcss.com/", "_blank")
+   }
 </script>
