@@ -31,7 +31,7 @@
          },
          trocarRota() {
             if (this.avançar) {
-               this.$router.push('/disclosure')
+               this.$router.push('/radio')
             }
             else {
                if (this.form.nome === '' && this.form.email.length < 10 && this.form.telefone.length < 13 && this.form.cpf.length < 13 && this.form.senha.length < 5) {
@@ -86,7 +86,7 @@
          <div class="col-span-1 mt-4 text-lg font-medium">
             Junte-se conosco e descubra as vantagens em utilizar o Traning para gerenciar seus negócios!
          </div>
-         <form class="col-span-2 grid lg:grid-cols-2 gap-4 pr-2 pl-2">
+         <form class="col-span-2 grid lg:grid-cols-2 gap-4 pr-6 pl-6">
             <div>
                <div class="text-sm font-medium flex pl-1 mt-2">
                   Nome
