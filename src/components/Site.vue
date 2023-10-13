@@ -12,7 +12,8 @@
       </div>
       <div v-if="exibir" class="flex justify-end bg-gray-200 dark:bg-slate-900 space-x-2">
          <p>Dark Mode</p>
-         <Switch @click="escuro = !escuro" class="mt-1" />
+         <Switch class="mt-1" />
+         <p class="text-slate-900">.</p>
       </div>
       <div class="text-center justify-center max-w-md mx-auto">
          <div class="inline-flex text-center justify-center p-10 py-4">
@@ -50,23 +51,12 @@
          </div>
          <div class="font-medium flex justify-center mt-2">
             <div class="inline-flex space-x-2">
-               <img src="../assets/logo.png" class="h-7 w-7">
-               <button @click="vue">Vue.JS</button>
-            </div>
-            <div class="inline-flex pl-4 space-x-2">
-               <img src="../assets/tailwind.logo.png" class="h-7 w-7">
-               <button @click="tail">TailwindCSS</button>
+               <img src="../assets/logo.png" @click="vue" class="w-12">
             </div>
          </div>
       </div>
-      <!-- TODO: DARK DEIXAR ASSIM E NO LIGHT COLOCAR IMAGEM LIGHT -->
-      <!-- TODO: DEIXAR O BOTÃO DE ENTRAR E CADASTRAR MAIS BONITO -->
-      <!-- TODO: DEIXAR A IMAGEM FIXADA COMO SE FOSSE UM RODAPÉ -->
-      <div v-if="escuro">
-         <img src="../assets/tailscreen.png" class="w-screen opacity-10 py-10">
-      </div>
-      <div v-if="!escuro">
-         <img src="../assets/tillll.png" class="w-screen opacity-10 py-10">
+      <div>
+         <img src="../assets/tillll.png" @click="tail" class="w-screen dark:opacity-10 py-10">
       </div>
    </div>
 </template>
@@ -96,7 +86,6 @@ export default {
    },
    data:() => ({
       exibir: false,
-      escuro: false,
    }),
 }
 </script>
