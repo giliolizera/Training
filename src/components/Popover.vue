@@ -32,7 +32,7 @@
           </a>
         </div>
         <div class="bg-gray-200 p-4">
-          <a href="##"
+          <a href="#"
             class="flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-opacity-50">
             <span class="flex items-center">
               <span class="text-sm font-medium text-gray-900">
@@ -58,6 +58,7 @@ export default {
       {
         name: 'Insights',
         description: 'Measure actions your users take',
+        href: '#',
         icon: `
       <svg
         width="48"
@@ -93,6 +94,7 @@ export default {
       {
         name: 'Automations',
         description: 'Create your own targeted content',
+        href: '#',
         icon: `
       <svg
         width="48"
@@ -120,6 +122,7 @@ export default {
       {
         name: 'Reports',
         description: 'Keep track of your growth',
+        href: '#',
         icon: `
       <svg
         width="48"

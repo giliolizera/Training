@@ -12,7 +12,7 @@
       </div>
       <div v-if="exibir" class="flex justify-end bg-gray-200 dark:bg-slate-900 space-x-2">
          <p>Dark Mode</p>
-         <Switch class="mt-1" />
+         <Switch @click="escuro = !escuro" class="mt-1" />
       </div>
       <div class="text-center justify-center max-w-md mx-auto">
          <div class="inline-flex text-center justify-center p-10 py-4">
@@ -58,12 +58,16 @@
                <button @click="tail">TailwindCSS</button>
             </div>
          </div>
-         <Switch class="absolute bottom-0 hidden" />
       </div>
       <!-- TODO: DARK DEIXAR ASSIM E NO LIGHT COLOCAR IMAGEM LIGHT -->
       <!-- TODO: DEIXAR O BOTÃO DE ENTRAR E CADASTRAR MAIS BONITO -->
       <!-- TODO: DEIXAR A IMAGEM FIXADA COMO SE FOSSE UM RODAPÉ -->
-      <img src="../assets/tailscreen.png" class="w-screen dark:opacity-10 py-10">
+      <div v-if="escuro">
+         <img src="../assets/tailscreen.png" class="w-screen opacity-10 py-10">
+      </div>
+      <div v-if="!escuro">
+         <img src="../assets/tillll.png" class="w-screen opacity-10 py-10">
+      </div>
    </div>
 </template>
 
@@ -92,6 +96,7 @@ export default {
    },
    data:() => ({
       exibir: false,
+      escuro: false,
    }),
 }
 </script>
