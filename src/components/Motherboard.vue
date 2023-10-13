@@ -77,8 +77,8 @@ export default {
         price: "899,00",
       },
       {
-        name: "X570M Asus",
-        specs: "Socket AM4",
+        name: "B760M Aorus Elite",
+        specs: "Socket LGA 1700",
         price: "1299,00",
       },
     ],

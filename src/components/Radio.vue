@@ -13,27 +13,27 @@
     >
 
       <div class="col-span- grid-cols-1">
-        <h3>CPU</h3>
+        <p class="font-medium text-xl">CPU</p>
         <Cpu />
       </div>
       <div class="col-span- grid-cols-2">
-        <h3>GPU</h3>
+        <p class="font-medium text-xl">GPU</p>
         <Gpu />
       </div>
       <div class="col-span- grid-cols-3">
-        <h3>RAM + SSD</h3>
+        <p class="font-medium text-xl">RAM + SSD</p>
         <Memory />
       </div>
       <div class="col-span- grid-cols-1">
-        <h3>SOURCE</h3>
+        <p class="font-medium text-xl">SOURCE</p>
         <Power />
       </div>
       <div class="col-span- grid-cols-1">
-        <h3>MOTHERBOARD</h3>
+        <p class="font-medium text-xl">MOTHERBOARD</p>
         <Motherboard />
       </div>
       <div class="col-span- grid-cols-1">
-        <h3>CABINET</h3>
+        <p class="font-medium text-xl">CABINET</p>
         <Gabinete />
       </div>
     </div>
