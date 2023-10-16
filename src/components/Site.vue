@@ -51,7 +51,7 @@
          </div>
          <div class="font-medium flex justify-center mt-2">
             <div class="inline-flex space-x-2">
-               <img src="../assets/logo.png" @click="vue" class="w-12">
+               <img src="../assets/logo.png" @click="vue" class="sm:w-16 sm:h-16 lg:w-40 lg:h-40 md:w-24 md:h-24 h-16 w-16">
             </div>
          </div>
       </div>
