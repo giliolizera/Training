@@ -21,7 +21,7 @@
               <li class="text-left text-sm font-medium">
                 {{ plan.name }}
               </li>
-              <button v-if="active === plan.name" class="absolute flex 2xl:ml-96 xl:ml-80 lg:ml-64 md:ml-80 sm:ml-96">
+              <button v-if="active === plan.name" class="flex space-between">
                 <CheckCircleIcon
                   class="hidden sm:block h-8 w-8 mt-1 text-black-500"
                 />
@@ -62,7 +62,7 @@ export default {
         price: "499,00",
       },
       {
-        name: "Corsair Vengeance DDR4 + Kingston A400",
+        name: "Corsair Vengce DDR4 + Kingston A400",
         specs: "16GB RAM + 960GB SSD",
         price: "899,00",
       },
@@ -72,12 +72,12 @@ export default {
         price: "1299,00",
       },
       {
-        name: "Superframe DDR4 3600Mhz + WD Green",
+        name: "Super DDR4 3600Mhz + WD Green",
         specs: "32GB RAM + 2TB SSD",
         price: "1999,00",
       },
       {
-        name: "Kingston Fury Beast + MoveSpeed G",
+        name: "Kingston Fury Beast + MoveSpeed",
         specs: "64GB RAM + 4TB SSD",
         price: "3999,00",
       },

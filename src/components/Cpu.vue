@@ -19,7 +19,7 @@
                   <li class="text-left text-sm font-medium">
                     {{ plan.name }}
                   </li>
-                  <button v-if="active === plan.name" class="absolute flex 2xl:ml-96 xl:ml-80 lg:ml-64 md:ml-80 sm:ml-96">
+                  <button v-if="active === plan.name" class="flex space-between">
                     <CheckCircleIcon
                       class="hidden sm:block h-8 w-8 mt-1 text-black-500"
                     />
