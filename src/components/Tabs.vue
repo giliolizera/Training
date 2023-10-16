@@ -25,7 +25,9 @@
               <h3 class="mt-1 text-sm font-medium leading-5 text-black">{{ recent.title }}</h3>
               <ul class="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-500">
                 <li>{{ recent.date }}</li>
+                <span aria-hidden="true"> &middot; </span>
                 <li>{{ recent.commentCount }} comments</li>
+                <span aria-hidden="true"> &middot; </span>
                 <li>{{ recent.shareCount }} shares</li>
               </ul>
             </div>
@@ -38,7 +40,9 @@
               <h3 class="mt-1 text-sm font-medium leading-5 text-black">{{ popular.title }}</h3>
               <ul class="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-500">
                 <li>{{ popular.date }}</li>
+                <span aria-hidden="true"> &middot; </span>
                 <li>{{ popular.commentCount }} comments</li>
+                <span aria-hidden="true"> &middot; </span>
                 <li>{{ popular.shareCount }} shares</li>
               </ul>
             </div>
@@ -51,7 +55,9 @@
               <h3 class="mt-1 text-sm font-medium leading-5 text-black">{{ trending.title }}</h3>
               <ul class="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-500">
                 <li>{{ trending.date }}</li>
+                <span aria-hidden="true"> &middot; </span>
                 <li>{{ trending.commentCount }} comments</li>
+                <span aria-hidden="true"> &middot; </span>
                 <li>{{ trending.shareCount }} shares</li>
               </ul>
             </div>

@@ -13,7 +13,6 @@
       <div v-if="exibir" class="flex justify-end bg-gray-200 dark:bg-slate-900 space-x-2">
          <p>Dark Mode</p>
          <Switch class="mt-1" />
-         <p class="text-slate-900">.</p>
       </div>
       <div class="text-center justify-center max-w-md mx-auto">
          <div class="inline-flex text-center justify-center p-10 py-4">
