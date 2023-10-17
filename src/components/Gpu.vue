@@ -23,7 +23,7 @@
               </li>
               <button v-if="active === plan.name" class="flex space-between">
                 <CheckCircleIcon
-                  class="hidden sm:block h-8 w-8 mt-1 text-black-500"
+                  class="h-8 w-8 mt-1 text-black-500"
                 />
               </button>
             </ul>
