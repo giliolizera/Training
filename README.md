@@ -1,7 +1,10 @@
-It´s sad when you continued a thing who you don´t think you´re good, people see you not it, and... FUCK
-1705
-1406
-2909
-1010
-Man, i'm out.
+### Training
 
+It´s a project for training my skills in VueJS and Tailwind CSS.
+With this application i´m improve my code, my skills in this frameworks and more able to a job.
+
+### Install dependences 
+## npm install 
+
+## For compile and hot reloads
+## npm run serve
