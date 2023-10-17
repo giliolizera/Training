@@ -6,7 +6,7 @@
       <UpSideMenu/>
    </div>
   <div class="bg-gray-100 h-full rounded dark:bg-slate-800 py-16">
-    <div class="mx-auto w-72 max-w-md rounded-md">
+    <div class="mx-auto w-72 rounded-md">
       <div class="inline-flex bg-white text-black w-72 rounded-md">
         <button @click="exibir = !exibir" @keypress="!exibir" @keydown.prevent.esc="escape()"
           @keydown.prevent.down="baixo()" @keydown.prevent.up="cima()" @keydown.prevent.enter="enter()"

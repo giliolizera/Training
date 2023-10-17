@@ -45,17 +45,17 @@
             </div>
          </div>
          
-         <div class="flex justify-center text-xl mb-5 font-medium mt-10">
+         <div class="flex justify-center text-xl mb-5 font-medium mt-6">
             Tecnologias utilizadas no projeto
          </div>
-         <div class="font-medium flex justify-center mt-2">
+         <div class="font-medium flex justify-center mt-0">
             <div class="inline-flex space-x-2">
                <img src="../assets/logo.png" @click="vue" class="sm:w-16 sm:h-16 lg:w-40 lg:h-40 md:w-24 md:h-24 h-16 w-16">
             </div>
          </div>
       </div>
       <div>
-         <img src="../assets/tillll.png" @click="tail" class="w-screen dark:opacity-10 py-10">
+         <img src="../assets/tillll.png" @click="tail" class="w-screen dark:opacity-10 mt-4">
       </div>
    </div>
 </template>
