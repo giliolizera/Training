@@ -12,6 +12,8 @@
             cpf: '85657895236',
             curso: 'Ciências da Computação',
             senha: 'segredo123',
+            cidade: 'Passo Fundo',
+            endereco: 'Rua Alfredo Chaves, 365',
             observation: 'Qual é o motivo da gente estar vivo? Será o mesmo que me mantém acordado até as 04:20am?',
          },
          avançar: false,
@@ -89,36 +91,52 @@
          </div>
          <form class="col-span-2 grid lg:grid-cols-2 gap-4 pr-6 pl-6">
             <div>
-               <div class="text-sm font-medium flex pl-1 mt-2">
-                  Nome
+               <div class="text-sm font-medium flex space-x-1 pl-1 mt-2">
+                  <p>Nome</p><p class="flex text-red-600">*</p>
                </div>
                <input type="text"
                   class="w-full dark:text-gray-200 dark:border-blue-600 border-black border dark:bg-slate-700 bg-white rounded-md mt-1 pl-3 p-2"
                   v-model="form.nome">
             </div>
             <div>
-               <div class="text-sm font-medium flex pl-1 mt-2">
-                  Email
+               <div class="text-sm font-medium flex space-x-1 pl-1 mt-2">
+                  <p>Email</p><p class="flex text-red-600">*</p>
                </div>
                <input type="email"
                   class="w-full dark:text-gray-200 dark:border-blue-600 border-black border dark:bg-slate-700 bg-white rounded-md p-2 pl-3 mt-1"
                   v-model="form.email">
             </div>
             <div>
-               <div class="text-sm font-medium flex pl-1 mt-2">
-                  Telefone
+               <div class="text-sm font-medium flex space-x-1 pl-1 mt-2">
+                  <p>Telefone</p><p class="flex text-red-600">*</p>
                </div>
                <input type="text"
                   class="w-full dark:text-gray-200 dark:border-blue-600 border-black border dark:bg-slate-700 bg-white rounded-md p-2 mt-1"
                   v-model="form.telefone" v-maska="'(##) #####-####'">
             </div>
             <div>
-               <div class="text-sm font-medium flex pl-1 mt-2">
-                  CPF
+               <div class="text-sm font-medium flex space-x-1 pl-1 mt-2">
+                  <p>CPF</p><p class="flex text-red-600">*</p>
                </div>
                <input type="text"
                   class="w-full dark:text-gray-200 dark:border-blue-600 border-black border dark:bg-slate-700 bg-white rounded-md p-2 mt-1"
                   v-model="form.cpf" v-maska="'###.###.###-##'">
+            </div>
+            <div>
+               <div class="text-sm font-medium flex pl-1 mt-2">
+                  Cidade
+               </div>
+               <input type="text"
+                  class="w-full dark:text-gray-200 dark:border-blue-600 border-black border dark:bg-slate-700 bg-white rounded-md p-2 pl-3 mt-1"
+                  v-model="form.cidade">
+            </div>
+            <div>
+               <div class="text-sm font-medium flex pl-1 mt-2">
+                  Endereço
+               </div>
+               <input type="text"
+                  class="w-full dark:text-gray-200 dark:border-blue-600 border-black border dark:bg-slate-700 bg-white rounded-md p-2 pl-3 mt-1"
+                  v-model="form.endereco">
             </div>
             <div>
                <div class="text-sm font-medium flex pl-1 mt-2">
@@ -129,8 +147,8 @@
                   v-model="form.curso">
             </div>
             <div>
-               <div class="text-sm font-medium flex pl-1 mt-2">
-                  Senha
+               <div class="text-sm font-medium flex space-x-1 pl-1 mt-2">
+                  <p>Senha</p><p class="flex text-red-600">*</p>
                </div>
                <div class="relative w-full">
                   <input :type="typePassword ? 'password' : 'text'"
@@ -143,7 +161,7 @@
                </div>
             </div>
             <div class="lg:col-span-2">
-               <div class="text-sm font-medium flex pl-1 mt-2">
+               <div class="text-sm font-medium flex space-x-1 pl-1 mt-2">
                   Observação
                </div>
                <textarea type="text"
