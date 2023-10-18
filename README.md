@@ -3,8 +3,12 @@
 It´s a project for training my skills in VueJS and Tailwind CSS.
 With this application i´m improve my code, my skills in this frameworks and more able to a job.
 
-### Install dependences 
- npm install 
+### Project setup
+```
+npm install
+```
 
-### For compile and hot reloads
- npm run serve
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
