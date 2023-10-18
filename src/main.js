@@ -3,6 +3,7 @@ import App from './App.vue'
 import './assets/main.css'
 import { createRouter, createWebHistory } from 'vue-router'
 import Maska from 'maska'
+// import VueMask from 'v-mask'
 
 // routes
 import Site from './components/Site.vue'
@@ -73,4 +74,5 @@ const router = createRouter({
 const Vue = createApp(App)
 Vue.use(router)
 Vue.use(Maska)
+// Vue.use(VueMask)
 Vue.mount('#app')

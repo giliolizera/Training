@@ -12,6 +12,7 @@
     "@truffle/hdwallet-provider": "^1.0.41-1",
     "@vueuse/core": "^10.3.0",
     "maska": "^1.5.0",
+    "v-mask": "^2.3.0",
     "vue": "^3.2.26",
     "vue-router": "4.0.12"
   },

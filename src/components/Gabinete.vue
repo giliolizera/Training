@@ -67,7 +67,7 @@ export default {
         price: "199,00",
       },
       {
-        name: "Gabinete Rise Mode GLASSx06 com fan",
+        name: "Gabinete Rise Mode GLASSx06 Fans",
         specs: "Mid Tower ATX",
         price: "449,00",
       },
@@ -77,7 +77,7 @@ export default {
         price: "599,00",
       },
       {
-        name: "Gabinete Lian Aquarium 10fans AIGO",
+        name: "Gabinete Lian LO Aquarium",
         specs: "Big Tower ATX",
         price: "899,00",
       },
