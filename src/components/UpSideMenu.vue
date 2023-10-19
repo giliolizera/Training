@@ -15,8 +15,8 @@
             class="fixed top-4 right-4 grid rounded-md w-56 h-max  bg-white text-black font-medium p-4 space-y-3 mr-4 z-50 transform overflow-hidden"
             v-if="exibir">
             <div class="inline-flex justify-between">
-               <router-link to="/disclosure">
-                  <p class="space-x-6">Disclosure</p>
+               <router-link to="/radio">
+                  <p class="space-x-6">Radio</p>
                </router-link>
                <button class="pl-24" @click="exibir = false">
                   <XMarkIcon class="h-4 w-4 text-gray-500" />
@@ -40,8 +40,8 @@
             <router-link to="/popover">
                Popover
             </router-link>
-            <router-link to="/radio">
-               Radio
+            <router-link to="/disclosure">
+               Disclosure
             </router-link>
             <div class="inline-flex">
                Switch Theme
