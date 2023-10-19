@@ -1,9 +1,9 @@
 <template>
    <div class="">
-      <div class="lg:flex bg-gray-200 dark:bg-slate-900">
+      <div class="lg:flex bg-gray-300 dark:bg-slate-900">
          <div class="lg:inline-flex justify-start">
             <router-link to="/">
-               <button class="text-blue-600 bg-gray-200 dark:bg-slate-900 font-medium text-2xl flex p-4 justify-start">
+               <button class="text-blue-600 bg-gray-300 dark:bg-slate-900 font-medium text-2xl flex p-4 justify-start">
                   Training WebSite
                </button>
             </router-link>

@@ -98,7 +98,8 @@
           { id: 29, name: 'Severo Snape' },
           { id: 30, name: 'Axel Rhoades' },
           { id: 31, name: 'Bob Callistenic' },
-          { id: 32, name: 'Lupin Queli RJ' },
+          { id: 32, name: 'Lupin RJ' },
+          { id: 33, name: 'Zocleique Spa' }
         ],
         exibir: false,
         selected: 'Durward Reynolds',
