@@ -17,7 +17,7 @@
       <div v-if="exibir" class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
         <div class="relative grid gap-8 bg-white p-7">
           <a v-for="item in solutions" :key="item.name" :href="item.href"
-            class="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-opacity-50">
+            class="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-300 focus:outline-none focus-visible:ring focus-visible:ring-opacity-50">
             <div class="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12">
               <div v-html="item.icon"></div>
             </div>
@@ -33,7 +33,7 @@
         </div>
         <div class="bg-gray-200 p-4">
           <a href="#"
-            class="flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-opacity-50">
+            class="flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-300 focus:outline-none focus-visible:ring focus-visible:ring-opacity-50">
             <span class="flex items-center">
               <span class="text-sm font-medium text-gray-900">
                 Documentation

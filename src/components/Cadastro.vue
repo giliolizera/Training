@@ -14,7 +14,7 @@
             senha: 'segredo123',
             cidade: 'Passo Fundo',
             endereco: 'Rua Alfredo Chaves, 365',
-            observation: 'Qual é o motivo da gente estar vivo? Será o mesmo que me mantém acordado até as 04:20am?',
+            observation: 'Qual é o motivo da gente estar vivo?',
          },
          avançar: false,
          exibir: false,
