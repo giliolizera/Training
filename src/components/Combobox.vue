@@ -100,6 +100,8 @@
           { id: 31, name: 'Bob Callistenic' },
           { id: 32, name: 'Lupin RJ'        },
           { id: 33, name: 'Rafael Nuqara'   },
+          { id: 34, name: 'Jocleide Travis' },
+          { id: 35, name: 'Leonir Raptor'   },
         ],
         exibir: false,
         selected: 'Durward Reynolds',
