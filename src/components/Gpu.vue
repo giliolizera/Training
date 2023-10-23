@@ -67,9 +67,9 @@ export default {
         price: "1199,00",
       },
       {
-        name: "Gigabyte Nvidia RTX 4060 Ti",
+        name: "Gigabyte Nvidia RTX 4060",
         vram: "8GB",
-        price: "2499,00",
+        price: "1959,00",
       },
       {
         name: "Saphire AMD RX 7800XT",

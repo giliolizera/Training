@@ -57,14 +57,14 @@ export default {
         price: "199,00",
       },
       {
-        name: "A520M Gigabyte",
-        specs: "Socket AM4",
-        price: "399,00",
-      },
-      {
         name: "H510M Asus",
         specs: "Socket LGA1200",
         price: "399,00",
+      },
+      {
+        name: "A520M PRO Gigabyte",
+        specs: "Socket AM4",
+        price: "429,00",
       },
       {
         name: "H610M Mancer",

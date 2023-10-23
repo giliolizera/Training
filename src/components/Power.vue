@@ -52,12 +52,12 @@ export default {
   data: () => ({
     plans: [
       {
-        name: "Fonte Duex 350W",
+        name: "Fonte Duex 300W",
         specs: "Sem PFC",
         price: "99,00",
       },
       {
-        name: "Fonte Mancer 500W",
+        name: "Fonte MSI 400W",
         specs: "PFC Ativo",
         price: "199,00",
       },

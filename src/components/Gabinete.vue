@@ -57,7 +57,7 @@ export default {
         price: "49,00",
       },
       {
-        name: "Gabinete Ninja Mancer",
+        name: "Gabinete Ninja Gamer",
         specs: "Mid Tower Micro ATX",
         price: "149,00",
       },

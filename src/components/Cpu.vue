@@ -62,10 +62,10 @@
           price: "359,99",
         },
         {
-          name: "AMD Ryzen 5 5600G 4.40GHz",
+          name: "AMD Ryzen 5 5500 4.20GHz",
           ram: "16GB",
           cpus: "6/12 CPU",
-          price: "899,99",
+          price: "599,99",
         },
         {
           name: "AMD Ryzen 7 5700X 4.60GHz",
