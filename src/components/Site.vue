@@ -2,10 +2,10 @@
       <div
          class="text-slate-800 bg-white rounded dark:bg-slate-800 dark:text-white"
       >
-         <div class="flex justify-between bg-gray-300 dark:bg-slate-900">
+         <div class="flex justify-between bg-gray-200 dark:bg-slate-900">
             <router-link to="/">
             <button
-               class="text-blue-600 bg-gray-300 dark:bg-slate-900 font-medium text-2xl flex p-4 justify-start"
+               class="text-blue-600 bg-gray-200 dark:bg-slate-900 font-medium text-2xl flex p-4 justify-start"
             >
                Training WebSite
             </button>
@@ -16,7 +16,7 @@
          </div>
          <div
             v-if="exibir"
-            class="flex justify-end bg-gray-300 dark:bg-slate-900 space-x-2"
+            class="flex justify-end bg-gray-200 dark:bg-slate-900 space-x-2"
          >
             <p>Dark Mode</p>
             <Switch class="mt-1" />

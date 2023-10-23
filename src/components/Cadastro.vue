@@ -71,9 +71,9 @@
                      
 <template>
    <div class=" text-slate-800 bg-white rounded dark:bg-slate-800 dark:text-white">
-      <div class="flex justify-between bg-gray-300 dark:bg-slate-900">
+      <div class="flex justify-between bg-gray-200 dark:bg-slate-900">
          <router-link to="/">
-            <button class="text-blue-600 bg-gray-300 dark:bg-slate-900 font-medium text-2xl flex p-4 justify-start">
+            <button class="text-blue-600 bg-gray-200 dark:bg-slate-900 font-medium text-2xl flex p-4 justify-start">
                Training WebSite
             </button>
          </router-link>
@@ -81,7 +81,7 @@
             <EllipsisVerticalIcon class="h-6 w-6 mr-2" />
          </button>
       </div>
-      <div class="flex justify-end bg-gray-300  dark:bg-slate-900 space-x-2" v-if="exibir">
+      <div class="flex justify-end bg-gray-200  dark:bg-slate-900 space-x-2" v-if="exibir">
          <p>Dark Mode</p>
          <Switch class="mt-1" />
       </div>
