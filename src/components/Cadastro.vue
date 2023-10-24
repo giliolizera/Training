@@ -19,7 +19,7 @@
          avançar: false,
          exibir: false,
          typePassword: true,
-         // 360 1260 i5 3470
+         // 365 1380 i5 3470
          // 385 1480 i5 3570 0.2ghz more than i5 3470
          // 380 1785 i5 8265u
       }),
