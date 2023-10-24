@@ -7,10 +7,10 @@
    </div>
   <div class="text-slate-800 bg-white rounded dark:bg-slate-800 dark:text-white">
     <div class="w-full px-4 pt-16">
-      <div class="mx-auto w-full max-w-md rounded-2xl bg-gray-100 p-2">
+      <div class="mx-auto w-full max-w-lg rounded-2xl bg-gray-100 p-2">
         <button 
         @click="exibir = !exibir" type="button"
-        class="flex w-full justify-between rounded-lg bg-purple-100 px-4 py-2 text-left text-sm font-medium text-slate-900 hover:bg-purple-200 focus:outline-none">
+        class="flex w-full justify-between rounded-lg bg-gray-100 px-4 py-2 text-left text-sm font-medium text-slate-900 hover:bg-gray-200 focus:outline-none">
           What is your refund policy?
         </button>
         <transition 
@@ -25,7 +25,7 @@
         </transition>
         <div class="mt-2">
           <button @click="exibir2 = !exibir2"
-            class="flex w-full justify-between rounded-lg bg-purple-100 px-4 py-2 text-left text-sm font-medium text-slate-900 hover:bg-purple-200 focus:outline-none">
+            class="flex w-full justify-between rounded-lg bg-gray-100 px-4 py-2 text-left text-sm font-medium text-slate-900 hover:bg-gray-200 focus:outline-none">
             Do you offer technical support?
           </button>
           <transition 
