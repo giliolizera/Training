@@ -22,11 +22,11 @@
                   <XMarkIcon class="h-4 w-4 text-gray-500" />
                </button>
             </div>
-            <router-link to="/tabs">
-               Tabs
-            </router-link>
             <router-link to="/select">
                Select
+            </router-link>
+            <router-link to="/disclosure">
+               Disclosure
             </router-link>
             <router-link to="/menu">
                Menu
@@ -34,14 +34,14 @@
             <router-link to="/combobox">
                Combobox
             </router-link>
-            <router-link to="/dialog">
-               Dialog
+            <router-link to="/tabs">
+               Tabs
             </router-link>
             <router-link to="/popover">
                Popover
             </router-link>
-            <router-link to="/disclosure">
-               Disclosure
+            <router-link to="/dialog">
+               Dialog
             </router-link>
             <div class="inline-flex">
                Switch Theme

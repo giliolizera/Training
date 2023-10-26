@@ -14,14 +14,14 @@
                   Radio
                </button>
             </router-link>
-            <router-link to="/tabs" class="mt-3">
-               <button class="dark:bg-slate-900 bg:gray-200 dark:text-gray-100 font-medium py-2 px-5 mb-2 rounded-xl">
-                  Tabs
-               </button>
-            </router-link>
             <router-link to="/select" class="mt-3">
                <button class="dark:bg-slate-900 bg:gray-200 dark:text-gray-100 font-medium py-2 px-5 mb-2 rounded-xl">
                   Select
+               </button>
+            </router-link>
+            <router-link to="/disclosure" class="mt-3">
+               <button class="dark:bg-slate-900 bg:gray-200 dark:text-gray-100 font-medium py-2 px-5 mb-2 rounded-xl">
+                  Disclosure
                </button>
             </router-link>
             <router-link to="/menu" class="mt-3">
@@ -34,9 +34,9 @@
                   Combobox
                </button>
             </router-link>
-            <router-link to="/dialog" class="mt-3">
+            <router-link to="/tabs" class="mt-3">
                <button class="dark:bg-slate-900 bg:gray-200 dark:text-gray-100 font-medium py-2 px-5 mb-2 rounded-xl">
-                  Dialog
+                  Tabs
                </button>
             </router-link>
             <router-link to="/popover" class="mt-3">
@@ -44,9 +44,9 @@
                   Popover
                </button>
             </router-link>
-            <router-link to="/disclosure" class="mt-3">
+            <router-link to="/dialog" class="mt-3">
                <button class="dark:bg-slate-900 bg:gray-200 dark:text-gray-100 font-medium py-2 px-5 mb-2 rounded-xl">
-                  Disclosure
+                  Dialog
                </button>
             </router-link>
             <div class="ml-2 mt-5">
