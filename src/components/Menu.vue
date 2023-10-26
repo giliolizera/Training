@@ -27,12 +27,12 @@
                   <PencilIcon class="mt-0.5 text-gray-600 mr-2 h-5 w-5" />
                   Edit
                </button>
-               <button @click="exibir = false" class="w-full inline-flex px-3 py-1.5 hover:bg-slate-500 text-base rounded-md text-black">
+               <button @click="exibir = false, duplicate = true" class="w-full inline-flex px-3 py-1.5 hover:bg-slate-500 text-base rounded-md text-black">
                   <DocumentDuplicateIcon class="mt-0.5 text-gray-600 mr-2 h-5 w-5" />
                   Duplicate
                </button>
                <li class="px-1 py-1 divide-y divide-gray-800"></li>
-               <button @click="exibir = false" class="w-full inline-flex px-3 py-1.5 hover:bg-slate-500 text-base rounded-md text-black">
+               <button @click="exibir = false, duplicate = false" class="w-full inline-flex px-3 py-1.5 hover:bg-slate-500 text-base rounded-md text-black">
                   <ArchiveBoxIcon class="mt-0.5 text-gray-600 mr-2 h-5 w-5" />
                   Archive
                </button>
@@ -41,15 +41,29 @@
                   Move
                </button>
                <li class="px-1 py-1 divide-y divide-gray-800"></li>
-               <button @click="exibir = false" class="w-full inline-flex px-3 pt-1.5 pb-1.5 mb-0 hover:bg-slate-500 text-base rounded-md text-black">
+               <button @click="exibir = false, remove = true" class="w-full inline-flex px-3 pt-1.5 pb-1.5 mb-0 hover:bg-slate-500 text-base rounded-md text-black">
                   <TrashIcon class="mt-0.5 text-gray-600 mr-2 h-5 w-5" />
                   Delete
+               </button>
+               <button @click="exibir = false, remove = false" class="w-full inline-flex px-3 pt-1.5 pb-1.5 mb-0 hover:bg-slate-500 text-base rounded-md text-black">
+                  <ArrowUturnUpIcon class="mt-0.5 text-gray-600 mr-2 h-5 w-5" />
+                  Restore
                </button>
             </ul>
          </div>
          </TransitionGroup>
       </div>
    </div>
+   <div class="w-full px-4 mt-64">
+      <div class="mx-auto w-full max-w-md rounded-2xl p-2">
+         <div v-if="remove === false">
+            <img src="../assets/Vue-js.png" alt="Vue" class="rounded-lg">
+         </div>
+         <div v-if="duplicate === true">
+            <img src="../assets/Vue-js.png" alt="Vue" class="rounded-lg mt-4">
+         </div>
+      </div>
+   </div>   
 </template>
 
 <script>
@@ -57,6 +71,8 @@
 export default {
    data: () => ({
       exibir: true,
+      remove: false,
+      duplicate: false,
    }),
    components: {
       Upside, UpSideMenu
@@ -71,6 +87,7 @@ import { PencilIcon, TrashIcon } from "@heroicons/vue/24/outline";
 import { DocumentDuplicateIcon } from "@heroicons/vue/24/outline";
 import { ArchiveBoxIcon } from "@heroicons/vue/24/outline";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
+import { ArrowUturnUpIcon } from "@heroicons/vue/24/outline";
 import UpSideMenu from "./UpSideMenu.vue";
 import Upside from "./Upside.vue";
 document.title="Menu - Training"
