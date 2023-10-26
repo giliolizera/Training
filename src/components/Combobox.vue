@@ -5,8 +5,14 @@
    <div class="lg:hidden">
       <UpSideMenu/>
    </div>
+   <div class="bg-gray-100 dark:bg-slate-800">
+     <div class="p-10 divide-y max-w-lg bg-gray-100 dark:bg-slate-800">
+       <p class="font-medium text-xl pb-1">Search People</p>
+       <p class="text-base py-2">Search a People who you like to work with. You can search typing or navegate with arrows</p>
+      </div>
+    </div>
    <div class="h-screen bg-gray-100 rounded dark:bg-slate-800">
-     <div class="bg-gray-100 rounded dark:bg-slate-800 py-16">
+     <div class="bg-gray-100 rounded dark:bg-slate-800">
        <div class="mx-auto w-72 max-w-md rounded-md">
          <div class="inline-flex bg-white text-black w-72 rounded-md">
            <input class="w-full bg-white pl-3 px-1 py-1 rounded-md focus:outline-none text-left" type="text"

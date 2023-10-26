@@ -5,7 +5,13 @@
    <div class="lg:hidden">
       <UpSideMenu/>
    </div>
-  <div class="bg-gray-100 h-full rounded dark:bg-slate-800 py-16">
+   <div class="bg-gray-100 dark:bg-slate-800">
+     <div class="p-10 divide-y max-w-lg bg-gray-100 dark:bg-slate-800">
+       <p class="font-medium text-xl pb-1">Select People</p>
+       <p class="text-base py-2">Select a People who you like to married with.</p>
+      </div>
+    </div>
+  <div class="bg-gray-100 h-full rounded dark:bg-slate-800">
     <div class="mx-auto w-72 rounded-md">
       <div class="inline-flex bg-white text-black w-72 rounded-md">
         <button @click="exibir = !exibir" @keypress="!exibir" @keydown.prevent.esc="escape()"
@@ -47,12 +53,15 @@ export default {
   data: () => ({
     peoples: [
       { name: 'Guilherme Gilioli' },
-      { name: 'João Vitor' },
+      { name: 'Jimmy de Santa' },
       { name: 'Bartolomeu Krautch' },
       { name: 'Tom Riddle' },
-      { name: 'Taina Bitch' },
-      { name: 'Hellen Child' },
-      { name: 'Maik Sanaiott'}
+      { name: 'Taina Bitches' },
+      { name: 'Hellen Childs' },
+      { name: 'Maik Sanaiott'},
+      { name: 'Rillary Clinton'},
+      { name: 'Francis Pigdey'},
+      { name: 'Michel Nigris'},
     ],
     active: -1,
     selected: 'Guilherme Gilioli',
