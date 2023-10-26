@@ -70,7 +70,7 @@
 
 export default {
    data: () => ({
-      exibir: true,
+      exibir: false,
       remove: false,
       duplicate: false,
    }),
