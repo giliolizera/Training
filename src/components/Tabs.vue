@@ -67,12 +67,16 @@
       </div>
     </div>
   </div>
+  <div>
+    <TabsIndex/>
+  </div>
 </template>
 
 <script>
 import UpSideMenu from './UpSideMenu.vue'
 import Upside from './Upside.vue'
 import Switch from './Switch.vue'
+import TabsIndex from './TabsIndex.vue'
 
 export default {
   data() {
