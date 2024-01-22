@@ -3,7 +3,8 @@
 It´s a project for training my skills in VueJS and Tailwind CSS.
 With this application i´m improve my code, my skills in this frameworks and more able to a job.
 
-## Link ( Combobox Fail )
+## Project URL
+* Combobox page isn´t running
 ```
 https://training-ten-iota.vercel.app/
 ```
