@@ -21,5 +21,3 @@ npm install
 ```
 npm run serve
 ```
-
-Congratulate for you who is seeing this work of art :D
